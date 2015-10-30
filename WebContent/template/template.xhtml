@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+    <h:head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    	<title><ui:insert name="title">LinkinParkTVBr</ui:insert></title>
+    	<h:outputStylesheet name="css/pages.css" />
+    </h:head>
+
+	<h:body>
+	<div class="container-header" align="center">
+		<div align="center">
+			<header>
+				<img src="resources/imagens/banner.jpg" alt="Banner" />
+				<nav class="container-nav">
+					<ul id="lista_header">
+						<li><a href="index.xhtml">Página Inicial</a></li>
+						<li><a href="texte.xhtml">Músicas Legendadas</a></li>
+						<li><a href="index.xhtml">Videoclipes Legendados</a></li>
+						<li><a href="index.xhtml">Redes Sociais</a></li>
+						<li><a href="index.xhtml">Sobre</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+			
+		<div id="conteudo">
+			<ui:insert name="conteudo" />
+		</div>
+			
+		<footer>
+			<div align="center">
+				<small>
+					LinkinParkTVBr<br />
+					linkinparktvbr@gmail.com<br />
+					2015
+				</small>
+			</div>
+		</footer>
+	</div>
+	</h:body>
+</html>
