@@ -1,0 +1,66 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-image: url("#{resource['imagens/background.jpg']}");
+	background-repeat: repeat;
+	padding: 15px 0px 0px 0px;
+}
+
+#container-header {
+	display: block;
+	color: white;
+	width: 80%;
+	height: 80%;
+	margin-left: auto;
+  	margin-right: auto;
+  	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.6);
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+#container-nav {
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Courier New", Courier, monospace;
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.6);
+}
+
+#li-index, #li-mus-leg, #li-video-leg, #li-redes, #li-sobre {
+	color: white;
+	display: inline-block;
+	padding: 10px 50px 10px 50px;
+	white-space: nowrap;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+#container-footer{
+	width: 200px;
+	height: 100%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+#div-footer{
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	width: 100%;
+	height: 80%;
+	color: white;
+}

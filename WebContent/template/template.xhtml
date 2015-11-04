@@ -7,32 +7,34 @@
     <h:head>
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     	<title><ui:insert name="title">LinkinParkTVBr</ui:insert></title>
-    	<h:outputStylesheet name="css/pages.css" />
+    	<h:outputStylesheet name="css/template.css" />
     </h:head>
 
 	<h:body>
-	<div class="container-header" align="center">
-		<div align="center">
-			<header>
-				<img src="resources/imagens/banner.jpg" alt="Banner" />
-				<nav class="container-nav">
-					<ul id="lista_header">
-						<li><a href="index.xhtml">Página Inicial</a></li>
-						<li><a href="texte.xhtml">Músicas Legendadas</a></li>
-						<li><a href="index.xhtml">Videoclipes Legendados</a></li>
-						<li><a href="index.xhtml">Redes Sociais</a></li>
-						<li><a href="index.xhtml">Sobre</a></li>
-					</ul>
-				</nav>
-			</header>
+	<main id="container">
+		<div id="container-header" align="center">
+			<div align="center">
+				<header>
+					<img src="resources/imagens/banner.jpg" alt="Banner" />
+					<nav id="container-nav">
+						<ul id="lista_header">
+							<li id="li-index"><a href="index.xhtml">Página Inicial</a></li>
+							<li id="li-mus-leg"><a href="texte.xhtml">Músicas Legendadas</a></li>
+							<li id="li-video-leg"><a href="index.xhtml">Vídeos Legendados</a></li>
+							<li id="li-redes"><a href="redes-sociais.xhtml">Redes Sociais</a></li>
+							<li id="li-sobre"><a href="index.xhtml">Sobre</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
 		</div>
-			
+		
 		<div id="conteudo">
 			<ui:insert name="conteudo" />
 		</div>
-			
-		<footer>
-			<div align="center">
+		
+		<footer id="container-footer">
+			<div id="div-footer" align="center">
 				<small>
 					LinkinParkTVBr<br />
 					linkinparktvbr@gmail.com<br />
@@ -40,6 +42,6 @@
 				</small>
 			</div>
 		</footer>
-	</div>
+	</main>
 	</h:body>
 </html>

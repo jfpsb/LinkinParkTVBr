@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</h:head> 
+
+	<ui:composition template="template/template.xhtml">
+		<ui:define name="title">LinkinParkTVBr</ui:define>
+		<ui:define name="conteudo">
+			<h:outputStylesheet name="css/redes-sociais.css" />
+			<section id="redes-section">
+				<article id="article-facebook">
+					<img id="img-facebook" align="left" src="resources/imagens/facebook-icon.png" alt="Ícone do Facebook"/>
+					<h2 id="titulo-facebook">Facebook</h2>
+					<p id="texto-facebook">Texto do facebook</p>
+				</article>
+			</section>
+		</ui:define>
+	</ui:composition>
+</html>
