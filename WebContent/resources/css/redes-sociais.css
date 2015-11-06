@@ -1,39 +1,53 @@
 @CHARSET "ISO-8859-1";
 
-article {	
+#article-facebook, #article-youtube, #article-twitter {	
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 	border-style: solid;
 	border-width: 1px;
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.8);
+  	margin:	0px 0px 15px 0px;
+  	padding: 15px 0px 0px 0px;
 }
 
 #redes-section{
 	display: block;
-	background: rgb(0, 0, 0);
-  	background: rgba(0, 0, 0, 0.8);
   	width: 50%;
   	margin-left: auto;
-  	margin-right: auto;  	
+  	margin-right: auto;
+  	padding: 15px 0px 0px 0px;
 }
 
-#texto-facebook{
+#texto-facebook, #link-facebook, #texto-youtube, #link-youtube, #texto-twitter, #link-twitter {
 	text-align: center;
 	padding: 0px 0px 0px 0px;
-	font-size: 80%;
-}
-
-#titulo-facebook {
-	text-align: left;
-	position: relative;
-	bottom: 0;
-	padding: 25px 5px 0px 0px;
-	display: inline-block;
 	font-size: 100%;
+	padding: 0px 100px 10px 100px;
 }
 
-#img-facebook{
-	width: 3%;
-	height: 3%;
+#img-facebook {
+	width: 5%;
+	height: 5%;
 	display: inline-block;
-	padding: 25px 5px 0px 10px;
+	padding: 0px 5px 0px 10px;
+}
+
+#facebook-amostra, #youtube-amostra, #twitter-amostra {
+	width: 60%;
+	height: 60%;
+}
+
+#img-youtube {
+	width: 9%;
+	height: 9%;
+	display: inline-block;
+	padding: 0px 5px 0px 10px;
+}
+
+#img-twitter {
+	width: 12%;
+	height: 12%;
+	display: inline-block;
+	padding: 0px 5px 0px 10px;
 }
