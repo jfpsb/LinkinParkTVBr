@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:composition template="template/template.xhtml">
+		<ui:define name="title">Músicas Legendadas</ui:define>
+		<ui:define name="icon"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /></ui:define>
+		<ui:define name="conteudo">
+			<h:outputStylesheet name="css/mus-leg.css" />
+			<section id="mus-section">
+				<article id="mus-article">
+					<h:form id="mus-form">
+						<h2 id="titulo">Selecione o álbum:</h2>
+						<h:panelGrid class="panel" id="mus-panel" columns="2">
+							<h:commandButton styleClass="botao ht" value="Hybrid Theory" />
+							<h:commandButton styleClass="botao mt" value="Meteora" />
+							<h:commandButton styleClass="botao mtm" value="Minutes To Midnight" />
+							<h:commandButton styleClass="botao ats" value="A Thousand Suns" />
+							<h:commandButton styleClass="botao lt" value="Living Things" />
+							<h:commandButton styleClass="botao thp" value="The Hunting Party" />
+						</h:panelGrid>
+					</h:form>
+				</article>
+			</section>
+		</ui:define>
+	</ui:composition>
+</html>
