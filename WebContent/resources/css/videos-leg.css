@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+.botao.lptv {
+	background: white url("#{resource['imagens/lptv-logo.jpg']}") no-repeat top;
+	background-size: 100%;
+}
+
+.botao.shows {
+	background: white url("#{resource['imagens/shows-logo.jpg']}") no-repeat top;
+	background-size: 100%;
+}
+
+.botao.ent {
+	background: white url("#{resource['imagens/entrevista-logo.jpg']}") no-repeat top;
+	background-size: 100%;
+}
+
+.botao.logs {
+	background: white url("#{resource['imagens/linkin-log-logo.png']}") no-repeat top;
+	background-size: 100%;
+}
+
+.botao.outros {
+	background: white url("#{resource['imagens/outros-logo.png']}") no-repeat top;
+	background-size: 100%;
+}

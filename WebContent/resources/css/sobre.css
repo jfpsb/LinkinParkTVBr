@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+#titulo {
+	font-size: 200%;
+}
+p {
+	text-indent: 3em;
+	padding: 0px 25px 0px 25px;
+	font-size: 125%;
+}
+
+#rodape1 {
+	color: red;
+	font-size: 80%;
+	width: 30%;
+	
+}
+
+img {
+	align: center;
+	width: 60%
+}

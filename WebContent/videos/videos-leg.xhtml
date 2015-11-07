@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:composition template="/WEB-INF/template.xhtml">
+		<ui:define name="title">Vídeos Legendados</ui:define>
+		<ui:define name="icon"><link rel="shortcut icon" href="#{request.contextPath}/favicon.ico" type="image/x-icon" /></ui:define>
+		<ui:define name="conteudo">
+			<h:outputStylesheet name="css/pages-leg.css" />
+			<h:outputStylesheet name="css/videos-leg.css" />			
+			<section id="videos-section" >
+				<article id="videos-article">
+					<h:form id="videos-form">
+						<h:panelGrid class="panel" id="video-panel" columns="2">
+							<h:button styleClass="botao lptv" value="LPTVs"/>
+							<h:button styleClass="botao ent" value="Entrevistas"/>
+							<h:button styleClass="botao shows" value="Shows"/>
+							<h:button styleClass="botao logs" value="Linkin Log's"/>
+							<h:button styleClass="botao outros" value="Outros"/>
+						</h:panelGrid>
+					</h:form>
+				</article>
+			</section>
+		</ui:define>
+	</ui:composition>
+</html>
