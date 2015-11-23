@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"> 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" >
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -12,37 +13,30 @@
 	<ui:define name="title">LinkinParkTVBr</ui:define>
 	<ui:define name="icon"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /></ui:define>
 	<ui:define name="conteudo" >
-	<div align="center">
-		<article>
-			<ul>
-				<li>
-					<article>
-						<p>Post 1</p>
-					</article>
-				</li>
-				<li>
-					<article>
-						<p>Post 2</p>
-					</article>
-				</li>
-				<li>
-					<article>
-						<p>Post 3</p>
-					</article>
-				</li>
-				<li>
-					<article>
-						<p>Post 4</p>
-					</article>
-				</li>
-				<li>
-					<article>
-						<p>Post 5</p>
-					</article>
-				</li>
-			</ul>
-		</article>
-	</div>
+	<section>
+	<h:outputStylesheet name="css/index.css" />
+		<div align="center">
+			<article>
+				<h:form>
+					<p:panel id="panel" header="Vídeos Recentes">
+						<article id="videoGrid" styleClasse="article">
+							<p:panelGrid columns="4">
+								<h:outputText value="Vídeo 1" />
+								<h:outputText value="Vídeo 2" />
+								<h:outputText value="Vídeo 3" />
+								<h:outputText value="Vídeo 4" />
+								<h:outputText value="Vídeo 5" />
+								<h:outputText value="Vídeo 6" />
+								<h:outputText value="Vídeo 7" />
+								<h:outputText value="Vídeo 8" />
+							</p:panelGrid>
+						</article>
+					</p:panel>
+				</h:form>
+
+			</article>
+		</div>
+	</section>
 	</ui:define>
 </ui:composition>
 </html>
