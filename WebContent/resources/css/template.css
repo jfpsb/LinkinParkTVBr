@@ -16,6 +16,16 @@ body {
   	background: rgba(0, 0, 0, 0.6);
 }
 
+.button {
+	font-family: "Courier New", Courier, monospace;
+	color: black;
+	background: #ECECEC;
+	border: 1px solid !important;
+	text-align: center !important;
+	margin: 10px 50px 10px 50px;
+	border-radius: 15px;
+}
+
 a:link, a:visited {
 	text-decoration: none;
 	color: white;
@@ -31,13 +41,6 @@ a:hover {
 	font-family: "Courier New", Courier, monospace;
 	background: rgb(0, 0, 0);
   	background: rgba(0, 0, 0, 0.6);
-}
-
-#li-index, #li-mus-leg, #li-video-leg, #li-redes, #li-sobre {
-	color: white;
-	display: inline-block;
-	padding: 10px 50px 10px 50px;
-	white-space: nowrap;
 }
 
 img {

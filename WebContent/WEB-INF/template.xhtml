@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
       
     <h:head>
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -17,14 +18,14 @@
 			<div align="center">
 				<header>
 					<img src="#{request.contextPath}/resources/imagens/banner.jpg" alt="Banner" />
-					<nav id="container-nav">
-						<ul id="lista_header">
-							<li id="li-index"><a href="#{request.contextPath}/index.xhtml">Página Inicial</a></li>
-							<li id="li-mus-leg"><a href="#{request.contextPath}/musicas/musicas-leg.xhtml">Músicas Traduzidas</a></li>
-							<li id="li-video-leg"><a href="#{request.contextPath}/videos/videos-leg.xhtml">Vídeos Legendados</a></li>
-							<li id="li-redes"><a href="#{request.contextPath}/redes-sociais.xhtml">Redes Sociais</a></li>
-							<li id="li-sobre"><a href="#{request.contextPath}/sobre.xhtml">Sobre</a></li>
-						</ul>
+					<nav id="container-nav">						
+						<h:form>
+							<p:button styleClass="button" outcome="/index.xhtml" value="Página Inicial" />
+							<p:button styleClass="button" outcome="/musicas/musicas-leg.xhtml" value="Músicas Traduzidas" />
+							<p:button styleClass="button" outcome="/videos/videos-leg.xhtml" value="Vídeos Legendados" />
+							<p:button styleClass="button" outcome="/redes-sociais.xhtml" value="Redes Sociais" />
+							<p:button styleClass="button" outcome="/sobre.xhtml" value="Sobre" />
+						</h:form>
 					</nav>
 				</header>
 			</div>
