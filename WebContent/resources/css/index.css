@@ -22,3 +22,21 @@ section{
 	font-family: "Courier New", Courier, monospace;
 	font-size: 130%;
 }
+
+ul {
+	width: 100%;
+	list-style-type: none;
+	columns: 4;
+	-webkit-columns: 4;
+	-moz-columns: 4;
+	padding: 0;
+	margin: 0;
+	display: block;
+	table-layout: fixed;
+}
+
+ul li {	
+	margin: 0;
+	height: 240px;
+	text-align: center;
+}

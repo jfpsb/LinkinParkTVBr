@@ -13,30 +13,17 @@
 	<ui:define name="title">LinkinParkTVBr</ui:define>
 	<ui:define name="icon"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /></ui:define>
 	<ui:define name="conteudo" >
-	<section>
-	<h:outputStylesheet name="css/index.css" />
-		<div align="center">
-			<article>
-				<h:form>
-					<p:panel id="panel" header="Vídeos Recentes">
-						<article id="videoGrid" styleClasse="article">
-							<p:panelGrid columns="4">
-								<h:outputText value="Vídeo 1" />
-								<h:outputText value="Vídeo 2" />
-								<h:outputText value="Vídeo 3" />
-								<h:outputText value="Vídeo 4" />
-								<h:outputText value="Vídeo 5" />
-								<h:outputText value="Vídeo 6" />
-								<h:outputText value="Vídeo 7" />
-								<h:outputText value="Vídeo 8" />
-							</p:panelGrid>
-						</article>
-					</p:panel>
-				</h:form>
-
-			</article>
-		</div>
-	</section>
+		<h:outputScript library="js" name="jquery-1.11.3.min.js" />
+		<h:outputScript library="js" name="yt_upload.js" />	
+		<section>
+			<h:outputStylesheet name="css/index.css" />
+				<h:form id="form">
+				<p:panel header="Vídeos Recentes">
+					<ul id="lista">						
+					</ul>
+				</p:panel>
+				</h:form>				
+		</section>
 	</ui:define>
 </ui:composition>
 </html>
