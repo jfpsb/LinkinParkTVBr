@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" >
 
 	<ui:composition template="/WEB-INF/template.xhtml">
 		<ui:define name="title">Músicas Legendadas</ui:define>
@@ -15,7 +16,7 @@
 					<h:form id="mus-form">
 						<h2 id="titulo">Selecione o álbum:</h2>
 						<h:panelGrid class="panel" id="mus-panel" columns="2" columnClasses="colstyle">
-							<h:button styleClass="botao ht" value="Hybrid Theory"/>
+							<h:button outcome="hybrid-theory/hybrid-theory.xhtml" styleClass="botao ht" value="Hybrid Theory"/>
 							<h:button styleClass="botao mt" value="Meteora" />
 							<h:button styleClass="botao mtm" value="Minutes To Midnight" />
 							<h:button styleClass="botao ats" value="A Thousand Suns" />

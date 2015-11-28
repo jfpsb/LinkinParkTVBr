@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+
+ul {
+	list-style-type: decimal;
+	padding-left: 110px;
+	vertical-align: middle;
+}
+
+.ui-panel {
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.6);
+  	margin-top: 0;
+}
+
+.ui-panel-title {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 150%;
+}
+
+ul li {
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+a:link, a:visited, .link {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+#ht-article {
+	background: white;
+	background-image: url("#{resource['imagens/hybrid-theory-cover.jpg']}");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+}
+
+.ui-button {
+	width: 35px;
+	heigth: 15px;
+}

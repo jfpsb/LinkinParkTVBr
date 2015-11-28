@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" >
+
+	<ui:composition template="/WEB-INF/template.xhtml">
+		<ui:define name="title">Hybrid Theory</ui:define>
+		<ui:define name="icon"><link rel="shortcut icon" href="#{request.contextPath}/favicon.ico" type="image/x-icon" /></ui:define>
+		<ui:define name="conteudo">
+			<h:outputStylesheet name="css/pages-leg.css" />
+			<h:outputStylesheet name="css/hybrid-theory.css" />
+			<section id="ht-section">
+				<article id="ht-article">
+					<p:panel header="Hybrid Theory">
+						<ul>
+							<li>Papercut <p:button value="" icon="ui-icon-star"></p:button></li>
+							<li>One Step Closer</li>
+							<li>With You</li>
+							<li>Points of Authority</li>
+							<li>Crawling</li>
+							<li>Runaway</li>
+							<li>By Myself</li>
+							<li>In The End</li>
+							<li>A Place For My Head</li>
+							<li>Forgotten</li>
+							<li>Cure For The Itch</li>
+							<li>Pushing Me Away</li>
+						</ul>
+					</p:panel>
+				</article>
+			</section>
+		</ui:define>
+	</ui:composition>
+</html>
