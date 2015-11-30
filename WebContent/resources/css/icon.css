@@ -1,0 +1,5 @@
+@CHARSET "ISO-8859-1";
+
+.lyric-icon {
+	background-image: url("#{resource['imagens/lyric-icon.png']}") !important;
+}

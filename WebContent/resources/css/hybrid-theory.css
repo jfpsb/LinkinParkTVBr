@@ -17,11 +17,12 @@ ul {
 	font-size: 150%;
 }
 
-ul li {
+li {
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 	font-size: 30px;
 	font-weight: bold;
+	
 }
 
 a:link, a:visited, .link {
@@ -41,7 +42,9 @@ a:hover {
 	padding: 0;
 }
 
-.ui-button {
-	width: 35px;
-	heigth: 15px;
+.ui-button.mus {
+	width: auto;
+	heigth: auto;
+	background-repeat: no-repeat;
+	font-size: 50%;
 }

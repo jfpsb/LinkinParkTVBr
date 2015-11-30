@@ -11,23 +11,67 @@
 		<ui:define name="conteudo">
 			<h:outputStylesheet name="css/pages-leg.css" />
 			<h:outputStylesheet name="css/hybrid-theory.css" />
+			<h:outputStylesheet name="css/icon.css" />
+			<h:outputScript library="js" name="letramusica.js" />	
 			<section id="ht-section">
 				<article id="ht-article">
 					<p:panel header="Hybrid Theory">
 						<ul>
-							<li>Papercut <p:button value="" icon="ui-icon-star"></p:button></li>
-							<li>One Step Closer</li>
-							<li>With You</li>
-							<li>Points of Authority</li>
-							<li>Crawling</li>
-							<li>Runaway</li>
-							<li>By Myself</li>
-							<li>In The End</li>
-							<li>A Place For My Head</li>
-							<li>Forgotten</li>
-							<li>Cure For The Itch</li>
-							<li>Pushing Me Away</li>
+							<li>Papercut <p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:commandButton></li>
+							<li>One Step Closer <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>With You <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>Points of Authority <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>Crawling <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>Runaway <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>By Myself <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>In The End <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>A Place For My Head <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>Forgotten <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>Cure For The Itch <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
+							<li>Pushing Me Away <p:button styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon">
+								<f:param name="albumId" value="hybridtheory"/>
+								<f:param name="musicaId" value="papercut"/>
+							</p:button></li>
 						</ul>
+						
+						<p:dialog id="musicaDialog" widgetVar="letra" onShow="loadDoc()" draggable="true">
+							<div id="div">
+								
+							</div>
+						</p:dialog>
 					</p:panel>
 				</article>
 			</section>
