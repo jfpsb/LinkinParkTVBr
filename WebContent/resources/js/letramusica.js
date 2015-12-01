@@ -9,3 +9,7 @@ function loadDoc(musica) {
   xhttp.open("GET", "letra/" + musica + ".txt", true);
   xhttp.send();
 }
+
+function onDialogClose() {
+	document.getElementById("textArea").innerHTML = "<p>Aguarde...</p>";
+}

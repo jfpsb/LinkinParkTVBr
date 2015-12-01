@@ -1,4 +1,4 @@
-Não consigo mais aguentar isso
+<pre>Não consigo mais aguentar isso
 Estou dizendo tudo que já disse antes
 Todas essas palavras não fazem sentido
 Encontro felicidade na ignorância
@@ -42,4 +42,4 @@ Deixa-me um passo mais próximo do limite
 E estou a ponto de explodir
 Preciso de espaço para respirar
 Porque estou a um passo do limite
-Estou a ponto de explodir
+Estou a ponto de explodir</pre>
