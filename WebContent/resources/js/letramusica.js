@@ -1,3 +1,8 @@
+$.ajax({
+  cache: false,
+  //other options...
+});
+
 function loadDoc(musica) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {

@@ -20,22 +20,22 @@
 							<p:panelGrid id="panelGrid" columns="4">
 								<h:outputLabel class="outputLabel" value="1." />
 								<h:outputLabel class="outputLabel" value="Foreword"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" disabled="true" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="2." />
 								<h:outputLabel class="outputLabel" value="Don't Stay"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();loadDoc('dont-stay')" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="3." />
 								<h:outputLabel class="outputLabel" value="Somewhere I Belong"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();loadDoc('somewhere-i-belong')" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="4." />
 								<h:outputLabel class="outputLabel" value="Lying From You"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();loadDoc('lying-from-you')" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="5." />
@@ -75,7 +75,7 @@
 								
 								<h:outputLabel class="outputLabel" value="12." />
 								<h:outputLabel class="outputLabel" value="Session" />
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" disabled="true" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="13." />
@@ -88,16 +88,16 @@
 							<img id="mt-img" class="albumCover" src="../../resources/imagens/meteora-1400x1400.jpg" alt="Capa Meteora"/>						
 						</aside>
 						
-						<p:dialog id="musicaDialog" widgetVar="letra" onShow="loadDoc()" draggable="true" height="500" width="800" position="center"
+						<p:dialog id="musicaDialog" widgetVar="letra" draggable="true" height="500" width="800" position="center"
 						showEffect="fade" hideEffect="fade" resizeable="true" onHide="onDialogClose()" closeOnEscape="true">
-							<textarea id="textArea" class="textArea">
-							
-							</textarea>
+							<div id="textArea" class="textArea">
+								<p>Aguarde...</p>
+							</div>
 						</p:dialog>
 						
 						<p:dialog id="videoDialog" widgetVar="video" draggable="true" height="360" width="640" position="center"
 						showEffect="fade" hideEffect="fade" resizeable="true">
-						
+							<p>Em breve...</p>
 						</p:dialog>
 					</p:panel>
 				</article>
