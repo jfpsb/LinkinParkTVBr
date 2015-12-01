@@ -1,0 +1,95 @@
+@CHARSET "ISO-8859-1";
+
+.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid {
+	background: none;
+	border-style: none !important;
+	text-align: center;
+}
+
+aside {
+	float: right;
+	width: 600px;
+	height: 480px;
+}
+
+.albumCover {
+	border: 3px solid white;
+	margin-top: 5px;
+}
+
+#ht-img {
+	width: 100%;
+	height: 100%;
+}
+
+#mt-img {
+	width: 600px;
+	height: 515px;
+}
+
+.panelGridContainer {
+	float: left;
+}
+
+.outputLabel {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+.ui-panel {
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.6);
+  	margin-top: 0;
+  	overflow:auto;
+}
+
+.ui-panel-title {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 150%;
+}
+
+.musica-article {
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+}
+
+#ht-article {
+	background-image: url("#{resource['imagens/hybrid-theory-cover.jpg']}");
+}
+
+#meteora-article {
+	background-image: url("#{resource['imagens/meteora-cover.jpg']}");
+}
+
+.ui-button.mus {
+	width: auto;
+	heigth: auto;
+	background-repeat: no-repeat;
+	font-size: 100%;
+}
+
+.ui-dialog-titlebar {
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.6);
+}
+
+.ui-dialog-content {
+	overflow: hidden;
+}
+
+.textArea {
+	resize: none;
+	width:100%;
+	height: 100%;
+	border-style: none; 
+    border-color: Transparent; 
+    overflow: auto; 
+	text-align: center;
+}
+
+.ui-dialog-titlebar-close {
+	color: red;
+}

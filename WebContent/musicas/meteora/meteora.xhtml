@@ -6,88 +6,93 @@
       xmlns:p="http://primefaces.org/ui" >
 
 	<ui:composition template="/WEB-INF/template.xhtml">
-		<ui:define name="title">Músicas : Hybrid Theory</ui:define>
+		<ui:define name="title">Músicas : Meteora</ui:define>
 		<ui:define name="icon"><link rel="shortcut icon" href="#{request.contextPath}/favicon.ico" type="image/x-icon" /></ui:define>
 		<ui:define name="conteudo">
 			<h:outputStylesheet name="css/pages-leg.css" />
 			<h:outputStylesheet name="css/musica-lista.css" />
 			<h:outputStylesheet name="css/icon.css" />
 			<h:outputScript library="js" name="letramusica.js" />
-			<section id="ht-section">
-				<article id="ht-article" class="musica-article">
+			<section id="meteora-section">
+				<article id="meteora-article" class="musica-article">
 					<p:panel header="Hybrid Theory">
 						<div class="panelGridContainer">
 							<p:panelGrid id="panelGrid" columns="4">
 								<h:outputLabel class="outputLabel" value="1." />
-								<h:outputLabel class="outputLabel" value="Papercut"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();loadDoc('papercut');" />
+								<h:outputLabel class="outputLabel" value="Foreword"/>
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="2." />
-								<h:outputLabel class="outputLabel" value="One Step Closer"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();loadDoc('one-step-closer');" />
+								<h:outputLabel class="outputLabel" value="Don't Stay"/>
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="3." />
-								<h:outputLabel class="outputLabel" value="With You"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show('asdsad');" />
+								<h:outputLabel class="outputLabel" value="Somewhere I Belong"/>
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="4." />
-								<h:outputLabel class="outputLabel" value="Points of Authority"/>
+								<h:outputLabel class="outputLabel" value="Lying From You"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="5." />
-								<h:outputLabel class="outputLabel" value="Crawling"/>
+								<h:outputLabel class="outputLabel" value="Hit The Floor"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="6." />
-								<h:outputLabel class="outputLabel" value="Runaway"/>
+								<h:outputLabel class="outputLabel" value="Easier To Run"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="7." />
-								<h:outputLabel class="outputLabel" value="By Myself"/>
+								<h:outputLabel class="outputLabel" value="Faint"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="8." />
-								<h:outputLabel class="outputLabel" value="In The End"/>
+								<h:outputLabel class="outputLabel" value="Figure.09"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="9." />
-								<h:outputLabel class="outputLabel" value="A Place For My Head"/>
+								<h:outputLabel class="outputLabel" value="Breaking The Habit"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="10." />
-								<h:outputLabel class="outputLabel" value="Forgotten"/>
+								<h:outputLabel class="outputLabel" value="From The Inside"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="11." />
-								<h:outputLabel class="outputLabel" value="Cure For The Itch"/>
+								<h:outputLabel class="outputLabel" value="Nobody's Listening"/>
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="12." />
-								<h:outputLabel class="outputLabel" value="Pushing Me Away"/>
+								<h:outputLabel class="outputLabel" value="Session" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+								
+								<h:outputLabel class="outputLabel" value="13." />
+								<h:outputLabel class="outputLabel" value="Numb" />
 								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 							</p:panelGrid>
 						</div>
 						<aside>						
-							<img id="ht-img" class="albumCover" src="../../resources/imagens/hybrid-theory-1400x1400.jpg" alt="Capa Hybrid Theory"/>						
+							<img id="mt-img" class="albumCover" src="../../resources/imagens/meteora-1400x1400.jpg" alt="Capa Meteora"/>						
 						</aside>
 						
-						<p:dialog id="musicaDialog" widgetVar="letra" draggable="true" height="500" width="800" position="center"
+						<p:dialog id="musicaDialog" widgetVar="letra" onShow="loadDoc()" draggable="true" height="500" width="800" position="center"
 						showEffect="fade" hideEffect="fade" resizeable="true">
-							<div id="textArea" class="textArea">
+							<textarea id="textArea" class="textArea">
 							
-							</div>
+							</textarea>
 						</p:dialog>
 						
 						<p:dialog id="videoDialog" widgetVar="video" draggable="true" height="360" width="640" position="center"

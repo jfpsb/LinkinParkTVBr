@@ -1,4 +1,4 @@
- Por que está parecendo noite hoje?
+<pre>Por que está parecendo noite hoje?
 Algo aqui não está certo hoje
 Por que estou tão tenso hoje?
 Paranoia é a única coisa que me resta
@@ -67,4 +67,4 @@ Eu sinto a luz me trair
 É como se eu não pudesse parar essa voz dentro de mim
 É como se eu não pudesse parar essa voz dentro de mim
 É como se eu não pudesse parar essa voz dentro de mim
-É como se o rosto interior estivesse bem sob minha pele
+É como se o rosto interior estivesse bem sob minha pele</pre>

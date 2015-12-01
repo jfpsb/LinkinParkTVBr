@@ -5,8 +5,8 @@
 }
 
 section{
-	display: block;
-  	width: 1300px;
+  	width: 70%;
+  	height: 100%;
   	margin-left: auto;
   	margin-right: auto;
   	padding: 15px 0px 0px 0px;
@@ -21,8 +21,6 @@ article {
   	background: rgba(0, 0, 0, 0.6);
   	margin:	0px 0px 15px 0px;
   	padding: 15px 0px 0px 0px;
-  	width: auto;
-	height: auto;
 }
 
 .botao {

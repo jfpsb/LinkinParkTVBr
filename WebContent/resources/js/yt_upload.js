@@ -36,8 +36,8 @@ $(document).ready(function() {
 						
 						output = "<li>";
 						button = "<a href=" + videoUrl + " target=\"_blank\" style=\"color: white; font-family: 'Courier New', Courier, monospace; " +
-								"width: 284px; height: 160px; background-image: url(" + videoThumb 
-						+ "); background-size:cover; display: block; margin-left: auto; margin-right: auto; border-radius: 10px; \"/>";
+								"width: 100%; height: 70%; background-image: url(" + videoThumb 
+						+ "); background-size:cover; display: block; margin-left: auto; margin-right: auto; border-radius: 5px; \"/>";
 						output = output + button;
 						output = output + "<p style='font-size: 70%;'>" + videoTitle + "</p>" +"</li>";
 						

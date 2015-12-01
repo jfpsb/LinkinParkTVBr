@@ -1,4 +1,4 @@
-function loadDoc() {
+function loadDoc(musica) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -6,6 +6,6 @@ function loadDoc() {
     }
   };
   
-  xhttp.open("GET", "letra/papercut.txt", true);
+  xhttp.open("GET", "letra/" + musica + ".txt", true);
   xhttp.send();
 }
