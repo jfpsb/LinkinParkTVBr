@@ -1,8 +1,3 @@
-$.ajax({
-  cache: false,
-  //other options...
-});
-
 function loadTraducao(musica) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
