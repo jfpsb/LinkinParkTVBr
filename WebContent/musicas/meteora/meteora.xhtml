@@ -70,17 +70,20 @@
 								
 								<h:outputLabel class="outputLabel" value="11." />
 								<h:outputLabel class="outputLabel" value="Nobody's Listening"/>
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" 
+								onclick="PF('letra').show();loadTraducao('nobodys-listening');loadOriginal('nobodys-listening')" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="12." />
 								<h:outputLabel class="outputLabel" value="Session" />
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" disabled="true" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" disabled="true" icon="lyric-icon" 
+								onclick="PF('letra').show();" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 								
 								<h:outputLabel class="outputLabel" value="13." />
 								<h:outputLabel class="outputLabel" value="Numb" />
-								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" onclick="PF('letra').show();" />
+								<p:commandButton styleClass="ui-button ui-button-text mus" value="Letra" icon="lyric-icon" 
+								onclick="PF('letra').show();loadTraducao('numb');loadOriginal('numb')" />
 								<p:commandButton styleClass="ui-button ui-button-text video" value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
 							</p:panelGrid>
 						</div>
@@ -90,9 +93,18 @@
 						
 						<p:dialog id="musicaDialog" widgetVar="letra" draggable="true" height="500" width="800" position="center"
 						showEffect="fade" hideEffect="fade" resizeable="true" onHide="onDialogClose()" closeOnEscape="true">
-							<div id="textArea" class="textArea">
-								<p>Aguarde...</p>
-							</div>
+							<p:tabView>
+								<p:tab title="Original">
+								<div id="origTextArea" class="textArea">
+									<p>Aguarde...</p>
+								</div>
+								</p:tab>
+								<p:tab title="Tradução">
+									<div id="tradTextArea" class="textArea">
+										<p>Aguarde...</p>
+									</div>
+								</p:tab>								
+							</p:tabView>							
 						</p:dialog>
 						
 						<p:dialog id="videoDialog" widgetVar="video" draggable="true" height="360" width="640" position="center"
