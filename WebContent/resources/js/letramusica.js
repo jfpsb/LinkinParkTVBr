@@ -1,3 +1,8 @@
+function loadLetra(musica) {	
+	loadTraducao(musica);
+	loadOriginal(musica);	
+} 
+
 function loadTraducao(musica) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
