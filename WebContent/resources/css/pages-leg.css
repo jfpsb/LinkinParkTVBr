@@ -43,3 +43,8 @@ article {
   	text-align: center;
   	padding: 0px 0px 25px 0px;
 }
+
+.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid {
+	margin-right: auto;
+	margin-left: auto;
+}

@@ -9,3 +9,13 @@
 	background-image: url("#{resource['imagens/video-icon.ico']}") !important;
 	background-size: cover;
 }
+
+.brasil-icon {
+	background-image: url("#{resource['imagens/brasil.ico']}") !important;
+	background-size: cover;
+}
+
+.eua-icon {
+	background-image: url("#{resource['imagens/eua.ico']}") !important;
+	background-size: cover;
+}

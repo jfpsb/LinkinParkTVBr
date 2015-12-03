@@ -7,6 +7,11 @@
 	<ui:composition template="/WEB-INF/template.xhtml">
 		<ui:define name="title">Vídeos Legendados</ui:define>
 		<ui:define name="icon"><link rel="shortcut icon" href="#{request.contextPath}/favicon.ico" type="image/x-icon" /></ui:define>
+		<ui:define name="script">
+			<h:outputScript target="body" >
+            	window.location.hash="videos-section"; 
+        	</h:outputScript>
+		</ui:define>
 		<ui:define name="conteudo">
 			<h:outputStylesheet name="css/pages-leg.css" />
 			<h:outputStylesheet name="css/videos-leg.css" />			

@@ -4,31 +4,7 @@
 	background: none;
 	border-style: none !important;
 	text-align: center;
-}
-
-aside {
-	float: right;
-	width: 600px;
-	height: 480px;
-}
-
-.albumCover {
-	border: 3px solid white;
-	margin-top: 5px;
-}
-
-#ht-img {
-	width: 100%;
-	height: 100%;
-}
-
-#mt-img {
-	width: 600px;
-	height: 515px;
-}
-
-.panelGridContainer {
-	float: left;
+	margin: 0 auto;
 }
 
 .outputLabel {
@@ -39,29 +15,39 @@ aside {
 }
 
 .ui-panel {
-	background: rgb(0, 0, 0);
-  	background: rgba(0, 0, 0, 0.6);
-  	margin-top: 0;
-  	overflow:auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 0;
+	overflow: auto;
+	width: 99.4%;
+	border-radius: 5px;
+}
+
+#ht-panel {
+	background-image: url("#{resource['imagens/hybrid-theory-cover.jpg']}");
+}
+
+#mt-panel {
+	background-image: url("#{resource['imagens/meteora-cover.jpg']}");
+}
+
+#mtm-panel {
+	background-image: url("#{resource['imagens/mtm-cover.jpg']}");
+}
+
+#ats-panel {
+	background-image: url("#{resource['imagens/ats-cover.jpg']}");
+}
+
+.ui-panel-content {
+	background: rgb(0, 0, 0) !important;
+	background: rgba(0, 0, 0, 0.6) !important;
+	margin: 5px !important;
 }
 
 .ui-panel-title {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 150%;
-}
-
-.musica-article {
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 0;
-}
-
-#ht-article {
-	background-image: url("#{resource['imagens/hybrid-theory-cover.jpg']}");
-}
-
-#meteora-article {
-	background-image: url("#{resource['imagens/meteora-cover.jpg']}");
 }
 
 .ui-button.mus {
@@ -73,7 +59,7 @@ aside {
 
 .ui-dialog-titlebar {
 	background: rgb(0, 0, 0);
-  	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.6);
 }
 
 .ui-dialog-content {
@@ -82,11 +68,11 @@ aside {
 
 .textArea {
 	resize: none;
-	width:100%;
+	width: 100%;
 	height: 100%;
-	border-style: none; 
-    border-color: Transparent; 
-    overflow: auto; 
+	border-style: none;
+	border-color: Transparent;
+	overflow: auto;
 	text-align: center;
 }
 
