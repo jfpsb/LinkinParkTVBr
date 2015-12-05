@@ -43,6 +43,10 @@
 	background-image: url("#{resource['imagens/lt-cover.jpg']}");
 }
 
+#thp-panel {
+	background-image: url("#{resource['imagens/thp-cover.jpg']}");
+}
+
 .ui-panel-content {
 	background: rgb(0, 0, 0) !important;
 	background: rgba(0, 0, 0, 0.6) !important;

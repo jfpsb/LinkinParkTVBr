@@ -1,5 +1,13 @@
 @CHARSET "ISO-8859-1";
 
+.body-section {
+	display: block;
+  	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+  	padding: 15px 0px 0px 0px;
+}
+
 body {
 	background-image: url("#{resource['imagens/background.jpg']}");
 	background-repeat: repeat;
@@ -9,31 +17,33 @@ body {
 #container-header {
 	display: block;
 	color: white;
-	width: 1300px;
-	margin-left: auto;
-  	margin-right: auto;
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
   	background: rgb(0, 0, 0);
   	background: rgba(0, 0, 0, 0.6);
 }
 
 .button {
 	font-family: "Courier New", Courier, monospace;
-	font-size: auto;
+	font-size: 1em;
+	overflow: hidden;
+	min-width: 100px;
 	color: black;
 	background: #ECECEC;
 	border: 1px solid !important;
 	text-align: center !important;
-	margin: 10px 40px 10px 40px;
+	margin: auto;
 	border-radius: 15px;
 }
 
-a:link, a:visited {
-	color: white;
-	text-decoration: none;
+.template-form {
+	padding: 10px 40px 10px 40px;
+	text-align: center;
 }
 
 a:hover {
-    color: hotpink;
+    color: blue;
 }
 
 #container-nav {

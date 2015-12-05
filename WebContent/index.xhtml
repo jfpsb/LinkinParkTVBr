@@ -1,31 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui" >
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</h:head> 
+</h:head>
 
-<ui:composition template="/WEB-INF/template.xhtml" >
+<ui:composition template="/WEB-INF/template.xhtml">
 	<ui:define name="title">LinkinParkTVBr</ui:define>
-	<ui:define name="icon"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /></ui:define>
-	<ui:define name="conteudo" >
+	<ui:define name="icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	</ui:define>
+	<ui:define name="conteudo">
 		<h:outputStylesheet name="css/index.css" />
-		<h:outputScript library="js" name="jquery-1.11.3.min.js" />
-		<h:outputScript library="js" name="yt_upload.js" />	
-		<section>
-				<h:form id="form" class="indexForm">
-					<p:panel header="Vídeos Recentes">
-						<div class="liDiv">
-							<ul id="lista">						
-							</ul>
-						</div>
-					</p:panel>
-				</h:form>				
-		</section>
+
+
+		<h:form>
+
+			<section class="body-section"> <p:dataGrid var="video"
+				value="#{videoBean.getListaVideos()}" columns="4" layout="grid">
+
+				<f:facet name="header">
+					<p:outputLabel value="Vídeos Recentes" style="font-size: 150%; text-align: left;"/>
+				</f:facet>
+
+				<p:panel>
+					<p:panelGrid columns="1" class="videoGrid">
+						<a href="http://www.youtube.com/watch/#{video.videoId}" target="_blank" class="videoLink">
+							<img src="#{video.thumbUrl}" alt="Thumbnail: #{video.nome}" class="videoThumb"/>
+							<p>#{video.nome}</p>
+						</a>
+					</p:panelGrid>
+				</p:panel>
+
+			</p:dataGrid> </section>
+		</h:form>
 	</ui:define>
 </ui:composition>
 </html>

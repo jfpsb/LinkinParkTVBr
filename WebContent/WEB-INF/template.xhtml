@@ -1,57 +1,48 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
-      
-    <h:head>
-    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    	<title>
-    		<ui:insert name="title">LinkinParkTVBr</ui:insert>
-    	</title>
-    	<link>
-    		<ui:insert name="icon">Link</ui:insert>
-    	</link>
-    	<h:outputStylesheet name="css/template.css" />
-    </h:head>
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
-	<h:body>
-	<main id="container">
-		<div id="container-header" align="center">
-			<div align="center">
-				<header>
-					<img src="#{request.contextPath}/resources/imagens/banner.jpg" alt="Banner" />
-					<nav id="container-nav">						
-						<h:form>
-							<p:button styleClass="button" outcome="/index.xhtml" value="Página Inicial" />
-							<p:button styleClass="button" outcome="/musicas/musicas-leg.xhtml" value="Músicas Traduzidas" />
-							<p:button styleClass="button" outcome="/videos/videos-leg.xhtml" value="Vídeos Legendados" />
-							<p:button styleClass="button" outcome="/redes-sociais.xhtml" value="Redes Sociais" />
-							<p:button styleClass="button" outcome="/sobre.xhtml" value="Sobre" />
-						</h:form>
-					</nav>
-				</header>
-			</div>
-		</div>
-		
-		<div id="script">
-			<ui:insert name="script" />
-		</div>
-		
-		<div id="conteudo">
-			<ui:insert name="conteudo" />
-		</div>
-		
-		<footer id="container-footer">
-			<div id="div-footer" align="center">
-				<small>
-					LinkinParkTVBr<br />
-					linkinparktvbr@gmail.com<br />
-					2015
-				</small>
-			</div>
-		</footer>
-	</main>
-	</h:body>
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title><ui:insert name="title">LinkinParkTVBr</ui:insert></title>
+	<link>
+		<ui:insert name="icon">Link</ui:insert>
+	</link>
+	<h:outputStylesheet name="css/template.css" />
+</h:head>
+
+<h:body>
+	<main id="container"> <header id="container-header"> <img
+		src="#{request.contextPath}/resources/imagens/banner.jpg" alt="Banner" />
+	<nav id="container-nav"> <h:form class="template-form">
+		<p:button styleClass="button" outcome="/index.xhtml"
+			value="Página Inicial" />
+		<p:button styleClass="button" outcome="/musicas/musicas-leg.xhtml"
+			value="Músicas Traduzidas" />
+		<p:button styleClass="button" outcome="/videos/videos-leg.xhtml"
+			value="Vídeos Legendados" />
+		<p:button styleClass="button" outcome="/redes-sociais.xhtml"
+			value="Redes Sociais" />
+		<p:button styleClass="button" outcome="/sobre.xhtml" value="Sobre" />
+	</h:form> </nav> </header>
+
+	<div id="script">
+		<ui:insert name="script" />
+	</div>
+
+	<div id="conteudo">
+		<ui:insert name="conteudo" />
+	</div>
+
+	<footer id="container-footer">
+	<div id="div-footer" align="center">
+		<small> LinkinParkTVBr<br /> linkinparktvbr@gmail.com<br />
+			2015
+		</small>
+	</div>
+	</footer> </main>
+</h:body>
 </html>

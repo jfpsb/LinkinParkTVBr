@@ -19,7 +19,7 @@
 	<ui:define name="conteudo">
 		<h:outputStylesheet name="css/pages-leg.css" />
 		<h:outputStylesheet name="css/mus-leg.css" />
-		<section id="mus-section"> <article id="mus-article">
+		<section id="mus-section" class="body-section"> <article id="mus-article" class="leg-article">
 		<h:form id="mus-form">
 			<h2 id="titulo">Selecione o álbum:</h2>
 			<h:panelGrid class="panel" id="mus-panel" columns="2"
@@ -32,7 +32,7 @@
 					value="Minutes To Midnight" />
 				<h:button outcome="ats/ats.xhtml" styleClass="botao ats" value="A Thousand Suns" />
 				<h:button outcome="living-things/living-things.xhtml" styleClass="botao lt" value="Living Things" />
-				<h:button styleClass="botao thp" value="The Hunting Party" />
+				<h:button outcome="thp/thp.xhtml" styleClass="botao thp" value="The Hunting Party" />
 			</h:panelGrid>
 		</h:form> </article> </section>
 	</ui:define>
