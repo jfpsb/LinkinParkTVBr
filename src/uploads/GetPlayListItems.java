@@ -116,11 +116,7 @@ public class GetPlayListItems {
 
 					v.setNome(item.getSnippet().getTitle());
 					v.setVideoId(item.getContentDetails().getVideoId());
-					try {
-						v.setThumbUrl(item.getSnippet().getThumbnails().getMaxres().getUrl());
-					} catch (NullPointerException ec) {
-						v.setThumbUrl(item.getSnippet().getThumbnails().getHigh().getUrl());
-					}
+					v.setThumbUrl(item.getSnippet().getThumbnails().getMedium().getUrl());
 					
 					listaVideos.add(v);
 				}

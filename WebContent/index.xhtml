@@ -31,7 +31,7 @@
 					<p:panelGrid columns="1" class="videoGrid">
 						<a href="http://www.youtube.com/watch/#{video.videoId}" target="_blank" class="videoLink">
 							<img src="#{video.thumbUrl}" alt="Thumbnail: #{video.nome}" class="videoThumb"/>
-							<p>#{video.nome}</p>
+							<h:outputLabel value="#{video.nome}"/>
 						</a>
 					</p:panelGrid>
 				</p:panel>
