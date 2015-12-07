@@ -12,7 +12,7 @@
 			type="image/x-icon" />
 	</ui:define>
 	<ui:define name="script">
-		<h:outputScript target="body" >
+		<h:outputScript target="body">
             window.location.hash="meteora-section"; 
         </h:outputScript>
 	</ui:define>
@@ -21,6 +21,7 @@
 		<h:outputStylesheet name="css/musica-lista.css" />
 		<h:outputStylesheet name="css/icon.css" />
 		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
 		<section id="meteora-section" class="body-section"> <p:panel
 			header="Hybrid Theory" id="mt-panel">
 			<p:panelGrid id="panelGrid" columns="4">
@@ -30,7 +31,8 @@
 					value="Letra" disabled="true" icon="lyric-icon"
 					onclick="PF('letra').show();" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('foreword')" />
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="Don't Stay" />
@@ -38,7 +40,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('dont-stay')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('dont-stay')" />
 
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="Somewhere I Belong" />
@@ -46,7 +49,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('somewhere-i-belong')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('somewhere-i-belong')" />
 
 				<h:outputLabel class="outputLabel" value="4." />
 				<h:outputLabel class="outputLabel" value="Lying From You" />
@@ -54,7 +58,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('lying-from-you')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('lying-from-you')" />
 
 				<h:outputLabel class="outputLabel" value="5." />
 				<h:outputLabel class="outputLabel" value="Hit The Floor" />
@@ -62,7 +67,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('hit-the-floor')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('hit-the-floor')" />
 
 				<h:outputLabel class="outputLabel" value="6." />
 				<h:outputLabel class="outputLabel" value="Easier To Run" />
@@ -70,7 +76,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('easier-to-run')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('easier-to-run')" />
 
 				<h:outputLabel class="outputLabel" value="7." />
 				<h:outputLabel class="outputLabel" value="Faint" />
@@ -78,7 +85,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('faint')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('faint')" />
 
 				<h:outputLabel class="outputLabel" value="8." />
 				<h:outputLabel class="outputLabel" value="Figure.09" />
@@ -86,7 +94,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('figure09')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('figure09')" />
 
 				<h:outputLabel class="outputLabel" value="9." />
 				<h:outputLabel class="outputLabel" value="Breaking The Habit" />
@@ -94,7 +103,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('breaking-the-habit')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('breaking-the-habit')" />
 
 				<h:outputLabel class="outputLabel" value="10." />
 				<h:outputLabel class="outputLabel" value="From The Inside" />
@@ -102,7 +112,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('from-the-inside')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('from-the-inside')" />
 
 				<h:outputLabel class="outputLabel" value="11." />
 				<h:outputLabel class="outputLabel" value="Nobody's Listening" />
@@ -110,7 +121,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('nobodys-listening')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('nobodys-listening')" />
 
 				<h:outputLabel class="outputLabel" value="12." />
 				<h:outputLabel class="outputLabel" value="Session" />
@@ -118,7 +130,8 @@
 					value="Letra" disabled="true" icon="lyric-icon"
 					onclick="PF('letra').show();" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('session')" />
 
 				<h:outputLabel class="outputLabel" value="13." />
 				<h:outputLabel class="outputLabel" value="Numb" />
@@ -126,7 +139,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('numb')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('numb')" />
 			</p:panelGrid>
 
 			<p:dialog id="musicaDialog" widgetVar="letra" draggable="true"
@@ -148,9 +162,9 @@
 			</p:dialog>
 
 			<p:dialog id="videoDialog" widgetVar="video" draggable="true"
-				height="360" width="640" position="center" showEffect="fade"
-				hideEffect="fade" resizeable="true">
-				<p>Em breve...</p>
+				height="520" width="960" position="center" showEffect="fade"
+				hideEffect="fade" resizeable="true" closeOnEscape="true" >
+				<div id="videoDiv" style="width: 100%; height: 100%;"></div>
 			</p:dialog>
 		</p:panel> </section>
 	</ui:define>
