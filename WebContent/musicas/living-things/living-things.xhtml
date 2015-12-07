@@ -21,6 +21,7 @@
 		<h:outputStylesheet name="css/musica-lista.css" />
 		<h:outputStylesheet name="css/icon.css" />
 		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
 		<section id="lt-section" class="body-section"> <p:panel header="Living Things"
 			id="lt-panel">
 
@@ -31,7 +32,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('lost-in-the-echo')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();" />
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="IN MY REMAINS" />
@@ -47,7 +49,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('burn-it-down')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('burn-it-down')" />
 
 				<h:outputLabel class="outputLabel" value="4." />
 				<h:outputLabel class="outputLabel" value="LIES GREED MISERY" />
@@ -140,9 +143,11 @@
 			</p:dialog>
 
 			<p:dialog id="videoDialog" widgetVar="video" draggable="true"
-				height="360" width="640" position="center" showEffect="fade"
-				hideEffect="fade" resizeable="true">
-				<p>Em breve...</p>
+				height="540" width="960" position="center" showEffect="fade"
+				hideEffect="fade" resizeable="true" onHide="onVideoDialogClose()">
+				<div id="videoDiv" style="width: 100%; height: 100%;">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bf1eTGf-0Hs" frameborder="0"></iframe>
+				</div>
 			</p:dialog>
 
 		</p:panel> </section>

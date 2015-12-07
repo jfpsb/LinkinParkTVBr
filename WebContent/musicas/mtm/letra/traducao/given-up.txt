@@ -1,38 +1,52 @@
 <h2>Given Up</h2>
-<pre>Wake in a sweat again
-Another day’s been laid to waste
-In my disgrace
-Stuck in my head again
-Feels like I’ll never leave this place
-There’s no escape
+<pre>Acordo suando de novo
+Outro belo dia para desperdiçar
+Em minha desgraça
+Preso em minha cabeça de novo
+Sinto que nunca deixarei este lugar
+Não há escapatória
 
-I’m my own worst enemy
+Eu sou meu próprio pior inimigo
 
-I’ve given up, I’m sick of feeling
-Is there nothing you can say?
-Take this all away, I’m suffocating
-Tell me what the fuck is wrong with me
+Eu desisti
+Estou cansado de sentir
+Não há nada que você possa dizer?
+Leve tudo isso para longe
+Estou sufocando
+Me diga, que há de errado...
+Comigo?
 
-I don’t know what to take
-Thought I was focused, but I’m scared
-I’m not prepared
-I hyperventilate
-Looking for help, somehow, somewhere
-And no one cares
+Eu não sei o que fazer
+Pensei que estava focado
+Mas estou assustado
+Eu não estou preparado
+Eu respiro fundo
+Procurando por ajuda
+De alguma maneira
+Em algum lugar
+E ninguém liga
 
-I’m my own worst enemy
+Eu sou meu próprio pior inimigo
 
-I’ve given up, I’m sick of feeling
-Is there nothing you can say?
-Take this all away, I’m suffocating
-Tell me what the fuck is wrong with me
+Eu desisti
+Estou cansado de sentir
+Não há nada que você possa dizer?
+Leve tudo isso para longe
+Estou sufocando
+Me diga, que há de errado...
+Comigo?
 
-Put me out of my misery!
-Put me out of my misery!
-Put me out of my
-Put me out of my fucking misery!
+Tire-me da minha miséria!
+Tire-me da minha miséria!
+Tire-me da minha...
+Tire-me da minha maldita infelicidade!
 
-I’ve given up, I’m sick of feeling
-Is there nothing you can say?
-Take this all away, I’m suffocating
-Tell me what the fuck is wrong with me</pre>
+
+Eu desisti
+Estou cansado de sentir
+Não há nada que você possa dizer?
+Leve tudo isso para longe
+Estou sufocando
+Me diga, que há de errado...
+Comigo?
+</pre>
