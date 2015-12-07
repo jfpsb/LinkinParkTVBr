@@ -33,7 +33,7 @@
 					onclick="PF('letra').show();loadLetra('lost-in-the-echo')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();" />
+					onclick="PF('video').show();loadVideo('lost-in-the-echo')" />
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="IN MY REMAINS" />
@@ -41,7 +41,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('in-my-remains')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('in-my-remains')" />
 
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="BURN IT DOWN" />
@@ -58,7 +59,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('lies-greed-misery')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('lies-greed-misery')" />
 
 				<h:outputLabel class="outputLabel" value="5." />
 				<h:outputLabel class="outputLabel" value="I'LL BE GONE" />
@@ -66,7 +68,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('ill-be-gone')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('ill-be-gone')" />
 
 				<h:outputLabel class="outputLabel" value="6." />
 				<h:outputLabel class="outputLabel" value="CASTLE OF GLASS" />
@@ -74,7 +77,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('castle-of-glass')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('castle-of-glass')" />
 
 				<h:outputLabel class="outputLabel" value="7." />
 				<h:outputLabel class="outputLabel" value="VICTIMIZED" />
@@ -82,7 +86,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('victimized')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('victimized')" />
 
 				<h:outputLabel class="outputLabel" value="8." />
 				<h:outputLabel class="outputLabel" value="ROADS UNTRAVELED" />
@@ -90,7 +95,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('roads-untraveled')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('roads-untraveled')" />
 
 				<h:outputLabel class="outputLabel" value="9." />
 				<h:outputLabel class="outputLabel" value="SKIN TO BONE" />
@@ -98,7 +104,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('skin-to-bone')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('skin-to-bone')" />
 
 				<h:outputLabel class="outputLabel" value="10." />
 				<h:outputLabel class="outputLabel" value="UNTIL IT BREAKS" />
@@ -106,14 +113,16 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('until-it-breaks')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('until-it-breaks')" />
 
 				<h:outputLabel class="outputLabel" value="11." />
 				<h:outputLabel class="outputLabel" value="TINFOIL" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon" disabled="true" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('tinfoil')" />
 
 				<h:outputLabel class="outputLabel" value="12." />
 				<h:outputLabel class="outputLabel" value="POWERLESS" />
@@ -121,7 +130,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('powerless')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('powerless')" />
 			</p:panelGrid>
 
 			<p:dialog id="musicaDialog" widgetVar="letra" draggable="true"
@@ -143,7 +153,7 @@
 			</p:dialog>
 
 			<p:dialog id="videoDialog" widgetVar="video" draggable="true"
-				height="540" width="960" position="center" showEffect="fade"
+				height="520" width="960" position="center" showEffect="fade"
 				hideEffect="fade" resizeable="true" onHide="onVideoDialogClose()">
 				<div id="videoDiv" style="width: 100%; height: 100%;">
 					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/bf1eTGf-0Hs" frameborder="0"></iframe>
