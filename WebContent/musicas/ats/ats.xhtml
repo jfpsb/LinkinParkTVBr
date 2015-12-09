@@ -12,17 +12,17 @@
 			type="image/x-icon" />
 	</ui:define>
 	<ui:define name="script">
-		<h:outputScript target="body" >
+		<h:outputScript target="body">
             window.location.hash="ats-section"; 
         </h:outputScript>
 	</ui:define>
 	<ui:define name="conteudo">
-		<h:outputStylesheet name="css/pages-leg.css" />
 		<h:outputStylesheet name="css/musica-lista.css" />
 		<h:outputStylesheet name="css/icon.css" />
 		<h:outputScript library="js" name="letramusica.js" />
-		<section id="ats-section" class="body-section"> <p:panel header="A Thousand Suns"
-			id="ats-panel">
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="ats-section" class="body-section"> <p:panel
+			header="A Thousand Suns" id="ats-panel">
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
 				<h:outputLabel class="outputLabel" value="The Requiem" />
@@ -30,7 +30,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('the-requiem')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('the-requiem')" />
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="The Radiance" />
@@ -38,7 +39,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('the-radiance')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('the-radiance')" />
 
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="Burning In The Skies" />
@@ -46,14 +48,16 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('burning-in-the-skies')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('burning-in-the-skies')" />
 
 				<h:outputLabel class="outputLabel" value="4." />
 				<h:outputLabel class="outputLabel" value="Empty Spaces" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon" disabled="true" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('empty-spaces')" />
 
 				<h:outputLabel class="outputLabel" value="5." />
 				<h:outputLabel class="outputLabel" value="When They Come For Me" />
@@ -61,7 +65,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('when-they-come-for-me')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('when-they-come-for-me')" />
 
 				<h:outputLabel class="outputLabel" value="6." />
 				<h:outputLabel class="outputLabel" value="Robot Boy" />
@@ -69,7 +74,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('robot-boy')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('robot-boy')" />
 
 				<h:outputLabel class="outputLabel" value="7." />
 				<h:outputLabel class="outputLabel" value="Jornada Del Muerto" />
@@ -77,7 +83,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('jornada-del-muerto')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('jornada-del-muerto')" />
 
 				<h:outputLabel class="outputLabel" value="8." />
 				<h:outputLabel class="outputLabel" value="Waiting For The End" />
@@ -85,7 +92,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('waiting-for-the-end')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('waiting-for-the-end')" />
 
 				<h:outputLabel class="outputLabel" value="9." />
 				<h:outputLabel class="outputLabel" value="Black Out" />
@@ -93,7 +101,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('black-out')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('black-out')" />
 
 				<h:outputLabel class="outputLabel" value="10." />
 				<h:outputLabel class="outputLabel" value="Wretches And Kings" />
@@ -101,7 +110,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('wretches-and-kings')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('wretches-and-kings')" />
 
 				<h:outputLabel class="outputLabel" value="11." />
 				<h:outputLabel class="outputLabel" value="Wisdow, Justice And Love" />
@@ -109,7 +119,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('wisdow-justice-and-love')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('wisdow-justice-and-love')" />
 
 				<h:outputLabel class="outputLabel" value="12." />
 				<h:outputLabel class="outputLabel" value="Iridescent" />
@@ -117,7 +128,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('iridescent')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('iridescent')" />
 
 				<h:outputLabel class="outputLabel" value="13." />
 				<h:outputLabel class="outputLabel" value="Fallout" />
@@ -125,7 +137,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('fallout')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('fallout')" />
 
 				<h:outputLabel class="outputLabel" value="14." />
 				<h:outputLabel class="outputLabel" value="The Catalyst" />
@@ -133,7 +146,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('the-catalyst')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('the-catalyst')" />
 
 				<h:outputLabel class="outputLabel" value="15." />
 				<h:outputLabel class="outputLabel" value="The Messenger" />
@@ -141,7 +155,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('the-messenger')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('the-messenger')" />
 			</p:panelGrid>
 
 			<p:dialog id="musicaDialog" widgetVar="letra" draggable="true"
@@ -163,9 +178,9 @@
 			</p:dialog>
 
 			<p:dialog id="videoDialog" widgetVar="video" draggable="true"
-				height="360" width="640" position="center" showEffect="fade"
-				hideEffect="fade" resizeable="true">
-				<p>Em breve...</p>
+				height="520" width="960" position="center" showEffect="fade"
+				hideEffect="fade" resizeable="true" closeOnEscape="true" onHide="onVideoDialogClose()" >
+				<div id="videoDiv" style="width: 100%; height: 100%;"></div>
 			</p:dialog>
 		</p:panel> </section>
 	</ui:define>

@@ -17,7 +17,6 @@
         </h:outputScript>
 	</ui:define>
 	<ui:define name="conteudo">
-		<h:outputStylesheet name="css/pages-leg.css" />
 		<h:outputStylesheet name="css/musica-lista.css" />
 		<h:outputStylesheet name="css/icon.css" />
 		<h:outputScript library="js" name="letramusica.js" />
@@ -155,7 +154,7 @@
 
 			<p:dialog id="videoDialog" widgetVar="video" draggable="true"
 				height="520" width="960" position="center" showEffect="fade"
-				hideEffect="fade" resizeable="true" closeOnEscape="true" >
+				hideEffect="fade" resizeable="true" closeOnEscape="true" onHide="onVideoDialogClose()">
 				<div id="videoDiv" style="width: 100%; height: 100%;"></div>
 			</p:dialog>
 		</p:panel> </section>

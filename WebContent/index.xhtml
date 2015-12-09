@@ -16,11 +16,9 @@
 	</ui:define>
 	<ui:define name="conteudo">
 		<h:outputStylesheet name="css/index.css" />
-
-
 		<h:form>
-
-			<section class="body-section"> <p:dataGrid var="video"
+			<section class="body-section">
+			<p:dataGrid var="video"
 				value="#{videoBean.getListaVideos()}" columns="4" layout="grid">
 
 				<f:facet name="header">
@@ -35,7 +33,6 @@
 						</a>
 					</p:panelGrid>
 				</p:panel>
-
 			</p:dataGrid> </section>
 		</h:form>
 	</ui:define>

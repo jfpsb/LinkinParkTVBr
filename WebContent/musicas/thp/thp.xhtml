@@ -17,10 +17,10 @@
         </h:outputScript>
 	</ui:define>
 	<ui:define name="conteudo">
-		<h:outputStylesheet name="css/pages-leg.css" />
 		<h:outputStylesheet name="css/musica-lista.css" />
 		<h:outputStylesheet name="css/icon.css" />
 		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
 		<section id="thp-section" class="body-section"> <p:panel
 			header="The Hunting Party" id="thp-panel">
 			<p:panelGrid id="panelGrid" columns="4">
@@ -30,7 +30,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('keys-to-the-kingdom')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('keys-to-the-kingdom')" />
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel"
@@ -39,7 +40,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('all-for-nothing')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('all-for-nothing')" />
 
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="Guilty All The Same" />
@@ -47,14 +49,16 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('guilty-all-the-same')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('guilty-all-the-same')" />
 
 				<h:outputLabel class="outputLabel" value="4." />
 				<h:outputLabel class="outputLabel" value="The Summoning" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon" disabled="true" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('the-summoning')" />
 
 				<h:outputLabel class="outputLabel" value="5." />
 				<h:outputLabel class="outputLabel" value="War" />
@@ -62,7 +66,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('war')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('war')" />
 
 				<h:outputLabel class="outputLabel" value="6." />
 				<h:outputLabel class="outputLabel" value="Wastelands" />
@@ -70,7 +75,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('wastelands')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('wastelands')" />
 
 				<h:outputLabel class="outputLabel" value="7." />
 				<h:outputLabel class="outputLabel" value="Until It's Gone" />
@@ -78,7 +84,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('until-its-gone')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('until-its-gone')" />
 
 				<h:outputLabel class="outputLabel" value="8." />
 				<h:outputLabel class="outputLabel"
@@ -87,7 +94,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('rebellion')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('rebellion')" />
 
 				<h:outputLabel class="outputLabel" value="9." />
 				<h:outputLabel class="outputLabel" value="Mark The Graves" />
@@ -95,7 +103,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('mark-the-graves')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mark-the-graves')" />
 
 				<h:outputLabel class="outputLabel" value="10." />
 				<h:outputLabel class="outputLabel"
@@ -103,7 +112,8 @@
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon" disabled="true" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('drawbar')" />
 
 				<h:outputLabel class="outputLabel" value="11." />
 				<h:outputLabel class="outputLabel" value="Final Masquerade" />
@@ -111,7 +121,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('final-masquerade')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('final-masquerade')" />
 
 				<h:outputLabel class="outputLabel" value="12." />
 				<h:outputLabel class="outputLabel" value="A Line In The Sand" />
@@ -119,7 +130,8 @@
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('a-line-in-the-sand')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" onclick="PF('video').show();" />
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('a-line-in-the-sand')" />
 			</p:panelGrid>
 
 			<p:dialog id="musicaDialog" widgetVar="letra" draggable="true"
@@ -141,9 +153,9 @@
 			</p:dialog>
 
 			<p:dialog id="videoDialog" widgetVar="video" draggable="true"
-				height="360" width="640" position="center" showEffect="fade"
-				hideEffect="fade" resizeable="true">
-				<p>Em breve...</p>
+				height="520" width="960" position="center" showEffect="fade"
+				hideEffect="fade" resizeable="true" closeOnEscape="true" onHide="onVideoDialogClose()">
+				<div id="videoDiv" style="width: 100%; height: 100%;"></div>
 			</p:dialog>
 		</p:panel> </section>
 	</ui:define>

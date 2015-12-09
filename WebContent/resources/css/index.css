@@ -1,44 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-.ui-panel {
-	width: 99.3%;
-}
-
-.ui-panel-title {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 200%;
-	padding: 15px;
-}
-
-.ui-panel-titlebar {
-	width: 100%;
-	padding: 0 !important;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.ui-panel-content {
-	margin: 0 !important;
-	padding: 15px 0px 15px 0px !important;
-}
-
-ul {
-	width: 100%;
-	list-style-type: none;
-	columns: 4;
-	-webkit-columns: 4;
-	-moz-columns: 4;
-	padding: 0;
-	margin: 0;
-}
-
-ul li {	
-	margin: 0;
-	width: 100%;
-	height: 260px;
-	text-align: center;
-}
-
 .titulo {
 	text-align: center;
 	font-size: 1em;

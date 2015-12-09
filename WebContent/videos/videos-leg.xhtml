@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" >
 
 	<ui:composition template="/WEB-INF/template.xhtml">
 		<ui:define name="title">Vídeos Legendados</ui:define>
@@ -13,19 +14,52 @@
         	</h:outputScript>
 		</ui:define>
 		<ui:define name="conteudo">
-			<h:outputStylesheet name="css/pages-leg.css" />
+			<h:outputStylesheet name="css/video-mus-page.css" />
 			<h:outputStylesheet name="css/videos-leg.css" />			
 			<section id="videos-section" class="body-section">
 				<article id="videos-article" class="leg-article">
-					<h:form id="videos-form">
-						<h:panelGrid class="panel" id="video-panel" columns="2" columnClasses="colstyle">
-							<h:button styleClass="botao lptv" value="LPTVs"/>
-							<h:button styleClass="botao ent" value="Entrevistas"/>
-							<h:button styleClass="botao shows" value="Shows"/>
-							<h:button styleClass="botao logs" value="Linkin Log's"/>
-							<h:button styleClass="botao outros" value="Outros"/>
-						</h:panelGrid>
-					</h:form>
+					<p:panelGrid class="panelGrid" id="video-panel" columns="2" columnClasses="colstyle">
+						<p:panel class="panel">
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/lptv-logo.jpg" alt="LPTV" />
+									<p:outputLabel value="LPTV" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+						</p:panel>
+						<p:panel class="panel">
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/entrevista-logo.jpg" alt="Entrevistas" />
+									<p:outputLabel value="Entrevistas" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+						</p:panel>
+						<p:panel class="panel">
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/shows-logo.jpg" alt="Shows" />
+									<p:outputLabel value="Shows" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+						</p:panel>
+						<p:panel class="panel">
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/linkin-log-logo.png" alt="Linkin Logs" />
+									<p:outputLabel value="Linkin Logs" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+						</p:panel>
+						<p:panel class="panel">
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/outros-logo.png" alt="Outros" />
+									<p:outputLabel value="Outros" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+						</p:panel>
+					</p:panelGrid>
 				</article>
 			</section>
 		</ui:define>

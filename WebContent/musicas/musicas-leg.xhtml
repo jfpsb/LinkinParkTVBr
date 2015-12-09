@@ -12,29 +12,138 @@
 			type="image/x-icon" />
 	</ui:define>
 	<ui:define name="script">
-		<h:outputScript target="body" >
-            window.location.hash="mus-section"; 
+		<h:outputScript target="body">
+            window.location.hash="mus-section";
         </h:outputScript>
 	</ui:define>
 	<ui:define name="conteudo">
-		<h:outputStylesheet name="css/pages-leg.css" />
-		<h:outputStylesheet name="css/mus-leg.css" />
-		<section id="mus-section" class="body-section"> <article id="mus-article" class="leg-article">
-		<h:form id="mus-form">
-			<h2 id="titulo">Selecione o álbum:</h2>
-			<h:panelGrid class="panel" id="mus-panel" columns="2"
-				columnClasses="colstyle">
-				<h:button outcome="hybrid-theory/hybrid-theory.xhtml"
-					styleClass="botao ht" value="Hybrid Theory" />
-				<h:button outcome="meteora/meteora.xhtml" styleClass="botao mt"
-					value="Meteora" />
-				<h:button outcome="mtm/mtm.xhtml" styleClass="botao mtm"
-					value="Minutes To Midnight" />
-				<h:button outcome="ats/ats.xhtml" styleClass="botao ats" value="A Thousand Suns" />
-				<h:button outcome="living-things/living-things.xhtml" styleClass="botao lt" value="Living Things" />
-				<h:button outcome="thp/thp.xhtml" styleClass="botao thp" value="The Hunting Party" />
-			</h:panelGrid>
-		</h:form> </article> </section>
+		<h:outputStylesheet name="css/video-mus-page.css" />
+		<h:outputScript library="js" name="focusElement.js" />
+		<section id="mus-section" class="body-section">
+		<article id="mus-article" class="leg-article">
+			<p:tabView orientation="left" onTabShow="focus(mus-section)">
+				<p:tab title="Álbuns">
+					<div class="panelGridContainer">
+						<p:panelGrid class="panelGrid" id="album-panel" columns="2"
+							columnClasses="colstyle">
+							<p:panel class="panel">
+								<p:panelGrid columns="1" class="videoGrid">
+									<a href="hybrid-theory/hybrid-theory.xhtml" class="link">
+										<img class="linkImg" src="../resources/imagens/hybrid-theory-cover.jpg" alt="Capa Hybrid Theory" />
+										<p:outputLabel value="Hybrid Theory" class="nomeLink"/>
+									</a>
+								</p:panelGrid>
+							</p:panel>
+							<p:panel class="panel">
+								<p:panelGrid columns="1" class="videoGrid">
+									<a href="meteora/meteora.xhtml">
+										<img class="linkImg" src="../resources/imagens/meteora-cover.jpg" alt="Capa Meteora" />
+										<p:outputLabel value="Meteora" class="nomeLink"/>
+									</a>
+								</p:panelGrid>
+							</p:panel>
+							<p:panel class="panel">
+								<p:panelGrid columns="1" class="videoGrid">
+									<a href="mtm/mtm.xhtml">
+										<img class="linkImg" src="../resources/imagens/mtm-cover.jpg" alt="Capa Minutes to Midnight" />
+										<p:outputLabel value="Minutes To Midnight" class="nomeLink"/>
+									</a>
+								</p:panelGrid>
+							</p:panel>
+							<p:panel class="panel">
+								<p:panelGrid columns="1" class="videoGrid">
+									<a href="ats/ats.xhtml">
+										<img class="linkImg" src="../resources/imagens/ats-cover.jpg" alt="Capa A Thousand Suns" />
+										<p:outputLabel value="A Thousand Suns" class="nomeLink"/>
+									</a>
+								</p:panelGrid>
+							</p:panel>
+							<p:panel class="panel">
+								<p:panelGrid columns="1" class="videoGrid">
+									<a href="living-things/living-things.xhtml">
+										<img class="linkImg" src="../resources/imagens/lt-cover.jpg" alt="Capa Living Things" />
+										<p:outputLabel value="Living Things" class="nomeLink"/>
+									</a>
+								</p:panelGrid>
+							</p:panel>
+							<p:panel class="panel">
+								<p:panelGrid columns="1" class="videoGrid">
+									<a href="thp/thp.xhtml">
+										<img class="linkImg" src="../resources/imagens/thp-cover.jpg" alt="Capa The Hunting Party" />
+										<p:outputLabel value="The Hunting Party" class="nomeLink"/>
+									</a>
+								</p:panelGrid>
+							</p:panel>
+						</p:panelGrid>
+					</div>
+				</p:tab>
+				<p:tab title="Singles">
+					<div class="panelGridContainer">
+						<p:panelGrid class="panelGrid" id="single-panel" columns="2"
+							columnClasses="colstyle">
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/one-step-closer.jpg" alt="Capa Single OSC" />
+									<p:outputLabel value="One Step Closer" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/crawling.png" alt="Capa Single Crawling" />
+									<p:outputLabel value="Crawling" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/papercut.jpg" alt="Capa Single Papercut" />
+									<p:outputLabel value="Papercut" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/in-the-endv1.jpg" alt="Capa Single ITE" />
+									<p:outputLabel value="In The End" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/in-the-endv2.jpg" alt="Capa Single ITE2" />
+									<p:outputLabel value="In The End (Versão 2)" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/in-the-end-live-rare.gif" alt="Capa Single ITELR" />
+									<p:outputLabel value="In The End: Live And Rare" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/pts.of.athrty.jpg" alt="Capa Single pts.of.athrty" />
+									<p:outputLabel value="Pts.Of.Athrty" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/somewhere-i-belong.jpg" alt="Capa Single SIB" />
+									<p:outputLabel value="Somewhere I Belong" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+							<p:panelGrid columns="1" class="videoGrid">
+								<a href="#" class="link">
+									<img class="linkImg" src="../resources/imagens/singles/faint.jpg" alt="Capa Single Faint" />
+									<p:outputLabel value="Faint" class="nomeLink"/>
+								</a>
+							</p:panelGrid>
+						</p:panelGrid>
+					</div>
+				</p:tab>
+				<p:tab title="Remixes">
+					
+				</p:tab>
+			</p:tabView>
+		</article>
+		</section>
 	</ui:define>
 </ui:composition>
 </html>
