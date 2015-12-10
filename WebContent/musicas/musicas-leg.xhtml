@@ -7,10 +7,6 @@
 
 <ui:composition template="/WEB-INF/template.xhtml">
 	<ui:define name="title">Músicas Legendadas</ui:define>
-	<ui:define name="icon">
-		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
-			type="image/x-icon" />
-	</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="mus-section";
@@ -20,8 +16,7 @@
 		<h:outputStylesheet name="css/video-mus-page.css" />
 		<h:outputScript library="js" name="focusElement.js" />
 		<section id="mus-section" class="body-section"> <article
-			id="mus-article" class="leg-article"> <p:tabView
-			orientation="left" onTabShow="focus(mus-section)">
+			id="mus-article" class="leg-article"> <p:tabView>
 			<p:tab title="Álbuns">
 				<div class="panelGridContainer">
 					<p:panelGrid class="panelGrid" id="album-panel" columns="2"
@@ -93,7 +88,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/final-masquerade/final-masquerade.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/final-masquerade.jpg"
+									src="../resources/imagens/singles/lowres/final-masquerade.jpg"
 									alt="Capa Single FM" /> <label class="nomeLink">Final
 										Masquerade</label>
 								</a>
@@ -102,7 +97,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/rebellion/rebellion.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/rebellion.jpg"
+									src="../resources/imagens/singles/lowres/rebellion.jpg"
 									alt="Capa Single Rebellion" /> <label class="nomeLink">Rebellion</label>
 								</a>
 							</div>
@@ -110,7 +105,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/wastelands/wastelands.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/wastelands.jpg"
+									src="../resources/imagens/singles/lowres/wastelands.jpg"
 									alt="Capa Single Wastelands" /> <label class="nomeLink">Wastelands</label>
 								</a>
 							</div>
@@ -118,7 +113,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/until-its-gone/until-its-gone.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/until-its-gone.jpg"
+									src="../resources/imagens/singles/lowres/until-its-gone.jpg"
 									alt="Capa Single UIG" /> <label class="nomeLink">Until
 										It's Gone</label>
 								</a>
@@ -127,7 +122,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/guilty-all-the-same/guilty-all-the-same.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/guilty-all-the-same.jpg"
+									src="../resources/imagens/singles/lowres/guilty-all-the-same.jpg"
 									alt="Capa Single GATS" /> <label class="nomeLink">Guilty
 										All The Same</label>
 								</a>
@@ -136,7 +131,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/a-light-that-never-comes/a-light-that-never-comes.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/a-light-that-never-comes.jpg"
+									src="../resources/imagens/singles/lowres/a-light-that-never-comes.jpg"
 									alt="Capa Single ALTNC" /> <label class="nomeLink">A
 										Light That Never Comes</label>
 								</a>
@@ -145,7 +140,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/castle-of-glass/castle-of-glass.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/castle-of-glass.jpg"
+									src="../resources/imagens/singles/lowres/castle-of-glass.jpg"
 									alt="Capa Single COG" /> <label class="nomeLink">Castle
 										Of Glass</label>
 								</a>
@@ -154,7 +149,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/powerless/powerless.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/powerless.jpg"
+									src="../resources/imagens/singles/lowres/powerless.jpg"
 									alt="Capa Single Powerless" /> <label class="nomeLink">Powerless</label>
 								</a>
 							</div>
@@ -162,7 +157,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/lost-in-the-echo/lost-in-the-echo.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/lost-in-the-echo.jpg"
+									src="../resources/imagens/singles/lowres/lost-in-the-echo.jpg"
 									alt="Capa Single LITE" /> <label class="nomeLink">Lost
 										In The Echo</label>
 								</a>
@@ -171,7 +166,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/burn-it-down/burn-it-down.xhtml" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/burn-it-down.jpg"
+									src="../resources/imagens/singles/lowres/burn-it-down.jpg"
 									alt="Capa Single BID" /> <label class="nomeLink">Burn
 										It Down</label>
 								</a>
@@ -179,16 +174,16 @@
 						</p:panelGrid>
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
-								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/iridescent.jpg"
+								<a href="singles/iridescent/iridescent.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lowres/iridescent.jpg"
 									alt="Capa Single Iridescent" /> <label class="nomeLink">Iridescent</label>
 								</a>
 							</div>
 						</p:panelGrid>
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
-								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/download-tsunami.jpg"
+								<a href="singles/download-tsunami/download-tsunami.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lowres/download-tsunami.jpg"
 									alt="Capa Single DFT" /> <label class="nomeLink">Download
 										To Donate: Tsunami Relief</label>
 								</a>
@@ -196,8 +191,8 @@
 						</p:panelGrid>
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
-								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/burning-in-the-skies.png"
+								<a href="singles/burning-in-the-skies/burning-in-the-skies.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lowres/burning-in-the-skies.png"
 									alt="Capa Single BITS" /> <label class="nomeLink">Burning
 										In The Skies</label>
 								</a>
@@ -205,8 +200,8 @@
 						</p:panelGrid>
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
-								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/waiting for the end.jpg"
+								<a href="singles/waiting-for-the-end/waiting-for-the-end.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lowres/waiting for the end.jpg"
 									alt="Capa Single WFTE" /> <label class="nomeLink">Waiting
 										For The End</label>
 								</a>
@@ -214,8 +209,8 @@
 						</p:panelGrid>
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
-								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/the-catalyst.jpg"
+								<a href="singles/the-catalyst/the-catalyst.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lowres/the-catalyst.jpg"
 									alt="Capa Single TC" /> <label class="nomeLink">The
 										Catalyst</label>
 								</a>
@@ -223,8 +218,8 @@
 						</p:panelGrid>
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
-								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/download-haiti.jpg"
+								<a href="singles/download-haiti/download-haiti.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lowres/download-haiti.jpg"
 									alt="Capa Single DFH" /> <label class="nomeLink">Download
 										To Donate For Haiti</label>
 								</a>
@@ -232,8 +227,8 @@
 						</p:panelGrid>
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
-								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/new-divide.jpg"
+								<a href="singles/new-divide/new-divide.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lowres/new-divide.jpg"
 									alt="Capa Single ND" /> <label class="nomeLink">New
 										Divide</label>
 								</a>
@@ -242,7 +237,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/leave-out-all-the-rest.jpg"
+									src="../resources/imagens/singles/lowres/leave-out-all-the-rest.jpg"
 									alt="Capa Single LOATR" /> <label class="nomeLink">Leave
 										Out All The Rest</label>
 								</a>
@@ -251,7 +246,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/given-up.jpg"
+									src="../resources/imagens/singles/lowres/given-up.jpg"
 									alt="Capa Single GU" /> <label class="nomeLink">Given
 										Up</label>
 								</a>
@@ -260,7 +255,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/shadow-of-the-day.jpg"
+									src="../resources/imagens/singles/lowres/shadow-of-the-day.jpg"
 									alt="Capa Single SOTD" /> <label class="nomeLink">Shadow
 										Of The Day</label>
 								</a>
@@ -269,7 +264,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/bleed-it-out.jpg"
+									src="../resources/imagens/singles/lowres/bleed-it-out.jpg"
 									alt="Capa Single BIO" /> <label class="nomeLink">Bleed
 										It Out</label>
 								</a>
@@ -278,7 +273,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/what-ive-done.jpg"
+									src="../resources/imagens/singles/lowres/what-ive-done.jpg"
 									alt="Capa Single WID" /> <label class="nomeLink">What
 										I've Done</label>
 								</a>
@@ -287,7 +282,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/numb-encore.jpg"
+									src="../resources/imagens/singles/lowres/numb-encore.jpg"
 									alt="Capa Single Numb/Encore" /> <label class="nomeLink">Numb/Encore</label>
 								</a>
 							</div>
@@ -295,7 +290,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/numb-encore-itunesep.jpg"
+									src="../resources/imagens/singles/lowres/numb-encore-itunesep.jpg"
 									alt="Capa Single Numb/Encore iTunes EP" /> <label
 									class="nomeLink">Numb/Encore<br />(iTunes EP)
 								</label>
@@ -305,7 +300,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/numbv2.jpg"
+									src="../resources/imagens/singles/lowres/numbv2.jpg"
 									alt="Capa Single Numb V2" /> <label class="nomeLink">Numb<br />(Versão
 										2)
 								</label>
@@ -315,7 +310,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/numbv1.jpg"
+									src="../resources/imagens/singles/lowres/numbv1.jpg"
 									alt="Capa Single Numb V1" /> <label class="nomeLink">Numb<br />(Versão
 										1)
 								</label>
@@ -325,7 +320,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/breaking-the-habit.jpg"
+									src="../resources/imagens/singles/lowres/breaking-the-habit.jpg"
 									alt="Capa Single BTH" /> <label class="nomeLink">Breaking
 										The Habit</label>
 								</a>
@@ -334,7 +329,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/from-the-inside.jpg"
+									src="../resources/imagens/singles/lowres/from-the-inside.jpg"
 									alt="Capa Single FTI" /> <label class="nomeLink">From
 										The Inside</label>
 								</a>
@@ -343,7 +338,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/faint.jpg"
+									src="../resources/imagens/singles/lowres/faint.jpg"
 									alt="Capa Single Faint" /> <label class="nomeLink">Faint</label>
 								</a>
 							</div>
@@ -351,7 +346,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/somewhere-i-belong.jpg"
+									src="../resources/imagens/singles/lowres/somewhere-i-belong.jpg"
 									alt="Capa Single SIB" /> <label class="nomeLink">Somewhere
 										I Belong</label>
 								</a>
@@ -360,7 +355,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/pts.of.athrty.jpg"
+									src="../resources/imagens/singles/lowres/pts.of.athrty.jpg"
 									alt="Capa Single pts.of.athrty" /> <label class="nomeLink">Pts.Of.Athrty</label>
 								</a>
 							</div>
@@ -368,7 +363,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/in-the-end-live-rare.gif"
+									src="../resources/imagens/singles/lowres/in-the-end-live-rare.gif"
 									alt="Capa Single ITELR" /><label class="nomeLink">In
 										The End:<br />Live And Rare
 								</label>
@@ -378,7 +373,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/in-the-endv2.jpg"
+									src="../resources/imagens/singles/lowres/in-the-endv2.jpg"
 									alt="Capa Single ITE2" /> <label class="nomeLink">In
 										The End<br />(Versão 2)
 								</label>
@@ -388,7 +383,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/in-the-endv1.jpg"
+									src="../resources/imagens/singles/lowres/in-the-endv1.jpg"
 									alt="Capa Single ITE" /> <label class="nomeLink">In
 										The End</label>
 								</a>
@@ -397,7 +392,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/papercut.jpg"
+									src="../resources/imagens/singles/lowres/papercut.jpg"
 									alt="Capa Single Papercut" /> <label class="nomeLink">Papercut</label>
 								</a>
 							</div>
@@ -405,7 +400,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/crawling.png"
+									src="../resources/imagens/singles/lowres/crawling.png"
 									alt="Capa Single Crawling" /> <label class="nomeLink">Crawling</label>
 								</a>
 							</div>
@@ -413,7 +408,7 @@
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="#" class="link"> <img class="linkImg"
-									src="../resources/imagens/singles/one-step-closer.jpg"
+									src="../resources/imagens/singles/lowres/one-step-closer.jpg"
 									alt="Capa Single OSC" /> <label class="nomeLink">One
 										Step Closer</label>
 								</a>

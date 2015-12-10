@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Singles : Burning In The Skies</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="bits-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/singles-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="bits-section" class="body-section"> <p:panel
+			header="Burning In The Skies" id="bits-panel">
+			<p:panelGrid id="panelGrid" columns="4">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Burning In The Skies" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('ats','burning-in-the-skies')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('ats','burning-in-the-skies')" />
+					
+					<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="BlackOut (Live Madison Square Garden)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('ats','blackout')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('bits-single','blackout')" />
+					
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="When They Come For Me (Live Madison Square Garden)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('ats','when-they-come-for-me')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('bits-single','when-they-come-for-me')" />
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

@@ -69,3 +69,52 @@
 	padding-top: 280px;
 	padding-bottom: 280px;
 }
+
+#irid-panel {
+	background-image: url("#{resource['imagens/singles/highres/iridescent.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#dt-panel {
+	background-image: url("#{resource['imagens/singles/highres/download-tsunami.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#bits-panel {
+	background-image: url("#{resource['imagens/singles/highres/burning-in-the-skies.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 200px;
+}
+
+#wfte-panel {
+	background-image: url("#{resource['imagens/singles/highres/waiting-for-the-end.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#tc-panel {
+	background-image: url("#{resource['imagens/singles/highres/the-catalyst.png']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#dh-panel {
+	background-image: url("#{resource['imagens/singles/highres/download-haiti.jpg']}");
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 330px;
+}
+
+#nd-panel {
+	background-image: url("#{resource['imagens/singles/highres/new-divide.jpg']}");
+	background-size: cover;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}

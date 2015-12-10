@@ -6,14 +6,10 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : Rebellion</ui:define>
-	<ui:define name="icon">
-		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
-			type="image/x-icon" />
-	</ui:define>
+	<ui:define name="title">Singles : Download To Donate: Tsunami Relief</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="reb-section"; 
+            window.location.hash="power-section"; 
         </h:outputScript>
 	</ui:define>
 	<ui:define name="mus-conteudo">
@@ -22,17 +18,17 @@
 		<h:outputStylesheet name="css/singles-lista.css" />
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
-		<section id="reb-section" class="body-section"> 
-			<p:panel header="Rebellion" id="reb-panel">
+		<section id="dt-section" class="body-section"> <p:panel
+			header="Powerless" id="dt-panel">
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="Rebellion (Feat. Daron Malakian)" />
+				<h:outputLabel class="outputLabel" value="Issho Ni" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('thp','rebellion')" />
+					disable="true" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('thp','rebellion')" />
+					onclick="PF('video').show();loadVideo('download-tsunami','issho-ni')" />
 			</p:panelGrid>
 		</p:panel> </section>
 	</ui:define>
