@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<ui:insert name="mus-conteudo"></ui:insert>
+
+		<p:dialog id="musicaDialog" widgetVar="letra" draggable="true"
+			height="500" width="800" position="center" showEffect="fade"
+			hideEffect="fade" resizeable="true" onHide="onDialogClose()"
+			closeOnEscape="true">
+			<p:tabView cache="false" effect="fade" effectDuration="fast">
+				<p:tab title="Original">
+					<div id="origTextArea" class="textArea">
+						<p>Aguarde...</p>
+					</div>
+				</p:tab>
+				<p:tab title="Tradução">
+					<div id="tradTextArea" class="textArea">
+						<p>Aguarde...</p>
+					</div>
+				</p:tab>
+			</p:tabView>
+		</p:dialog>
+
+		<p:dialog id="videoDialog" widgetVar="video" draggable="true"
+			height="520" width="960" position="center" showEffect="fade"
+			hideEffect="fade" resizeable="true" closeOnEscape="true"
+			onHide="onVideoDialogClose()">
+			<div id="videoDiv" style="width: 100%; height: 100%;">
+				<p>Aguarde... Ou tente abrir o vídeo novamente.</p>
+			</div>
+		</p:dialog>
+	</ui:define>
+</ui:composition>
+</html>

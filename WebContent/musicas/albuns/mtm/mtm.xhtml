@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Álbuns : Minutes To Midnight</ui:define>
+	<ui:define name="icon">
+		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
+			type="image/x-icon" />
+	</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body" >
+            window.location.hash="mtm-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/albuns-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="mtm-section" class="body-section"> <p:panel
+			header="Minutes To Midnight" id="mtm-panel">
+			<p:panelGrid id="panelGrid" columns="4">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Wake" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" disabled="true" icon="lyric-icon" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','wake')" />
+
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Given Up" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','given-up')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','given-up')" />
+
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Leave Out All The Rest" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','leave-out-all-the-rest')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','leave-out-all-the-rest')" />
+
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Bleed It Out" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','bleed-it-out')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','bleed-it-out')" />
+
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Shadow Of The Day" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','shadow-of-the-day')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','shadow-of-the-day')" />
+
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="What I've Done" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','what-ive-done')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','what-ive-done')" />
+
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Hands Held High" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','hands-held-high')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','hands-held-high')" />
+
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="No More Sorrow" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','no-more-sorrow')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','no-more-sorrow')" />
+
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Valentine's Day" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','valentines-day')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('mtm','valentines-day')" />
+					
+					
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="In Between" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','in-between')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','in-between')" />
+
+				<h:outputLabel class="outputLabel" value="11." />
+				<h:outputLabel class="outputLabel" value="In Pieces" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','in-pieces')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','in-pieces')" />
+
+				<h:outputLabel class="outputLabel" value="12." />
+				<h:outputLabel class="outputLabel"
+					value="The Little Things Give You Away" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','the-little-things-give-you-away')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mtm','the-little-things-give-you-away')" />
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

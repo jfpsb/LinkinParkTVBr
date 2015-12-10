@@ -3,7 +3,7 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui" >
 
 <ui:composition template="/WEB-INF/template.xhtml">
 	<ui:define name="title">Músicas Legendadas</ui:define>
@@ -19,131 +19,593 @@
 	<ui:define name="conteudo">
 		<h:outputStylesheet name="css/video-mus-page.css" />
 		<h:outputScript library="js" name="focusElement.js" />
-		<section id="mus-section" class="body-section">
-		<article id="mus-article" class="leg-article">
-			<p:tabView orientation="left" onTabShow="focus(mus-section)">
-				<p:tab title="Álbuns">
-					<div class="panelGridContainer">
-						<p:panelGrid class="panelGrid" id="album-panel" columns="2"
-							columnClasses="colstyle">
-							<p:panel class="panel">
-								<p:panelGrid columns="1" class="videoGrid">
-									<a href="hybrid-theory/hybrid-theory.xhtml" class="link">
-										<img class="linkImg" src="../resources/imagens/hybrid-theory-cover.jpg" alt="Capa Hybrid Theory" />
-										<p:outputLabel value="Hybrid Theory" class="nomeLink"/>
-									</a>
-								</p:panelGrid>
-							</p:panel>
-							<p:panel class="panel">
-								<p:panelGrid columns="1" class="videoGrid">
-									<a href="meteora/meteora.xhtml">
-										<img class="linkImg" src="../resources/imagens/meteora-cover.jpg" alt="Capa Meteora" />
-										<p:outputLabel value="Meteora" class="nomeLink"/>
-									</a>
-								</p:panelGrid>
-							</p:panel>
-							<p:panel class="panel">
-								<p:panelGrid columns="1" class="videoGrid">
-									<a href="mtm/mtm.xhtml">
-										<img class="linkImg" src="../resources/imagens/mtm-cover.jpg" alt="Capa Minutes to Midnight" />
-										<p:outputLabel value="Minutes To Midnight" class="nomeLink"/>
-									</a>
-								</p:panelGrid>
-							</p:panel>
-							<p:panel class="panel">
-								<p:panelGrid columns="1" class="videoGrid">
-									<a href="ats/ats.xhtml">
-										<img class="linkImg" src="../resources/imagens/ats-cover.jpg" alt="Capa A Thousand Suns" />
-										<p:outputLabel value="A Thousand Suns" class="nomeLink"/>
-									</a>
-								</p:panelGrid>
-							</p:panel>
-							<p:panel class="panel">
-								<p:panelGrid columns="1" class="videoGrid">
-									<a href="living-things/living-things.xhtml">
-										<img class="linkImg" src="../resources/imagens/lt-cover.jpg" alt="Capa Living Things" />
-										<p:outputLabel value="Living Things" class="nomeLink"/>
-									</a>
-								</p:panelGrid>
-							</p:panel>
-							<p:panel class="panel">
-								<p:panelGrid columns="1" class="videoGrid">
-									<a href="thp/thp.xhtml">
-										<img class="linkImg" src="../resources/imagens/thp-cover.jpg" alt="Capa The Hunting Party" />
-										<p:outputLabel value="The Hunting Party" class="nomeLink"/>
-									</a>
-								</p:panelGrid>
-							</p:panel>
+		<section id="mus-section" class="body-section"> <article
+			id="mus-article" class="leg-article"> <p:tabView
+			orientation="left" onTabShow="focus(mus-section)">
+			<p:tab title="Álbuns">
+				<div class="panelGridContainer">
+					<p:panelGrid class="panelGrid" id="album-panel" columns="2"
+						columnClasses="colstyle">
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="albuns/hybrid-theory/hybrid-theory.xhtml" class="link"> <img
+									class="linkImg"
+									src="../resources/imagens/hybrid-theory-cover.jpg"
+									alt="Capa Hybrid Theory" /> <label class="nomeLink">Hybrid
+										Theory</label>
+								</a>
+							</div>
 						</p:panelGrid>
-					</div>
-				</p:tab>
-				<p:tab title="Singles">
-					<div class="panelGridContainer">
-						<p:panelGrid class="panelGrid" id="single-panel" columns="2"
-							columnClasses="colstyle">
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/one-step-closer.jpg" alt="Capa Single OSC" />
-									<p:outputLabel value="One Step Closer" class="nomeLink"/>
+
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="albuns/meteora/meteora.xhtml"> <img class="linkImg"
+									src="../resources/imagens/meteora-cover.jpg" alt="Capa Meteora" />
+									<label class="nomeLink">Meteora</label>
 								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/crawling.png" alt="Capa Single Crawling" />
-									<p:outputLabel value="Crawling" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/papercut.jpg" alt="Capa Single Papercut" />
-									<p:outputLabel value="Papercut" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/in-the-endv1.jpg" alt="Capa Single ITE" />
-									<p:outputLabel value="In The End" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/in-the-endv2.jpg" alt="Capa Single ITE2" />
-									<p:outputLabel value="In The End (Versão 2)" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/in-the-end-live-rare.gif" alt="Capa Single ITELR" />
-									<p:outputLabel value="In The End: Live And Rare" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/pts.of.athrty.jpg" alt="Capa Single pts.of.athrty" />
-									<p:outputLabel value="Pts.Of.Athrty" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/somewhere-i-belong.jpg" alt="Capa Single SIB" />
-									<p:outputLabel value="Somewhere I Belong" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
-							<p:panelGrid columns="1" class="videoGrid">
-								<a href="#" class="link">
-									<img class="linkImg" src="../resources/imagens/singles/faint.jpg" alt="Capa Single Faint" />
-									<p:outputLabel value="Faint" class="nomeLink"/>
-								</a>
-							</p:panelGrid>
+							</div>
 						</p:panelGrid>
-					</div>
-				</p:tab>
-				<p:tab title="Remixes">
-					
-				</p:tab>
-			</p:tabView>
-		</article>
-		</section>
+
+
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="albuns/mtm/mtm.xhtml"> <img class="linkImg"
+									src="../resources/imagens/mtm-cover.jpg"
+									alt="Capa Minutes to Midnight" /> <label class="nomeLink">Minutes
+										To Midnight</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="albuns/ats/ats.xhtml"> <img class="linkImg"
+									src="../resources/imagens/ats-cover.jpg"
+									alt="Capa A Thousand Suns" /> <label class="nomeLink">A
+										Thousand Suns</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="albuns/living-things/living-things.xhtml"> <img
+									class="linkImg" src="../resources/imagens/lt-cover.jpg"
+									alt="Capa Living Things" /> <label class="nomeLink">Living
+										Things</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="albuns/thp/thp.xhtml"> <img class="linkImg"
+									src="../resources/imagens/thp-cover.jpg"
+									alt="Capa The Hunting Party" /> <label class="nomeLink">The
+										Hunting Party</label>
+								</a>
+							</div>
+						</p:panelGrid>
+					</p:panelGrid>
+				</div>
+			</p:tab>
+			<p:tab title="Singles">
+				<div class="panelGridContainer">
+					<p:panelGrid class="panelGrid" id="single-panel" columns="3"
+						columnClasses="colstyle">
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/final-masquerade/final-masquerade.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/final-masquerade.jpg"
+									alt="Capa Single FM" /> <label class="nomeLink">Final
+										Masquerade</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/rebellion/rebellion.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/rebellion.jpg"
+									alt="Capa Single Rebellion" /> <label class="nomeLink">Rebellion</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/wastelands/wastelands.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/wastelands.jpg"
+									alt="Capa Single Wastelands" /> <label class="nomeLink">Wastelands</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/until-its-gone/until-its-gone.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/until-its-gone.jpg"
+									alt="Capa Single UIG" /> <label class="nomeLink">Until
+										It's Gone</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/guilty-all-the-same/guilty-all-the-same.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/guilty-all-the-same.jpg"
+									alt="Capa Single GATS" /> <label class="nomeLink">Guilty
+										All The Same</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/a-light-that-never-comes/a-light-that-never-comes.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/a-light-that-never-comes.jpg"
+									alt="Capa Single ALTNC" /> <label class="nomeLink">A
+										Light That Never Comes</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/castle-of-glass/castle-of-glass.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/castle-of-glass.jpg"
+									alt="Capa Single COG" /> <label class="nomeLink">Castle
+										Of Glass</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/powerless/powerless.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/powerless.jpg"
+									alt="Capa Single Powerless" /> <label class="nomeLink">Powerless</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/lost-in-the-echo/lost-in-the-echo.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/lost-in-the-echo.jpg"
+									alt="Capa Single LITE" /> <label class="nomeLink">Lost
+										In The Echo</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="singles/burn-it-down/burn-it-down.xhtml" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/burn-it-down.jpg"
+									alt="Capa Single BID" /> <label class="nomeLink">Burn
+										It Down</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/iridescent.jpg"
+									alt="Capa Single Iridescent" /> <label class="nomeLink">Iridescent</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/download-tsunami.jpg"
+									alt="Capa Single DFT" /> <label class="nomeLink">Download
+										To Donate: Tsunami Relief</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/burning-in-the-skies.png"
+									alt="Capa Single BITS" /> <label class="nomeLink">Burning
+										In The Skies</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/waiting for the end.jpg"
+									alt="Capa Single WFTE" /> <label class="nomeLink">Waiting
+										For The End</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/the-catalyst.jpg"
+									alt="Capa Single TC" /> <label class="nomeLink">The
+										Catalyst</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/download-haiti.jpg"
+									alt="Capa Single DFH" /> <label class="nomeLink">Download
+										To Donate For Haiti</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/new-divide.jpg"
+									alt="Capa Single ND" /> <label class="nomeLink">New
+										Divide</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/leave-out-all-the-rest.jpg"
+									alt="Capa Single LOATR" /> <label class="nomeLink">Leave
+										Out All The Rest</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/given-up.jpg"
+									alt="Capa Single GU" /> <label class="nomeLink">Given
+										Up</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/shadow-of-the-day.jpg"
+									alt="Capa Single SOTD" /> <label class="nomeLink">Shadow
+										Of The Day</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/bleed-it-out.jpg"
+									alt="Capa Single BIO" /> <label class="nomeLink">Bleed
+										It Out</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/what-ive-done.jpg"
+									alt="Capa Single WID" /> <label class="nomeLink">What
+										I've Done</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/numb-encore.jpg"
+									alt="Capa Single Numb/Encore" /> <label class="nomeLink">Numb/Encore</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/numb-encore-itunesep.jpg"
+									alt="Capa Single Numb/Encore iTunes EP" /> <label
+									class="nomeLink">Numb/Encore<br />(iTunes EP)
+								</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/numbv2.jpg"
+									alt="Capa Single Numb V2" /> <label class="nomeLink">Numb<br />(Versão
+										2)
+								</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/numbv1.jpg"
+									alt="Capa Single Numb V1" /> <label class="nomeLink">Numb<br />(Versão
+										1)
+								</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/breaking-the-habit.jpg"
+									alt="Capa Single BTH" /> <label class="nomeLink">Breaking
+										The Habit</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/from-the-inside.jpg"
+									alt="Capa Single FTI" /> <label class="nomeLink">From
+										The Inside</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/faint.jpg"
+									alt="Capa Single Faint" /> <label class="nomeLink">Faint</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/somewhere-i-belong.jpg"
+									alt="Capa Single SIB" /> <label class="nomeLink">Somewhere
+										I Belong</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/pts.of.athrty.jpg"
+									alt="Capa Single pts.of.athrty" /> <label class="nomeLink">Pts.Of.Athrty</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/in-the-end-live-rare.gif"
+									alt="Capa Single ITELR" /><label class="nomeLink">In
+										The End:<br />Live And Rare
+								</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/in-the-endv2.jpg"
+									alt="Capa Single ITE2" /> <label class="nomeLink">In
+										The End<br />(Versão 2)
+								</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/in-the-endv1.jpg"
+									alt="Capa Single ITE" /> <label class="nomeLink">In
+										The End</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/papercut.jpg"
+									alt="Capa Single Papercut" /> <label class="nomeLink">Papercut</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/crawling.png"
+									alt="Capa Single Crawling" /> <label class="nomeLink">Crawling</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/singles/one-step-closer.jpg"
+									alt="Capa Single OSC" /> <label class="nomeLink">One
+										Step Closer</label>
+								</a>
+							</div>
+						</p:panelGrid>
+					</p:panelGrid>
+				</div>
+			</p:tab>
+			<p:tab title="Remixes">
+				<div class="panelGridContainer">
+					<p:panelGrid class="panelGrid" id="remix-panel" columns="3"
+						columnClasses="colstyle">
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/remix/a-light-that-never-comes-r.jpg"
+									alt="Capa Single ALTNCR" /> <label class="nomeLink">A
+										Light That Never Comes (Remixes)</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/remix/recharged.jpg"
+									alt="Capa Single Recharged" /> <label class="nomeLink">Recharged</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/remix/8bit-rebellion.jpg"
+									alt="Capa Single 8BR" /> <label class="nomeLink">8-Bit
+										Rebellion</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/remix/reanimation.jpg"
+									alt="Capa Single Reanimation" /> <label class="nomeLink">Reanimation</label>
+								</a>
+							</div>
+						</p:panelGrid>
+					</p:panelGrid>
+				</div>
+			</p:tab>
+			<p:tab title="LP Underground">
+				<div class="panelGridContainer">
+					<p:panelGrid class="panelGrid" id="lpu-panel" columns="3"
+						columnClasses="colstyle">
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu15.jpg"
+									alt="Capa Single LPU15" /> <label class="nomeLink">LPU 15</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpuxiv.png"
+									alt="Capa Single LPUXIV" /> <label class="nomeLink">LPU XIV</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpuxiii.jpg"
+									alt="Capa Single LPUXIII" /> <label class="nomeLink">LPU XIII</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu12.jpg"
+									alt="Capa Single LPU12" /> <label class="nomeLink">LP Underground 12</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu11.jpg"
+									alt="Capa Single LPU11" /> <label class="nomeLink">LP Underground 11</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/a-decade-underground.jpg"
+									alt="Capa Single ADU" /> <label class="nomeLink">A Decade Underground</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/songs-from-the-underground.jpg"
+									alt="Capa Single SFTU" /> <label class="nomeLink">Songs From The Underground</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpux.jpg"
+									alt="Capa Single LPUX" /> <label class="nomeLink">LP Underground X</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu9.jpg"
+									alt="Capa Single LPU9" /> <label class="nomeLink">LP Underground 9</label>
+								</a>
+							</div>
+						</p:panelGrid><p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu8.jpg"
+									alt="Capa Single LPU8" /> <label class="nomeLink">LP Underground 8</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu7.jpg"
+									alt="Capa Single LPU7" /> <label class="nomeLink">LP Underground 7</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu6.jpg"
+									alt="Capa Single LPU6" /> <label class="nomeLink">LP Underground 6</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu5.jpg"
+									alt="Capa Single LPU5" /> <label class="nomeLink">LP Underground 5</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu4.jpg"
+									alt="Capa Single LPU4" /> <label class="nomeLink">LP Underground 4</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu3.jpg"
+									alt="Capa Single LPU3" /> <label class="nomeLink">LP Underground 3</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu2.jpg"
+									alt="Capa Single LPU2" /> <label class="nomeLink">LP Underground 2</label>
+								</a>
+							</div>
+						</p:panelGrid>
+						<p:panelGrid columns="1" class="videoGrid">
+							<div class="linkPanel">
+								<a href="#" class="link"> <img class="linkImg"
+									src="../resources/imagens/lpu/lpu1.jpg"
+									alt="Capa Single LPU1" /> <label class="nomeLink">Hybrid Theory EP<br/>(LPU 1)</label>
+								</a>
+							</div>
+						</p:panelGrid>
+					</p:panelGrid>
+				</div>
+			</p:tab>
+		</p:tabView> </article> </section>
 	</ui:define>
 </ui:composition>
 </html>

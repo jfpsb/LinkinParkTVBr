@@ -1,4 +1,6 @@
-function loadVideo(musica) {
+var videoPath = "../../videos/";
+
+function loadVideo(album, musica) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -6,7 +8,7 @@ function loadVideo(musica) {
     }
   };
   
-  xhttp.open("GET", "video/" + musica + ".txt", true);
+  xhttp.open("GET", videoPath + album + "/" + musica + ".txt", true);
   xhttp.send();
 }
 

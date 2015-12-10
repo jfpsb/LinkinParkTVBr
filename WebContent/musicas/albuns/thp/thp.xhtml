@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Álbuns : The Hunting Party</ui:define>
+	<ui:define name="icon">
+		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
+			type="image/x-icon" />
+	</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="thp-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/albuns-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="thp-section" class="body-section"> <p:panel
+			header="The Hunting Party" id="thp-panel">
+			<p:panelGrid id="panelGrid" columns="4">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Keys To The Kingdom" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','keys-to-the-kingdom')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('thp','keys-to-the-kingdom')" />
+
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel"
+					value="All For Nothing (Feat. Page Hamilton)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','all-for-nothing')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('all-for-nothing')" />
+
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Guilty All The Same" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','guilty-all-the-same')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('guilty-all-the-same')" />
+
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="The Summoning" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" disabled="true" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('the-summoning')" />
+
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="War" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','war')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('war')" />
+
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Wastelands" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','wastelands')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('wastelands')" />
+
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Until It's Gone" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','until-its-gone')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('until-its-gone')" />
+
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel"
+					value="Rebellion (Feat. Daron Malakian)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','rebellion')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('rebellion')" />
+
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Mark The Graves" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','mark-the-graves')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('mark-the-graves')" />
+
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel"
+					value="Drawbar (Feat. Tom Morello)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" disabled="true" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('drawbar')" />
+
+				<h:outputLabel class="outputLabel" value="11." />
+				<h:outputLabel class="outputLabel" value="Final Masquerade" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','final-masquerade')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('final-masquerade')" />
+
+				<h:outputLabel class="outputLabel" value="12." />
+				<h:outputLabel class="outputLabel" value="A Line In The Sand" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('thp','a-line-in-the-sand')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('a-line-in-the-sand')" />
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

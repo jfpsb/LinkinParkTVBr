@@ -1,9 +1,12 @@
-function loadLetra(musica) {	
-	loadTraducao(musica);
-	loadOriginal(musica);	
+var letraPathTrad = "../../letras/traducao/";
+var letraPathOrig = "../../letras/original/";
+
+function loadLetra(album, musica) {	
+	loadTraducao(album, musica);
+	loadOriginal(album, musica);	
 } 
 
-function loadTraducao(musica) {
+function loadTraducao(album, musica) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -11,11 +14,11 @@ function loadTraducao(musica) {
     }
   };
   
-  xhttp.open("GET", "letra/traducao/" + musica + ".txt", true);
+  xhttp.open("GET", letraPathTrad + album + "/" + musica + ".txt", true);
   xhttp.send();
 }
 
-function loadOriginal(musica) {
+function loadOriginal(album, musica) {
 	  var xhttp = new XMLHttpRequest();
 	  xhttp.onreadystatechange = function() {
 	    if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -23,7 +26,7 @@ function loadOriginal(musica) {
 	    }
 	  };
 	  
-	  xhttp.open("GET", "letra/original/" + musica + ".txt", true);
+	  xhttp.open("GET", letraPathOrig + album + "/" + musica + ".txt", true);
 	  xhttp.send();
 	}
 

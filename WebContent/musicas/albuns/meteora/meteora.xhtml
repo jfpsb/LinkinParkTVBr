@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Álbuns : Meteora</ui:define>
+	<ui:define name="icon">
+		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
+			type="image/x-icon" />
+	</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="meteora-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/albuns-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="meteora-section" class="body-section"> <p:panel
+			header="Hybrid Theory" id="mt-panel">
+			<p:panelGrid id="panelGrid" columns="4">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Foreword" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" disabled="true" icon="lyric-icon"
+					onclick="PF('letra').show();" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','foreword')" />
+
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Don't Stay" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','dont-stay')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','dont-stay')" />
+
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Somewhere I Belong" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','somewhere-i-belong')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','somewhere-i-belong')" />
+
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Lying From You" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','lying-from-you')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','lying-from-you')" />
+
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Hit The Floor" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','hit-the-floor')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','hit-the-floor')" />
+
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Easier To Run" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','easier-to-run')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','easier-to-run')" />
+
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Faint" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','faint')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','faint')" />
+
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="Figure.09" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','figure09')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','figure09')" />
+
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Breaking The Habit" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','breaking-the-habit')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','breaking-the-habit')" />
+
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="From The Inside" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','from-the-inside')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','from-the-inside')" />
+
+				<h:outputLabel class="outputLabel" value="11." />
+				<h:outputLabel class="outputLabel" value="Nobody's Listening" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','nobodys-listening')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','nobodys-listening')" />
+
+				<h:outputLabel class="outputLabel" value="12." />
+				<h:outputLabel class="outputLabel" value="Session" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" disabled="true" icon="lyric-icon"
+					onclick="PF('letra').show();" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','session')" />
+
+				<h:outputLabel class="outputLabel" value="13." />
+				<h:outputLabel class="outputLabel" value="Numb" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('meteora','numb')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('meteora','numb')" />
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

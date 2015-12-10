@@ -23,30 +23,6 @@
 	border-radius: 5px;
 }
 
-#ht-panel {
-	background-image: url("#{resource['imagens/hybrid-theory-cover.jpg']}");
-}
-
-#mt-panel {
-	background-image: url("#{resource['imagens/meteora-cover.jpg']}");
-}
-
-#mtm-panel {
-	background-image: url("#{resource['imagens/mtm-cover.jpg']}");
-}
-
-#ats-panel {
-	background-image: url("#{resource['imagens/ats-cover.jpg']}");
-}
-
-#lt-panel {
-	background-image: url("#{resource['imagens/lt-cover.jpg']}");
-}
-
-#thp-panel {
-	background-image: url("#{resource['imagens/thp-cover.jpg']}");
-}
-
 .ui-panel-content {
 	background: rgb(0, 0, 0) !important;
 	background: rgba(0, 0, 0, 0.5) !important;

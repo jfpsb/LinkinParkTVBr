@@ -1,0 +1,71 @@
+@CHARSET "ISO-8859-1";
+
+#fm-panel {
+	background-image: url("#{resource['imagens/singles/highres/final-masquerade.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#reb-panel {
+	background-image: url("#{resource['imagens/singles/highres/rebellion.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#was-panel {
+	background-image: url("#{resource['imagens/singles/highres/wastelands.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#uig-panel {
+	background-image: url("#{resource['imagens/singles/highres/until-its-gone.png']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#gats-panel {
+	background-image: url("#{resource['imagens/singles/highres/guilty-all-the-same.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#altnc-panel {
+	background-image: url("#{resource['imagens/singles/highres/a-light-that-never-comes.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#cog-panel {
+	background-image: url("#{resource['imagens/singles/highres/castle-of-glass.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#power-panel {
+	background-image: url("#{resource['imagens/singles/highres/powerless.jpeg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#lite-panel {
+	background-image: url("#{resource['imagens/singles/highres/lost-in-the-echo.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#bid-panel {
+	background-image: url("#{resource['imagens/singles/highres/burn-it-down.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
