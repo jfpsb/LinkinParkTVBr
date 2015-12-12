@@ -188,3 +188,17 @@
 	padding-top: 300px;
 	padding-bottom: 300px;
 }
+
+#fti-panel {
+	background-image: url("#{resource['imagens/singles/highres/from-the-inside.jpg']}");
+	background-size: cover;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+
+#faint-panel {
+	background-image: url("#{resource['imagens/singles/highres/faint.jpg']}");
+	background-size: cover;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}

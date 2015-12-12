@@ -1,0 +1,10 @@
+<p:panelGrid columns="1">
+
+	<img src="../../../resources/imagens/singles/highres/faint.jpg" alt="Imagem Single Faint" style="width: 70%; max-width: 700px;"/>
+	<div align="center">
+		<audio controls="play" style="width: 70%; max-width: 700px;">
+			<source src="lying-from-you.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+
+</p:panelGrid>
