@@ -146,3 +146,45 @@
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
+
+#wid-panel {
+	background-image: url("#{resource['imagens/singles/highres/what-ive-done.jpg']}");
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+#ne-panel {
+	background-image: url("#{resource['imagens/singles/highres/numb-encore.jpg']}");
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+#nei-panel {
+	background-image: url("#{resource['imagens/singles/highres/numb-encore-itunes.jpg']}");
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#nv2-panel {
+	background-image: url("#{resource['imagens/singles/highres/numbv2.jpg']}");
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+#nv1-panel {
+	background-image: url("#{resource['imagens/singles/highres/numbv1.jpg']}");
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}
+
+#bth-panel {
+	background-image: url("#{resource['imagens/singles/highres/breaking-the-habit.jpg']}");
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 300px;
+}

@@ -7,10 +7,6 @@
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
 	<ui:define name="title">Singles : Wastelands</ui:define>
-	<ui:define name="icon">
-		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
-			type="image/x-icon" />
-	</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="was-section"; 
@@ -23,7 +19,7 @@
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
 		<section id="was-section" class="body-section"> <p:panel
-			header="Final Masquerade" id="was-panel">
+			header="Wastelands" id="was-panel">
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
 				<h:outputLabel class="outputLabel" value="Wastelands" />
