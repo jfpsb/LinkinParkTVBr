@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Singles : Leave Out All The Rest</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="loatr-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/singles-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="loatr-section" class="body-section"> <p:panel
+			header="Powerless" id="loatr-panel">
+			<p:panelGrid id="panelGrid" columns="4">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Leave Out All The Rest" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','leave-out-all-the-rest')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('mtm','leave-out-all-the-rest')" />
+
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel"
+					value="In Pieces (Live From Projekt Revolution, Washington DC, 19/08/07)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','in-pieces')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('loatr-single','in-pieces')" />
+
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel"
+					value="Leave Out All The Rest (Live From Projekt Revolution, Detroit MI, 22/08/07)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('mtm','leave-out-all-the-rest')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('loatr-single','leave-out-all-the-rest')" />
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

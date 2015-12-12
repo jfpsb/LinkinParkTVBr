@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>LinkinParkTVBr : Reportar Erro</title>
+	<link id="favicon" href="#{request.contextPath}/favicon16.ico"
+		rel="shortcut icon" type="image/vnd.microsoft.icon"></link>
+	<link rel="shortcut icon" href="#{request.contextPath}/favicon16.ico"
+		type="image/x-icon" />
+	<h:outputStylesheet name="css/reportarErro.css" />
+</h:head>
+<body>
+	<p:button value="Retornar à página inicial" outcome="/index.xhtml" class="indexButton"/>
+
+	<article>
+	<h2>Reporte erro no site</h2>
+	<p>Envie mensagens no caso de:</p>
+		<p:panelGrid columns="2">
+			<p:outputLabel value="1. " />
+			<p:outputLabel value="Links de vídeos que não estão mais funcionando." />
+			<p:outputLabel value="2. " />
+			<p:outputLabel value="Erros de navegação do site." />
+			<p:outputLabel value="3. " />
+			<p:outputLabel value="Sugestões de correção em traduções, imagens ou letras originais." />
+			<p:outputLabel value="4. " />
+			<p:outputLabel value="Erros de layout." />
+			<p:outputLabel value="5. " />
+			<p:outputLabel value="Sugestões para melhorar visual do site ou navegação." />
+		</p:panelGrid>
+		
+		<div>
+			<h3>Peço que não enviem por este canal mensagens 
+			com pedidos para <br/>legendar vídeos, para tal contate-nos
+			em nossas <a href="#{request.contextPath}/redes-sociais.xhtml">mídias sociais</a>.</h3>
+		</div>
+		
+		<h:form class="formulario">
+			<p:panelGrid columns="2" class="formPanelGrid">
+				<p:outputLabel value="Título(descrição curta): " />
+				<p:inputText id="titulo" maxlength="50"/>
+				<p:outputLabel value="Descrição: "/>
+				<p:inputTextarea cols="25" rows="10" maxlength="500" counter="display" counterTemplate="{0} dígitos restantes"/>
+				<h:outputText id="placeholder"/>
+				<h:outputText id="display" />
+			</p:panelGrid>
+			<div class="buttondiv">
+				<p:commandButton value="Enviar" class="button-enviar" />
+			</div>
+		</h:form>
+	</article>
+
+</body>
+</html>

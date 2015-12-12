@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+
+.ui-panelgrid, h3, h2, p, .ui-outputlabel {
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid {
+	border: 1px solid black;
+}
+
+.indexButton {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.ui-button {	
+	text-align: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 20px;
+}
+
+.button-enviar {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 25px;
+}
+
+.buttondiv {
+	text-align: center;
+}

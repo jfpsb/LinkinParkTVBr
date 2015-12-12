@@ -118,3 +118,31 @@
 	padding-top: 250px;
 	padding-bottom: 250px;
 }
+
+#loatr-panel {
+	background-image: url("#{resource['imagens/singles/highres/leave-out-all-the-rest.jpg']}");
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+#gu-panel {
+	background-image: url("#{resource['imagens/singles/highres/given-up.jpg']}");
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#sotd-panel {
+	background-image: url("#{resource['imagens/singles/highres/shadow-of-the-day.jpg']}");
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#bio-panel {
+	background-image: url("#{resource['imagens/singles/highres/bleed-it-out.jpg']}");
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}

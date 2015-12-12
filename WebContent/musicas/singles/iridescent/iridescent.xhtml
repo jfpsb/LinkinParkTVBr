@@ -1,16 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui" >
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
-	<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
 	<ui:define name="title">Singles : Iridescent</ui:define>
-	<ui:define name="icon">
-		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
-			type="image/x-icon" />
-	</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="irid-section"; 
@@ -26,7 +22,8 @@
 			header="Powerless" id="irid-panel">
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="Iridescent (From Transformers: Dark Side Of The Moon)" />
+				<h:outputLabel class="outputLabel"
+					value="Iridescent (From Transformers: Dark Side Of The Moon)" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('ats','iridescent')" />
@@ -36,5 +33,5 @@
 			</p:panelGrid>
 		</p:panel> </section>
 	</ui:define>
-	</ui:composition>
+</ui:composition>
 </html>

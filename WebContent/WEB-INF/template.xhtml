@@ -9,8 +9,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><ui:insert name="title">LinkinParkTVBr</ui:insert></title>
 	<link>
-		<ui:insert name="icon"><link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
-			type="image/x-icon" /></ui:insert>
+		<ui:insert name="icon">
+			<link id="favicon" href="#{request.contextPath}/favicon16.ico"
+				rel="shortcut icon" type="image/vnd.microsoft.icon"></link>
+			<link rel="shortcut icon" href="#{request.contextPath}/favicon16.ico"
+				type="image/x-icon" />
+		</ui:insert>
 	</link>
 	<h:outputStylesheet name="css/template.css" />
 </h:head>
@@ -38,12 +42,14 @@
 		<ui:insert name="conteudo" />
 	</div>
 
-	<footer id="container-footer">
-	<div id="div-footer" align="center">
-		<small> LinkinParkTVBr<br /> linkinparktvbr@gmail.com<br />
-			2015
-		</small>
-	</div>
-	</footer> </main>
+	<div id="container-footer"> <p:panelGrid
+		columns="1">
+		<p:outputLabel value="LinkinParkTVBr" class="footerLabel" />
+		<p:outputLabel value="linkinparktvbr@gmail.com" class="footerLabel"/>
+		<p:outputLabel value="2015" class="footerLabel"/>
+		<f:facet name="footer">
+			<a href="#{request.contextPath}/reportarErro.xhtml" class="footerLink">Reporte Erros</a>			
+		</f:facet>
+	</p:panelGrid> </div> </main>
 </h:body>
 </html>
