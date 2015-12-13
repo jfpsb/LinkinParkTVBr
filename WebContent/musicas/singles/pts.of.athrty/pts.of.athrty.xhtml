@@ -3,13 +3,13 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui" >
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : Given Up</ui:define>
+	<ui:define name="title">Singles : PTS.OF.ATHRTY</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="gu-section"; 
+            window.location.hash="faint-section"; 
         </h:outputScript>
 	</ui:define>
 	<ui:define name="mus-conteudo">
@@ -18,26 +18,36 @@
 		<h:outputStylesheet name="css/singles-lista.css" />
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
-		<section id="gu-section" class="body-section"> <p:panel
-			header="Given Up" id="gu-panel">
+		<section id="pointsremix-section" class="body-section"> <p:panel
+			header="PTS.OF.ATHRTY" id="pointsremix-panel">
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="Given Up" />
+				<h:outputLabel class="outputLabel" value="PTS.OF.ATHRTY" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','given-up')" />
+					onclick="PF('letra').show();loadLetra('hybrid-theory','points-of-authority')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('mtm','given-up')" />
+					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','points')" />
 					
 				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel" value="Valentine's Day" />
+				<h:outputLabel class="outputLabel" value="By Myself (Remix By Marilyn Manson)" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','valentines-day')" />
+					onclick="PF('letra').show();loadLetra('hybrid-theory','by-myself')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/given-up','valentines-day')" />
+					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','by-myself')" />
+					
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="H! VLTG3" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('reanimation','high-voltage')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','high-voltage')" />
+					
 			</p:panelGrid>
 		</p:panel> </section>
 	</ui:define>

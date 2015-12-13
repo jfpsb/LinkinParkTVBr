@@ -202,3 +202,17 @@
 	padding-top: 250px;
 	padding-bottom: 250px;
 }
+
+#sib-panel {
+	background-image: url("#{resource['imagens/singles/highres/somewhere-i-belong.jpg']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}
+
+#pointsremix-panel {
+	background-image: url("#{resource['imagens/singles/highres/pts.of.athrty.png']}");
+	background-size: cover;
+	padding-top: 280px;
+	padding-bottom: 280px;
+}

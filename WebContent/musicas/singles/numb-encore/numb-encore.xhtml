@@ -9,7 +9,7 @@
 	<ui:define name="title">Singles : Numb/Encore</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="nei-section"; 
+            window.location.hash="ne-section"; 
         </h:outputScript>
 	</ui:define>
 	<ui:define name="mus-conteudo">
@@ -31,13 +31,13 @@
 					onclick="PF('video').show();loadVideo('collision-course','numb-encore')" />
 
 				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel" value="Numb/Encore(Instrumental)" />
+				<h:outputLabel class="outputLabel" value="Numb/Encore (Instrumental)" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
 					disabled="true" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('ne-single','numb-encore')" />
+					onclick="PF('video').show();loadVideo('singles/numb-encore','numb-encore-instrumental')" />
 
 			</p:panelGrid>
 		</p:panel> </section>
