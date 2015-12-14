@@ -216,3 +216,45 @@
 	padding-top: 280px;
 	padding-bottom: 280px;
 }
+
+#iter-panel {
+	background-image: url("#{resource['imagens/singles/highres/in-the-end-rare.jpg']}");
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#ite-panel {
+	background-image: url("#{resource['imagens/singles/highres/in-the-end.jpg']}");
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#itev2-panel {
+	background-image: url("#{resource['imagens/singles/highres/in-the-endv2.jpg']}");
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+#papercut-panel {
+	background-image: url("#{resource['imagens/singles/highres/papercut.jpg']}");
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+#crawling-panel {
+	background-image: url("#{resource['imagens/singles/highres/crawling.jpg']}");
+	background-size: cover;
+	padding-top: 380px;
+	padding-bottom: 380px;
+}
+
+#osc-panel {
+	background-image: url("#{resource['imagens/singles/highres/one-step-closer.jpg']}");
+	background-size: cover;
+	padding-top: 250px;
+	padding-bottom: 250px;
+}

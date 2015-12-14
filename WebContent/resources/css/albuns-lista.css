@@ -2,24 +2,50 @@
 
 #ht-panel {
 	background-image: url("#{resource['imagens/hybrid-theory-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
 }
 
 #mt-panel {
 	background-image: url("#{resource['imagens/meteora-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
 }
 
 #mtm-panel {
 	background-image: url("#{resource['imagens/mtm-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
 }
 
 #ats-panel {
 	background-image: url("#{resource['imagens/ats-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
 }
 
 #lt-panel {
 	background-image: url("#{resource['imagens/lt-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
 }
 
 #thp-panel {
 	background-image: url("#{resource['imagens/thp-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#collision-panel {
+	background-image:
+		url("#{resource['imagens/collision-course-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#rtr-panel {
+	background-image:
+		url("#{resource['imagens/road-to-revolution-cover.jpg']}");
+	background-size: cover;
+	background-position: center;
 }

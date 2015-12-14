@@ -3,14 +3,14 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui" >
+	xmlns:p="http://primefaces.org/ui">
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : A Light That Never Comes</ui:define>
+	<ui:define name="title">Singles : Crawling</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="altnc-section"; 
-        </h:outputScript>
+            	window.location.hash="crawling-section"; 
+        	</h:outputScript>
 	</ui:define>
 	<ui:define name="mus-conteudo">
 		<h:outputStylesheet name="css/musica-lista.css" />
@@ -18,19 +18,28 @@
 		<h:outputStylesheet name="css/singles-lista.css" />
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
-		<section id="altnc-section" class="body-section"> <p:panel
-			header="A Light That Never Comes" id="altnc-panel" class="apanel">
+		<section id="crawling-section" class="body-section"> <p:panel
+			header="Crawling" id="crawling-panel">			
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel"
-					value="A Light That Never Comes (Com Steve Aoki)" />
+				<h:outputLabel class="outputLabel" value="Crawing" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('','a-light-that-never-comes')" />
+					onclick="PF('letra').show();loadLetra('hybrid-theory','crawling')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/altnc','a-light-that-never-comes')" />
+					onclick="PF('video').show();loadVideo('hybrid-theory','crawling')" />
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Papercut (Live From The BBC)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('hybrid-theory','papercut')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('singles/papercut','papercut')" />
 			</p:panelGrid>
+
 		</p:panel> </section>
 	</ui:define>
 </ui:composition>

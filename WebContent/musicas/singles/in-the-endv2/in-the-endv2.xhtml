@@ -6,10 +6,10 @@
 	xmlns:p="http://primefaces.org/ui" >
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : PTS.OF.ATHRTY</ui:define>
+	<ui:define name="title">Singles : In The End (Version 2)</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="pointsremix-section"; 
+            window.location.hash="itev2-section"; 
         </h:outputScript>
 	</ui:define>
 	<ui:define name="mus-conteudo">
@@ -18,35 +18,44 @@
 		<h:outputStylesheet name="css/singles-lista.css" />
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
-		<section id="pointsremix-section" class="body-section"> <p:panel
-			header="PTS.OF.ATHRTY" id="pointsremix-panel">
+		<section id="itev2-section" class="body-section"> <p:panel
+			header="In The End (Version 2)" id="itev2-panel">
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="PTS.OF.ATHRTY" />
+				<h:outputLabel class="outputLabel" value="In The End" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','points-of-authority')" />
+					onclick="PF('letra').show();loadLetra('hybrid-theory','in-the-end')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','points')" />
+					onclick="PF('video').show();loadVideo('hybrid-theory','in-the-end')" />
+					
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="In The End (Live BBC Radio One)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('hybrid-theory','in-the-end')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('singles/in-the-end','in-the-end')" />
 					
 				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel" value="By Myself (Remix By Marilyn Manson)" />
+				<h:outputLabel class="outputLabel" value="A Placa For My Head (Live At Docklands Arena, London)" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','by-myself')" />
+					onclick="PF('letra').show();loadLetra('hybrid-theory','a-place-for-my-head')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','by-myself')" />
+					onclick="PF('video').show();loadVideo('singles/in-the-end-rare','a-place-for-my-head')" />
 					
 				<h:outputLabel class="outputLabel" value="3." />
-				<h:outputLabel class="outputLabel" value="H! VLTG3" />
+				<h:outputLabel class="outputLabel" value="Step Up" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('reanimation','high-voltage')" />
+					onclick="PF('letra').show();loadLetra('','step-up')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','high-voltage')" />
+					onclick="PF('video').show();loadVideo('','step-up')" />
 					
 			</p:panelGrid>
 		</p:panel> </section>

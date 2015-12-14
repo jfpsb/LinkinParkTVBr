@@ -17,6 +17,7 @@
 .ui-panel {
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center; 
 	margin-top: 0;
 	overflow: auto;
 	width: 99.4%;

@@ -3,14 +3,14 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui" >
+	xmlns:p="http://primefaces.org/ui">
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : PTS.OF.ATHRTY</ui:define>
+	<ui:define name="title">Singles : Papercut</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="pointsremix-section"; 
-        </h:outputScript>
+            	window.location.hash="papercut-section"; 
+        	</h:outputScript>
 	</ui:define>
 	<ui:define name="mus-conteudo">
 		<h:outputStylesheet name="css/musica-lista.css" />
@@ -18,37 +18,37 @@
 		<h:outputStylesheet name="css/singles-lista.css" />
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
-		<section id="pointsremix-section" class="body-section"> <p:panel
-			header="PTS.OF.ATHRTY" id="pointsremix-panel">
+		<section id="papercut-section" class="body-section"> <p:panel
+			header="Papercut" id="papercut-panel">			
 			<p:panelGrid id="panelGrid" columns="4">
 				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="PTS.OF.ATHRTY" />
+				<h:outputLabel class="outputLabel" value="Papercut" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon"
+					onclick="PF('letra').show();loadLetra('hybrid-theory','papercut')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon"
+					onclick="PF('video').show();loadVideo('hybrid-theory','papercut')" />
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Points Of Authority (Live)" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
 					onclick="PF('letra').show();loadLetra('hybrid-theory','points-of-authority')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','points')" />
-					
-				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel" value="By Myself (Remix By Marilyn Manson)" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','by-myself')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','by-myself')" />
+					onclick="PF('video').show();loadVideo('singles/papercut','points-of-authority')" />
 					
 				<h:outputLabel class="outputLabel" value="3." />
-				<h:outputLabel class="outputLabel" value="H! VLTG3" />
+				<h:outputLabel class="outputLabel" value="Papercut (Live)" />
 				<p:commandButton styleClass="ui-button ui-button-text mus"
 					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('reanimation','high-voltage')" />
+					onclick="PF('letra').show();loadLetra('hybrid-theory','papercut')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','high-voltage')" />
-					
+					onclick="PF('video').show();loadVideo('singles/papercut','papercut')" />
 			</p:panelGrid>
+
 		</p:panel> </section>
 	</ui:define>
 </ui:composition>

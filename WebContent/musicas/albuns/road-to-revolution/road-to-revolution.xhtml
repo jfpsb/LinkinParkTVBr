@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Álbuns : Road To Revolution - Live At Milton Keynes</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="rtr-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/albuns-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="rtr-section" class="body-section"> <p:panel
+			header="Road To Revolution - Live At Milton Keynes" id="rtr-panel">
+			<p:panelGrid id="panelGrid" columns="4">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="One Step Closer" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('hybrid-theory','one-step-closer')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','one-step-closer')" />
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="From The Inside" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('meteora','from-the-inside')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','from-the-inside')" />
+					
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="No More Sorrow" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('mtm','no-more-sorrow')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','no-more-sorrow')" />
+					
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Given Up" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('mtm','given-up')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','given-up')" />
+					
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Lying From You" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('meteora','lying-from-you')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','lying-from-you')" />
+					
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Hands Held High" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('mtm','hands-held-high')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','hands-held-high')" />
+					
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Leave Out All The Rest" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('mtm','leave-out-all-the-rest')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','leave-out-all-the-rest')" />
+					
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="Numb" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('meteora','numb')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','numb')" />
+					
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="The Little Things Give You Away" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('mtm','the-little-things-give-you-away')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','the-little-things-give-you-away')" />
+					
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="Breaking The Habit" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('meteora','breaking-the-habit')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','breaking-the-habit')" />
+				
+				<h:outputLabel class="outputLabel" value="11." />
+				<h:outputLabel class="outputLabel" value="Shadow Of The Day" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('meteora','breaking-the-habit')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','breaking-the-habit')" />
+					
+				<h:outputLabel class="outputLabel" value="12." />
+				<h:outputLabel class="outputLabel" value="Crawling" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('hybrid-theory','crawling')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','crawling')" />
+					
+				<h:outputLabel class="outputLabel" value="13." />
+				<h:outputLabel class="outputLabel" value="In The End" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('hybrid-theory','in-the-end')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','in-the-end')" />
+					
+				<h:outputLabel class="outputLabel" value="14." />
+				<h:outputLabel class="outputLabel" value="Pushing Me Away" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('hybrid-theory','pushing-me-away')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','pushing-me-away')" />
+					
+				<h:outputLabel class="outputLabel" value="15." />
+				<h:outputLabel class="outputLabel" value="What I've Done" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('mtm','what-ive-done')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','what-ive-done')" />
+					
+				<h:outputLabel class="outputLabel" value="16." />
+				<h:outputLabel class="outputLabel" value="Numb/Encore (Feat. Jay-Z)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('collision-course','numb-encore')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','numb-encore')" />
+					
+				<h:outputLabel class="outputLabel" value="17." />
+				<h:outputLabel class="outputLabel" value="Jigga What/Faint (Feat. Jay-Z)" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('collision-course','jigga-what')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','jigga-what')" />
+					
+				<h:outputLabel class="outputLabel" value="18." />
+				<h:outputLabel class="outputLabel" value="Bleed It Out" />
+				<p:commandButton styleClass="ui-button ui-button-text mus"
+					value="Letra" icon="lyric-icon" 
+					onclick="PF('letra').show();loadLetra('mtm','bleed-it-out')" />
+				<p:commandButton styleClass="ui-button ui-button-text video"
+					value="Vídeo" icon="video-icon" 
+					onclick="PF('video').show();loadVideo('road-to-revolution','bleed-it-out')" />
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

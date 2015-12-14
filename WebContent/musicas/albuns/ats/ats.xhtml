@@ -7,10 +7,6 @@
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
 	<ui:define name="title">Álbuns : A Thousand Suns</ui:define>
-	<ui:define name="icon">
-		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
-			type="image/x-icon" />
-	</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="ats-section"; 
@@ -32,7 +28,7 @@
 					onclick="PF('letra').show();loadLetra('ats','the-requiem')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('the-requiem')" />
+					onclick="PF('video').show();loadVideo('ats','the-requiem')" />
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="The Radiance" />
@@ -41,7 +37,7 @@
 					onclick="PF('letra').show();loadLetra('ats','the-radiance')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('the-radiance')" />
+					onclick="PF('video').show();loadVideo('ats','the-radiance')" />
 
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="Burning In The Skies" />
@@ -50,7 +46,7 @@
 					onclick="PF('letra').show();loadLetra('ats','burning-in-the-skies')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('burning-in-the-skies')" />
+					onclick="PF('video').show();loadVideo('ats','burning-in-the-skies')" />
 
 				<h:outputLabel class="outputLabel" value="4." />
 				<h:outputLabel class="outputLabel" value="Empty Spaces" />
@@ -85,7 +81,7 @@
 					onclick="PF('letra').show();loadLetra('ats','jornada-del-muerto')" />
 				<p:commandButton styleClass="ui-button ui-button-text video"
 					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('jornada-del-muerto')" />
+					onclick="PF('video').show();loadVideo('ats','jornada-del-muerto')" />
 
 				<h:outputLabel class="outputLabel" value="8." />
 				<h:outputLabel class="outputLabel" value="Waiting For The End" />
