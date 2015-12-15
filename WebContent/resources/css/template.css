@@ -54,7 +54,18 @@ a:hover {
   	background: rgba(0, 0, 0, 0.6);
 }
 
-img {
+.img-banner {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+#banner320 {
+	display: none;
+}
+
+.videoThumb {
 	display: block;
 	width: 100%;
 	margin-left: auto;
@@ -70,7 +81,8 @@ img {
 
 #container-footer {
 	display: block;
-	width: 1100px;
+	max-width: 1100px;
+	width: 90%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -79,6 +91,13 @@ img {
 	background: rgb(0, 0, 0);
   	background: rgba(0, 0, 0, 0.6);
   	margin-top: 15px;
+}
+
+.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid {
+	background: none !important;
+	border-style: none !important;
+	text-align: center !important;
+	margin: 0 auto !important;
 }
 
 .footerLink {
@@ -118,10 +137,20 @@ img {
 	background: white !important;
 }
 
-@media all and (max-width: 600px) {
-  #mobile-nav {
-    display: block; }
+@media all and (max-width: 545px){
+  #mobile-nav, #banner320 {
+    display: block; 
+  }
 
-  #default-nav {
-    display: none; }
+  #default-nav, #banner-default {
+    display: none; 
+  }
+  
+  #container-header, #container-footer, .body-section {
+  	width: 100%;
+  }
+  
+  body {
+  	padding: 0;
+  }
 }

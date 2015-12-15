@@ -7,6 +7,7 @@
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title><ui:insert name="title">LinkinParkTVBr</ui:insert></title>
 	<link>
 		<ui:insert name="icon">
@@ -20,8 +21,9 @@
 </h:head>
 
 <h:body>
-	<main id="container"> <header id="container-header"> <img
-		src="#{request.contextPath}/resources/imagens/banner.jpg" alt="Banner" />
+	<main id="container"> <header id="container-header">
+	<img id="banner-default" class="img-banner" src="#{request.contextPath}/resources/imagens/banner.jpg" alt="Banner" />
+	<img id="banner320" class="img-banner" src="#{request.contextPath}/resources/imagens/banner320.jpg" alt="Banner" />
 	<div id="container-nav"> <nav id="default-nav">
 	<h:form class="template-form">
 		<p:button styleClass="button" outcome="/index.xhtml"

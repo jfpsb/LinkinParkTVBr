@@ -1,12 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid {
-	background: none;
-	border-style: none !important;
-	text-align: center;
-	margin: 0 auto;
-}
-
 .outputLabel {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 25px;

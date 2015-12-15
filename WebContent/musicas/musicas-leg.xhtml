@@ -20,13 +20,14 @@
 			<p:tab title="Álbuns">
 				<div class="panelGridContainer">
 					<p:panelGrid class="panelGrid" id="album-panel" columns="2"
-						columnClasses="colstyle">
+						columnClasses="colstyle" layout="grid">
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="albuns/thp/thp.xhtml"> <img class="linkImg"
 									src="../resources/imagens/thp-cover.jpg"
 									alt="Capa The Hunting Party" /> <label class="nomeLink">The
 										Hunting Party</label>
+									<label class="mobileNome">The Hunting Party</label>
 								</a>
 							</div>
 						</p:panelGrid>
@@ -36,6 +37,7 @@
 									class="linkImg" src="../resources/imagens/lt-cover.jpg"
 									alt="Capa Living Things" /> <label class="nomeLink">Living
 										Things</label>
+									<h:outputText value="Living Things" />
 								</a>
 							</div>
 						</p:panelGrid>
@@ -45,6 +47,7 @@
 									src="../resources/imagens/ats-cover.jpg"
 									alt="Capa A Thousand Suns" /> <label class="nomeLink">A
 										Thousand Suns</label>
+									<h:outputText value="A Thousand Suns" />
 								</a>
 							</div>
 						</p:panelGrid>
@@ -52,8 +55,9 @@
 							<div class="linkPanel">
 								<a href="albuns/road-to-revolution/road-to-revolution.xhtml"> <img class="linkImg"
 									src="../resources/imagens/road-to-revolution-cover.jpg"
-									alt="Capa A Thousand Suns" /> <label class="nomeLink">Road
+									alt="Capa Road To Revolution" /> <label class="nomeLink">Road
 										To Revolution</label>
+									<h:outputText value="Road To Revolution" />
 								</a>
 							</div>
 						</p:panelGrid>
@@ -63,6 +67,7 @@
 									src="../resources/imagens/mtm-cover.jpg"
 									alt="Capa Minutes to Midnight" /> <label class="nomeLink">Minutes
 										To Midnight</label>
+									<h:outputText value="Minutes to Midnight" />
 								</a>
 							</div>
 						</p:panelGrid>
@@ -70,8 +75,9 @@
 							<div class="linkPanel">
 								<a href="albuns/collision-course/collision-course.xhtml"> <img class="linkImg"
 									src="../resources/imagens/collision-course-cover.jpg"
-									alt="Capa Minutes to Midnight" /> <label class="nomeLink">Collision
+									alt="Capa Collision Course" /> <label class="nomeLink">Collision
 										Course</label>
+									<h:outputText value="Collision Course" />
 								</a>
 							</div>
 						</p:panelGrid>
@@ -80,6 +86,7 @@
 								<a href="albuns/meteora/meteora.xhtml"> <img class="linkImg"
 									src="../resources/imagens/meteora-cover.jpg" alt="Capa Meteora" />
 									<label class="nomeLink">Meteora</label>
+									<h:outputText value="Meteora" />
 								</a>
 							</div>
 						</p:panelGrid>
@@ -90,6 +97,7 @@
 									src="../resources/imagens/hybrid-theory-cover.jpg"
 									alt="Capa Hybrid Theory" /> <label class="nomeLink">Hybrid
 										Theory</label>
+									<h:outputText value="Hybrid Theory" />
 								</a>
 							</div>
 						</p:panelGrid>
@@ -99,7 +107,7 @@
 			<p:tab title="Singles">
 				<div class="panelGridContainer">
 					<p:panelGrid class="panelGrid" id="single-panel" columns="3"
-						columnClasses="colstyle">
+						columnClasses="colstyle" layout="grid">
 						<p:panelGrid columns="1" class="videoGrid">
 							<div class="linkPanel">
 								<a href="singles/final-masquerade/final-masquerade.xhtml"
