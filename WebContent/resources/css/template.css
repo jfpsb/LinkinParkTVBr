@@ -93,3 +93,35 @@ img {
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 }
+
+#mobile-nav {
+	display: none;
+}
+
+.ui-menubutton .ui-button {
+	text-align: center !important;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	margin-left: 5px !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	background: white !important;
+}
+
+.ui-menuitem-text, .ui-menubutton .ui-button-text {
+	font-family: "Courier New", Courier, monospace !important;
+	font-weight: bold !important;
+	margin: 0 auto !important;
+}
+
+.ui-menu .ui-menuitem, .ui-menu .ui-menu-list {
+	background: white !important;
+}
+
+@media all and (max-width: 600px) {
+  #mobile-nav {
+    display: block; }
+
+  #default-nav {
+    display: none; }
+}

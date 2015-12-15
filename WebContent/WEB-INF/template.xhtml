@@ -22,7 +22,8 @@
 <h:body>
 	<main id="container"> <header id="container-header"> <img
 		src="#{request.contextPath}/resources/imagens/banner.jpg" alt="Banner" />
-	<nav id="container-nav"> <h:form class="template-form">
+	<div id="container-nav"> <nav id="default-nav">
+	<h:form class="template-form">
 		<p:button styleClass="button" outcome="/index.xhtml"
 			value="Página Inicial" />
 		<p:button styleClass="button" outcome="/musicas/musicas-leg.xhtml"
@@ -32,7 +33,17 @@
 		<p:button styleClass="button" outcome="/redes-sociais.xhtml"
 			value="Redes Sociais" />
 		<p:button styleClass="button" outcome="/sobre.xhtml" value="Sobre" />
-	</h:form> </nav> </header>
+	</h:form> </nav> <nav id="mobile-nav"> <h:form>
+		<div id="menubuttondiv">
+		<p:menuButton value="Menu">
+			<p:menuitem value="Página Inicial" url="/index.xhtml" />
+			<p:menuitem value="Músicas Traduzidas" url="/musicas/musicas-leg.xhtml" />
+			<p:menuitem value="Vídeos Legendados" url="/videos/videos-leg.xhtml" />
+			<p:menuitem value="Redes Sociais" url="/redes-sociais.xhtml" />
+			<p:menuitem value="Sobre" url="/sobre.xhtml" />
+		</p:menuButton>
+		</div>
+	</h:form> </nav> </div> </header>
 
 	<div id="script">
 		<ui:insert name="script" />
@@ -42,14 +53,17 @@
 		<ui:insert name="conteudo" />
 	</div>
 
-	<div id="container-footer"> <p:panelGrid
-		columns="1">
-		<p:outputLabel value="LinkinParkTVBr" class="footerLabel" />
-		<p:outputLabel value="linkinparktvbr@gmail.com" class="footerLabel"/>
-		<p:outputLabel value="2015" class="footerLabel"/>
-		<f:facet name="footer">
-			<a href="#{request.contextPath}/reportarErro.xhtml" class="footerLink">Reporte Erros</a>			
-		</f:facet>
-	</p:panelGrid> </div> </main>
+	<div id="container-footer">
+		<p:panelGrid columns="1">
+			<p:outputLabel value="LinkinParkTVBr" class="footerLabel" />
+			<p:outputLabel value="linkinparktvbr@gmail.com" class="footerLabel" />
+			<p:outputLabel value="2015" class="footerLabel" />
+			<f:facet name="footer">
+				<a href="#{request.contextPath}/reportarErro.xhtml"
+					class="footerLink">Reporte Erros</a>
+			</f:facet>
+		</p:panelGrid>
+	</div>
+	</main>
 </h:body>
 </html>
