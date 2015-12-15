@@ -1,12 +1,5 @@
 @CHARSET "ISO-8859-1";
 
-.outputLabel {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 25px;
-	font-weight: bold;
-	color: white;
-}
-
 .ui-panel {
 	background-repeat: no-repeat;
 	background-size: cover;

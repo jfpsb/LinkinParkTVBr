@@ -19,6 +19,11 @@
 	width: 100%;
 }
 
+.panelGridContainer .ui-widget-content {
+	background: transparent !important;
+	border: none !important;
+}
+
 .videoGrid {
 	background: transparent !important;
 	width: 100%;

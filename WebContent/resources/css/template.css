@@ -137,7 +137,7 @@ a:hover {
 	background: white !important;
 }
 
-@media all and (max-width: 545px){
+@media all and (max-width: 320px){
   #mobile-nav, #banner320 {
     display: block; 
   }
