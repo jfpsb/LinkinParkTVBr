@@ -22,30 +22,39 @@
 
 <h:body>
 	<main id="container"> <header id="container-header">
-	<img id="banner-default" class="img-banner" src="#{request.contextPath}/resources/imagens/banner.jpg" alt="Banner" />
-	<img id="banner320" class="img-banner" src="#{request.contextPath}/resources/imagens/banner320.jpg" alt="Banner" />
-	<div id="container-nav"> <nav id="default-nav">
-	<h:form class="template-form">
-		<p:button styleClass="button" outcome="/index.xhtml"
-			value="Página Inicial" />
-		<p:button styleClass="button" outcome="/musicas/musicas-leg.xhtml"
-			value="Músicas Traduzidas" />
-		<p:button styleClass="button" outcome="/videos/videos-leg.xhtml"
-			value="Vídeos Legendados" />
-		<p:button styleClass="button" outcome="/redes-sociais.xhtml"
-			value="Redes Sociais" />
-		<p:button styleClass="button" outcome="/sobre.xhtml" value="Sobre" />
-	</h:form> </nav> <nav id="mobile-nav"> <h:form>
-		<div id="menubuttondiv">
-		<p:menuButton value="Menu">
-			<p:menuitem value="Página Inicial" url="/index.xhtml" />
-			<p:menuitem value="Músicas Traduzidas" url="/musicas/musicas-leg.xhtml" />
-			<p:menuitem value="Vídeos Legendados" url="/videos/videos-leg.xhtml" />
-			<p:menuitem value="Redes Sociais" url="/redes-sociais.xhtml" />
-			<p:menuitem value="Sobre" url="/sobre.xhtml" />
-		</p:menuButton>
-		</div>
-	</h:form> </nav> </div> </header>
+
+	<div id="container-nav">
+
+		<nav id="default-nav"> <img id="banner-default"
+			class="img-banner"
+			src="#{request.contextPath}/resources/imagens/banner.jpg"
+			alt="Banner" /> <h:form class="template-form">
+			<p:button styleClass="button" outcome="/index.xhtml"
+				value="Página Inicial" />
+			<p:button styleClass="button" outcome="/musicas/musicas-leg.xhtml"
+				value="Músicas Traduzidas" />
+			<p:button styleClass="button" outcome="/videos/videos-leg.xhtml"
+				value="Vídeos Legendados" />
+			<p:button styleClass="button" outcome="/redes-sociais.xhtml"
+				value="Redes Sociais" />
+			<p:button styleClass="button" outcome="/sobre.xhtml" value="Sobre" />
+		</h:form> </nav>
+
+		<nav id="mobile-nav"> <img id="banner320" class="img-banner"
+			src="#{request.contextPath}/resources/imagens/banner320.jpg"
+			alt="Banner" /> <h:form class="mobile-form">
+			<p:menuButton value="Menu">
+				<p:menuitem value="Página Inicial" url="/index.xhtml" />
+				<p:menuitem value="Músicas Traduzidas"
+					url="/musicas/musicas-leg.xhtml" />
+				<p:menuitem value="Vídeos Legendados" url="/videos/videos-leg.xhtml" />
+				<p:menuitem value="Redes Sociais" url="/redes-sociais.xhtml" />
+				<p:menuitem value="Sobre" url="/sobre.xhtml" />
+			</p:menuButton>
+		</h:form> </nav>
+	</div>
+	
+	</header>
 
 	<div id="script">
 		<ui:insert name="script" />

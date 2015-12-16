@@ -1,5 +1,21 @@
 @CHARSET "ISO-8859-1";
 
+.outputLabel {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 25px;
+	width: 10px;
+	font-weight: bold;
+	text-shadow: 2px 2px 3px black;
+	color: white;
+}
+
+.ui-panel-content .ui-widget-content {
+	background: rgb(0, 0, 0) !important;
+	background: rgba(0, 0, 0, 0.7) !important;
+	background: transparent !important;
+	border: none !important;
+}
+
 .ui-panel {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -21,7 +37,7 @@
 	font-size: 150%;
 }
 
-.ui-button.mus {
+.ui-button.mus, .ui-button.video {
 	width: 100%;
 	heigth: 100%;
 	background-repeat: no-repeat;
