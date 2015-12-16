@@ -19,10 +19,11 @@
 		<h:form>
 			<section class="body-section">
 			<p:dataGrid var="video"
-				value="#{videoBean.getListaVideos()}" columns="4" layout="grid">
+				value="#{videoBean.getListaVideos()}" columns="4" layout="grid"
+				emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 
 				<f:facet name="header">
-					<p:outputLabel value="Vídeos Recentes" style="font-size: 150%; text-align: left;"/>
+					<p:outputLabel value="Vídeos Recentes" style="font-size: 140%; text-align: left;"/>
 				</f:facet>
 
 				<p:panel>

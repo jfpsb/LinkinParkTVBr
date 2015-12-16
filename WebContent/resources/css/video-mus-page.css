@@ -63,12 +63,21 @@
 	padding: 0 !important;
 }
 
+ .mobileNome {
+ 	display: none;
+ 	color: white;
+	font-family: "Courier New", Courier, monospace;
+	text-decoration: none !important;
+	font-weight: bold;
+	text-shadow: 2px 2px black;
+ }
+
 .nomeLink {
 	color: white;
 	font-family: "Courier New", Courier, monospace;
 	font-size: calc(40% + 1vw) !important;
 	font-weight: bold;
-	text-shadow: 2px 2px black;
+	text-shadow: 2px 2px 2px black;
 	margin: 0 auto !important;
 	padding: 0 !important;
 	position: absolute;
@@ -90,9 +99,6 @@
   	margin-right: auto;
 }
 
-.mobileNome {
-	display:none;
-}
 .linkPanel {
 	position: relative;
 	width: 100%;
@@ -102,6 +108,7 @@
 
 a {
 	margin: none !important;
+	text-decoration: none;
 }
 
 a:hover>label {
@@ -111,9 +118,18 @@ a:hover>label {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-@media all and (max-width: 545px){	
+@media all and (max-width: 545px) {
 	.mobileNome {
-		display:block;
-		font-size: 80%;
+		display: block;
+		font-size: 100%;
 	}
+}
+
+@media all and (max-width: 800px) { 
+	.nomeLink {
+		visibility: visible;
+		opacity: 1;
+		font-size: 18px !important;
+	}
+	
 }
