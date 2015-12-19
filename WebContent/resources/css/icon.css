@@ -1,11 +1,6 @@
 @CHARSET "ISO-8859-1";
 
-.lyric-icon {
-	background-image: url("#{resource['imagens/lyric-icon.ico']}") !important;
-	background-size: cover;
-}
-
-.video-icon {
-	background-image: url("#{resource['imagens/video-icon.ico']}") !important;
+.brazil-icon {
+	background-image: url("#{resource['imagens/brazil.ico']}") !important;
 	background-size: cover;
 }

@@ -66,3 +66,13 @@
 .ui-dialog-titlebar-close {
 	color: red;
 }
+
+  #videoDialog div {
+  	font-size: 10%;
+  }
+  
+  @media all and (max-width: 600px){
+  	  dialog {
+  	width: 100% !important;
+  }
+  }

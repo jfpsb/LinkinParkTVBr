@@ -6,11 +6,7 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Álbuns : Meteora</ui:define>
-	<ui:define name="icon">
-		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
-			type="image/x-icon" />
-	</ui:define>
+	<ui:define name="title">Álbuns : Meteora</ui:define>	
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="meteora-section"; 
@@ -23,124 +19,59 @@
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
 		<section id="meteora-section" class="body-section"> <p:panel
-			header="Hybrid Theory" id="mt-panel" class="albumPanel">
-			<p:panelGrid id="panelGrid" columns="4" layout="grid">
+			header="Meteora" id="mt-panel" class="albumPanel">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
 				<h:outputLabel class="outputLabel" value="1." />
 				<h:outputLabel class="outputLabel" value="Foreword" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" disabled="true" icon="lyric-icon"
-					onclick="PF('letra').show();" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','foreword')" />
+				<p:button value="Tradução" outcome="foreword.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="Don't Stay" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','dont-stay')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','dont-stay')" />
+				<p:button value="Tradução" outcome="dont-stay.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="Somewhere I Belong" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','somewhere-i-belong')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','somewhere-i-belong')" />
+				<p:button value="Tradução" outcome="somewhere-i-belong.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="4." />
 				<h:outputLabel class="outputLabel" value="Lying From You" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','lying-from-you')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','lying-from-you')" />
+				<p:button value="Tradução" outcome="lying-from-you.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="5." />
 				<h:outputLabel class="outputLabel" value="Hit The Floor" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','hit-the-floor')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','hit-the-floor')" />
+				<p:button value="Tradução" outcome="hit-the-floor.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="6." />
 				<h:outputLabel class="outputLabel" value="Easier To Run" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','easier-to-run')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','easier-to-run')" />
+				<p:button value="Tradução" outcome="easier-to-run.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="7." />
 				<h:outputLabel class="outputLabel" value="Faint" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','faint')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','faint')" />
+				<p:button value="Tradução" outcome="faint.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="8." />
 				<h:outputLabel class="outputLabel" value="Figure.09" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','figure09')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','figure09')" />
+				<p:button value="Tradução" outcome="figure09.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="9." />
 				<h:outputLabel class="outputLabel" value="Breaking The Habit" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','breaking-the-habit')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','breaking-the-habit')" />
+				<p:button value="Tradução" outcome="breaking-the-habit.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="10." />
 				<h:outputLabel class="outputLabel" value="From The Inside" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','from-the-inside')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','from-the-inside')" />
+				<p:button value="Tradução" outcome="from-the-inside.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="11." />
 				<h:outputLabel class="outputLabel" value="Nobody's Listening" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','nobodys-listening')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','nobodys-listening')" />
+				<p:button value="Tradução" outcome="nobodys-listening.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="12." />
 				<h:outputLabel class="outputLabel" value="Session" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" disabled="true" icon="lyric-icon"
-					onclick="PF('letra').show();" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','session')" />
+				<p:button value="Tradução" outcome="session.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="13." />
 				<h:outputLabel class="outputLabel" value="Numb" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','numb')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('meteora','numb')" />
+				<p:button value="Tradução" outcome="numb.xhtml" icon="brazil-icon"/>
 			</p:panelGrid>
 		</p:panel> </section>
 	</ui:define>

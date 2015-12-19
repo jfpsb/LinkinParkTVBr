@@ -7,12 +7,8 @@
 .leg-article {
 	color: white;
 	font-family: "Courier New", Courier, monospace;
-	border-style: solid;
-	border-width: 1px;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.6);
-	margin: 0px 0px 15px 0px;
-	padding: 15px 0px 0px 0px;
+	background: none !important;
+	padding: 10px 0px 0px 0px;
 }
 
 .panelGridContainer {
@@ -30,9 +26,8 @@
 }
 
 .ui-tabs {
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.6);
-	border: none;
+	background: none !important;
+	border: none !important;
 	margin-top: -15px;
 	padding-top: 15px;
 }
@@ -40,6 +35,7 @@
 .ui-tabs-panels .ui-tabs-panel {
 	margin: 0 auto !important;
 	padding: 0 auto !important;
+	background: none !important;
 }
 
 .ui-tabs-selected {

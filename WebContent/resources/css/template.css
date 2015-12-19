@@ -2,10 +2,24 @@
 
 .body-section {
 	display: block;
-  	max-width: 1200px;
+	max-width: 1200px;
 	width: 90%;
 	margin: auto;
-  	padding: 15px 0px 0px 0px;
+	color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.8);
+  	margin: 15px auto;
+}
+
+pre {
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
 }
 
 body {
@@ -20,8 +34,8 @@ body {
 	max-width: 1200px;
 	width: 90%;
 	margin: auto;
-  	background: rgb(0, 0, 0);
-  	background: rgba(0, 0, 0, 0.6);
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.6);
 }
 
 .button {
@@ -45,7 +59,7 @@ body {
 }
 
 a:hover {
-    color: blue;
+	color: blue;
 }
 
 #container-nav {
@@ -53,21 +67,21 @@ a:hover {
 	border-width: 1px;
 	font-family: "Courier New", Courier, monospace;
 	background: rgb(0, 0, 0);
-  	background: rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.6);
 }
 
 .img-banner {
 	display: block;
 	width: 100%;
 	margin-left: auto;
-  	margin-right: auto;
+	margin-right: auto;
 }
 
 .videoThumb {
 	display: block;
 	width: 100%;
 	margin-left: auto;
-  	margin-right: auto;
+	margin-right: auto;
 }
 
 #container-footer {
@@ -80,8 +94,8 @@ a:hover {
 	border: 1px solid white;
 	color: white;
 	background: rgb(0, 0, 0);
-  	background: rgba(0, 0, 0, 0.6);
-  	margin-top: 15px;
+	background: rgba(0, 0, 0, 0.6);
+	margin-top: 15px;
 }
 
 .ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid {
@@ -117,6 +131,7 @@ a:hover {
 	padding-left: 5px !important;
 	padding-right: 5px !important;
 	background: white !important;
+	width: 90% !important;
 }
 
 .ui-menuitem-text, .ui-menubutton .ui-button-text {
@@ -129,32 +144,28 @@ a:hover {
 	background: white !important;
 }
 
-@media all and (max-width: 600px){
-  #mobile-nav {
-    display: block;
-  }
-  
-  .mobile-form {
-  	position: absolute;
-  	padding: 0;
-  	margin: 0;
-  	bottom: 1px;
-  }
-
-  #default-nav {
-    display: none;
-  }
-  
-  #container-header, #container-footer, .body-section {
-  	width: 100%;
-  }
-  
-  body {
-  	padding: 0;
-  	background-image: url("#{resource['imagens/background320.jpg']}");
-  }
+@media all and (max-width: 600px) {
+	#mobile-nav {
+		display: block;
+	}
+	.mobile-form {
+		position: absolute;
+		padding: 0;
+		margin: 0;
+		left: 0;
+		bottom: 1px;
+	}
+	#default-nav {
+		display: none;
+	}
+	#container-header, #container-footer, .body-section {
+		width: 100%;
+	}
+	body {
+		padding: 0;
+		background-image: url("#{resource['imagens/background320.jpg']}");
+	}
 }
 
 @media all and (min-width: 501px) and (max-width: 1000px) {
-	
 }

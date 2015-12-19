@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="album/thumb/hybrid-theory.jpg" class="album-thumb" />
+				<p:button value="Voltar ao Hybrid Theory" outcome="hybrid-theory.xhtml" 
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. Papercut" outcome="papercut.xhtml"/>
+			<p:link class="album-text" value="2. One Step Closer" outcome="one-step-closer.xhtml"/>
+			<p:link class="album-text" value="3. With You" outcome="with-you.xhtml"/>
+			<p:link class="album-text" value="4. Points of Authority" outcome="points.xhtml"/>
+			<p:link class="album-text" value="5. Crawling" outcome="crawling.xhtml"/>
+			<p:link class="album-text" value="6. Runaway" outcome="papercut.xhtml"/>
+			<p:link class="album-text" value="7. By Myself" outcome="by-myself.xhtml"/>
+			<p:link class="album-text" value="8. In The End" outcome="in-the-end.xhtml"/>
+			<p:link class="album-text" value="9. A Place For My Head" outcome="a-place-for-my-head.xhtml"/>
+			<p:link class="album-text" value="10. Forgotten" outcome="forgotten.xhtml"/>
+			<p:link class="album-text" value="11. Cure For The Itch" outcome="cure-for-the-itch.xhtml"/>
+			<p:link class="album-text" value="12. Pushing Me Away" outcome="pushing-me-away.xhtml"/>
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>
