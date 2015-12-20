@@ -10,6 +10,16 @@
 	width: 100% !important;
 }
 
+.album-text {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 80%;
+	width: 10px;
+	font-weight: bold;
+	text-shadow: 2px 2px 3px white;
+	color: black;
+	text-decoration: none !important;
+}
+
 .album-panelGrid {
 	background: white !important;
 	border-radius: 3px !important;
@@ -35,16 +45,6 @@
 	margin-right: auto !important;
 	text-align: center !important;
 	width: 100%;
-}
-
-.album-text {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 80%;
-	width: 10px;
-	font-weight: bold;
-	text-shadow: 2px 2px 3px white;
-	color: black;
-	text-decoration: none !important;
 }
 
 .ui-tabs {
