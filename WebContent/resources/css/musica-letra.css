@@ -1,7 +1,13 @@
 @CHARSET "ISO-8859-1";
 
 .footer-button .ui-button-text {
+	
 	font-family: "Courier New", Courier, monospace;
+	font-size: 71% !important;
+}
+
+.footer-button {
+	width: 100% !important;
 }
 
 .album-panelGrid {

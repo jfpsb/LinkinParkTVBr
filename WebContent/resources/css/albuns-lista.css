@@ -19,7 +19,7 @@
 }
 
 #ats-panel {
-	background-image: url("#{resource['imagens/album-highres/ats.png']}");
+	background-image: url("#{resource['imagens/album/ats.png']}");
 	background-size: cover;
 	background-position: center;
 }
@@ -45,7 +45,7 @@
 
 #rtr-panel {
 	background-image:
-		url("#{resource['imagens/album-highres/road-to-revolution.jpg']}");
+		url("#{resource['imagens/album/road-to-revolution.jpg']}");
 	background-size: cover;
 	background-position: center;
 }

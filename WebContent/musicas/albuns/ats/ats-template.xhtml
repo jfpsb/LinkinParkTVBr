@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="album/thumb/a-thousand-suns.jpg" class="album-thumb" />
+				<p:button value="Voltar ao A Thousand Suns" outcome="ats.xhtml" 
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. The Requiem" outcome="the-requiem.xhtml" />
+			<p:link class="album-text" value="2. The Radiance" outcome="the-radiance.xhtml" />
+			<p:link class="album-text" value="3. Burning In The Skies" outcome="burning-in-the-skies.xhtml" />
+			<p:link class="album-text" value="4. Empty Spaces" outcome="empty-spaces.xhtml" />
+			<p:link class="album-text" value="5. When They Come For Me" outcome="when-they-come-for-me.xhtml" />
+			<p:link class="album-text" value="6. Robot Boy" outcome="robot-boy.xhtml"/>
+			<p:link class="album-text" value="7. Jornada Del Muerto" outcome="jornada-del-muerto.xhtml"/>
+			<p:link class="album-text" value="8. Waiting For The End" outcome="waiting-for-the-end.xhtml"/>
+			<p:link class="album-text" value="9. Black Out" outcome="blackout.xhtml"/>
+			<p:link class="album-text" value="10. Wretches And Kings" outcome="wretches-and-kings.xhtml"/>
+			<p:link class="album-text" value="11. Wisdow, Justice And Love" outcome="wisdow-justice-and-love.xhtml"/>
+			<p:link class="album-text" value="12. Iridescent" outcome="iridescent.xhtml"/>
+			<p:link class="album-text" value="13. Fallout" outcome="fallout.xhtml"/>
+			<p:link class="album-text" value="14. The Catalyst" outcome="the-catalyst.xhtml"/>
+			<p:link class="album-text" value="15. The Messenger" outcome="the-messenger.xhtml"/>
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>
