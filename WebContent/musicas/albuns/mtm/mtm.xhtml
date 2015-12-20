@@ -20,115 +20,55 @@
 		<h:outputScript library="js" name="videomusica.js" />
 		<section id="mtm-section" class="body-section"> <p:panel
 			header="Minutes To Midnight" id="mtm-panel" class="albumPanel">
-			<p:panelGrid id="panelGrid" columns="4" layout="grid">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
 				<h:outputLabel class="outputLabel" value="1." />
 				<h:outputLabel class="outputLabel" value="Wake" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" disabled="true" icon="lyric-icon" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','wake')" />
+				<p:button value="Tradução" outcome="wake.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="Given Up" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','given-up')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','given-up')" />
+				<p:button value="Tradução" outcome="given-up.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="Leave Out All The Rest" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','leave-out-all-the-rest')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','leave-out-all-the-rest')" />
+				<p:button value="Tradução" outcome="leave-out-all-the-rest.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="4." />
 				<h:outputLabel class="outputLabel" value="Bleed It Out" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','bleed-it-out')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','bleed-it-out')" />
+				<p:button value="Tradução" outcome="wake.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="5." />
 				<h:outputLabel class="outputLabel" value="Shadow Of The Day" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','shadow-of-the-day')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','shadow-of-the-day')" />
+				<p:button value="Tradução" outcome="shadow-of-the-day.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="6." />
 				<h:outputLabel class="outputLabel" value="What I've Done" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','what-ive-done')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','what-ive-done')" />
+				<p:button value="Tradução" outcome="what-ive-done.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="7." />
 				<h:outputLabel class="outputLabel" value="Hands Held High" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','hands-held-high')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','hands-held-high')" />
+				<p:button value="Tradução" outcome="hands-held-high.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="8." />
 				<h:outputLabel class="outputLabel" value="No More Sorrow" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','no-more-sorrow')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','no-more-sorrow')" />
+				<p:button value="Tradução" outcome="no-more-sorrow.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="9." />
 				<h:outputLabel class="outputLabel" value="Valentine's Day" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','valentines-day')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('mtm','valentines-day')" />
-					
+				<p:button value="Tradução" outcome="valentines-day.xhtml" icon="brazil-icon"/>					
 					
 				<h:outputLabel class="outputLabel" value="10." />
 				<h:outputLabel class="outputLabel" value="In Between" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','in-between')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','in-between')" />
+				<p:button value="Tradução" outcome="in-between.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="11." />
 				<h:outputLabel class="outputLabel" value="In Pieces" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','in-pieces')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','in-pieces')" />
+				<p:button value="Tradução" outcome="in-pieces.xhtml" icon="brazil-icon"/>
 
 				<h:outputLabel class="outputLabel" value="12." />
 				<h:outputLabel class="outputLabel"
 					value="The Little Things Give You Away" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('mtm','the-little-things-give-you-away')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon" 
-					onclick="PF('video').show();loadVideo('mtm','the-little-things-give-you-away')" />
+				<p:button value="Tradução" outcome="the-little-things-give-you-away.xhtml" icon="brazil-icon"/>
 			</p:panelGrid>
 		</p:panel> </section>
 	</ui:define>

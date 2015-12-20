@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="album/thumb/collision-course.jpg" class="album-thumb" />
+				<p:button value="Voltar ao Collision Course" outcome="collision-course.xhtml" 
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. Dirt Off Your Shoulder/Lying From You" outcome="dirt-off-your-shoulders.xhtml" />
+			<p:link class="album-text" value="2. Big Pimpin'/Papercut" outcome="big-pimpin.xhtml" />
+			<p:link class="album-text" value="3. Jigga What/Faint" outcome="jigga-what.xhtml" />
+			<p:link class="album-text" value="4. Numb/Encore" outcome="numb-encore.xhtml" />
+			<p:link class="album-text" value="5. Izzo/In The End" outcome="izzo.xhtml" />
+			<p:link class="album-text" value="6. Points Of Authority/99 Problems/One Step Closer" outcome="points.xhtml"/>
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>

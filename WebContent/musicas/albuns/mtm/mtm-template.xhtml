@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+					<p>Não há letra ainda disponível. Entre em contato conosco e
+						reporte esta situação no botão ao final desta página.</p>
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid columns="1"
+			class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="album/thumb/meteora.jpg" class="album-thumb" />
+				<p:button value="Voltar ao Minutes To Midnight"
+					outcome="mtm.xhtml" class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. Wake"
+				outcome="wake.xhtml" />
+			<p:link class="album-text" value="2. Given Up"
+				outcome="given-up.xhtml" />
+			<p:link class="album-text" value="3. Leave Out All The Rest"
+				outcome="leave-out-all-the-rest.xhtml" />
+			<p:link class="album-text" value="4. Bleed It Out"
+				outcome="bleed-it-out.xhtml" />
+			<p:link class="album-text" value="5. Shadow Of The Day"
+				outcome="shadow-of-the-day.xhtml" />
+			<p:link class="album-text" value="6. What I've Done"
+				outcome="what-ive-done.xhtml" />
+			<p:link class="album-text" value="7. Hands Held High"
+				outcome="hands-held-high.xhtml" />
+			<p:link class="album-text" value="8. No More Sorrow"
+				outcome="no-more-sorrow.xhtml" />
+			<p:link class="album-text" value="9. Valentine's Day"
+				outcome="valentines-day.xhtml" />
+			<p:link class="album-text" value="10. In Between"
+				outcome="in-between.xhtml" />
+			<p:link class="album-text" value="11. In Pieces"
+				outcome="in-pieces.xhtml" />
+			<p:link class="album-text" value="12. The Little Things Give You Away"
+				outcome="the-little-things-give-you-away.xhtml" />
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>
