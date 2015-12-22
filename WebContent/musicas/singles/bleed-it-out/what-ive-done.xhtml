@@ -1,3 +1,6 @@
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/Q7_HNQK0_u4" 
+frameborder="0" style="width: 100%; height: 100%; border-radius: 5px;" allowfullscreen></iframe>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -6,27 +9,27 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <ui:composition template="bio-template.xhtml">
-	<ui:define name="title">Minutes To Midnight : Bleed It Out</ui:define>
+	<ui:define name="title">Bleed It Out : What I've Done (Distorted Remix)</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('mtm','bleed-it-out');
+            window.onload = loadLetra('mtm','what-ive-done');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
-		<p:tab title="VÃ­deos">
+		<p:tab title="Vídeos">
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/OnuuYcqhzCE" frameborder="0"
+						src="https://www.youtube.com/embed/Q7_HNQK0_u4" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
-			<p:panel header="VÃ­deos Relacionados" styleClass="rel-panel">
+			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Bleed It Out')}" columns="3"
-					layout="grid"
-					emptyMessage="ConteÃºdo nÃ£o encontrado. Tente atualizar a pÃ¡gina.">
+					value="#{searchBean.getListaVideos('What I've Done (Distorted Remix)')}"
+					columns="3" layout="grid"
+					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 
 					<p:panel>
 						<p:panelGrid columns="1" class="videoGrid">
@@ -37,6 +40,7 @@
 							</a>
 						</p:panelGrid>
 					</p:panel>
+
 				</p:dataGrid>
 			</p:panel>
 		</p:tab>
