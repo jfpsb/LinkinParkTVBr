@@ -1,6 +1,3 @@
-<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/Q7_HNQK0_u4" 
-frameborder="0" style="width: 100%; height: 100%; border-radius: 5px;" allowfullscreen></iframe>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -17,7 +14,7 @@ frameborder="0" style="width: 100%; height: 100%; border-radius: 5px;" allowfull
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
-		<p:tab title="Vídeos">
+		<p:tab title="VÃ­deos">
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
@@ -25,11 +22,11 @@ frameborder="0" style="width: 100%; height: 100%; border-radius: 5px;" allowfull
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
-			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
+			<p:panel header="VÃ­deos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('What I've Done (Distorted Remix)')}"
+					value="#{searchBean.getListaVideos('What I\'ve Done (Distorted Remix)')}"
 					columns="3" layout="grid"
-					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
+					emptyMessage="ConteÃºdo nÃ£o encontrado. Tente atualizar a pÃ¡gina.">
 
 					<p:panel>
 						<p:panelGrid columns="1" class="videoGrid">

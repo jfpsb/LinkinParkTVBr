@@ -5,38 +5,41 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : Bleed It Out</ui:define>
+<ui:composition template="bio-template.xhtml">
+	<ui:define name="title">Minutes To Midnight : Bleed It Out</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="bio-section"; 
+            window.location.hash="lista-section";
+            window.onload = loadLetra('mtm','bleed-it-out');
         </h:outputScript>
 	</ui:define>
-	<ui:define name="mus-conteudo">
-		<h:outputStylesheet name="css/musica-lista.css" />
-		<h:outputStylesheet name="css/icon.css" />
-		<h:outputStylesheet name="css/singles-lista.css" />
-		<h:outputScript library="js" name="letramusica.js" />
-		<h:outputScript library="js" name="videomusica.js" />
-		<section id="bio-section" class="body-section"> <p:panel
-			header="Bleed It Out" id="bio-panel">
-			<p:panelGrid id="panelGrid" columns="3">
-				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel"
-					value="Bleed It Out" />
-				<p:button value="Tradução" outcome="bleed-it-out.xhtml" icon="brazil-icon"/>
-					
-				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel"
-					value="What I've Done (Distorted Remix)" />
-				<p:button value="Tradução" outcome="what-ive-done.xhtml" icon="brazil-icon"/>
-					
-				<h:outputLabel class="outputLabel" value="3." />
-				<h:outputLabel class="outputLabel"
-					value="Given Up (Third Encore Session)" />
-				<p:button value="Tradução" outcome="given-up.xhtml" icon="brazil-icon"/>
-			</p:panelGrid>
-		</p:panel> </section>
+	<ui:define name="video-tab">
+		<p:tab title="Vídeos">
+			<p:panel header="Em Destaque" styleClass="destaque-panel">
+				<div class="video-container">
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/OnuuYcqhzCE" frameborder="0"
+						allowfullscreen="true"> </iframe>
+				</div>
+			</p:panel>
+			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
+				<p:dataGrid var="video"
+					value="#{searchBean.getListaVideos('Bleed It Out')}" columns="3"
+					layout="grid"
+					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
+
+					<p:panel>
+						<p:panelGrid columns="1" class="videoGrid">
+							<a href="http://www.youtube.com/watch/#{video.videoId}"
+								target="_blank" class="videoLink"> <img
+								src="#{video.thumbUrl}" alt="Thumbnail: #{video.nome}"
+								class="videoThumb" /> <h:outputLabel value="#{video.nome}" />
+							</a>
+						</p:panelGrid>
+					</p:panel>
+				</p:dataGrid>
+			</p:panel>
+		</p:tab>
 	</ui:define>
 </ui:composition>
 </html>

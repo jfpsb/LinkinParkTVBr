@@ -3,34 +3,43 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui" >
+	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : Final Masquerade</ui:define>
+<ui:composition template="fm-template.xhtml">
+	<ui:define name="title">Final Masquerade</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="fm-section"; 
+            window.location.hash="lista-section";
+            window.onload = loadLetra('thp','final-masquerade');
         </h:outputScript>
 	</ui:define>
-	<ui:define name="mus-conteudo">
-		<h:outputStylesheet name="css/musica-lista.css" />
-		<h:outputStylesheet name="css/icon.css" />
-		<h:outputStylesheet name="css/singles-lista.css" />
-		<h:outputScript library="js" name="letramusica.js" />
-		<h:outputScript library="js" name="videomusica.js" />
-		<section id="fm-section" class="body-section"> <p:panel
-			header="Final Masquerade" id="fm-panel">
-			<p:panelGrid id="panelGrid" columns="4">
-				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="Final Masquerade" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('thp','final-masquerade')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('thp','final-masquerade')" />
-			</p:panelGrid>
-		</p:panel> </section>
+	<ui:define name="video-tab">
+		<p:tab title="Vídeos">
+			<p:panel header="Em Destaque" styleClass="destaque-panel">
+				<div class="video-container">
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/i8q8fFs3kTM" frameborder="0"
+						allowfullscreen="true"> </iframe>
+				</div>
+			</p:panel>
+			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
+				<p:dataGrid var="video"
+					value="#{searchBean.getListaVideos('Final Masquerade')}" columns="3"
+					layout="grid"
+					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
+
+					<p:panel>
+						<p:panelGrid columns="1" class="videoGrid">
+							<a href="http://www.youtube.com/watch/#{video.videoId}"
+								target="_blank" class="videoLink"> <img
+								src="#{video.thumbUrl}" alt="Thumbnail: #{video.nome}"
+								class="videoThumb" /> <h:outputLabel value="#{video.nome}" />
+							</a>
+						</p:panelGrid>
+					</p:panel>
+				</p:dataGrid>
+			</p:panel>
+		</p:tab>
 	</ui:define>
 </ui:composition>
 </html>

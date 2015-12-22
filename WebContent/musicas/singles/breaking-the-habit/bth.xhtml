@@ -5,12 +5,12 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="wast-template.xhtml">
-	<ui:define name="title">Wastelands</ui:define>
+<ui:composition template="bth-template.xhtml">
+	<ui:define name="title">Meteora : Breaking The Habit</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('thp','wastelands');
+            window.onload = loadLetra('meteora','breaking-the-habit');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,13 +18,13 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/h6sFG7qOd4A" frameborder="0"
+						src="https://www.youtube.com/embed/v2H4l9RpkwM" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Wastelands')}" columns="3"
+					value="#{searchBean.getListaVideos('Breaking The Habit')}" columns="3"
 					layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 

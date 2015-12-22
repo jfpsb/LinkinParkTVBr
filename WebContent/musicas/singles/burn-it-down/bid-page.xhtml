@@ -3,13 +3,17 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
+	xmlns:p="http://primefaces.org/ui" >
 
 <ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : Breaking The Habit</ui:define>
+	<ui:define name="title">Singles : Burn It Down</ui:define>
+	<ui:define name="icon">
+		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
+			type="image/x-icon" />
+	</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="bth-section";
+            window.location.hash="bid-section"; 
         </h:outputScript>
 	</ui:define>
 	<ui:define name="mus-conteudo">
@@ -18,18 +22,12 @@
 		<h:outputStylesheet name="css/singles-lista.css" />
 		<h:outputScript library="js" name="letramusica.js" />
 		<h:outputScript library="js" name="videomusica.js" />
-		<section id="bth-section" class="body-section"> 
-		<ui:define name="title">Singles : Breaking The Habit)</ui:define><p:panel
-			header="Breaking The Habit" id="bth-panel">
-			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+		<section id="bid-section" class="body-section"> <p:panel
+			header="Burn It Down" id="bid-panel">
+			<p:panelGrid id="panelGrid" columns="3">
 				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="Breaking The Habit" />
-				<p:button value="Tradução" outcome="bth.xhtml" icon="brazil-icon"/>
-					
-				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel" value="Crawling (Live)" />
-				<p:button value="Tradução" outcome="crawling.xhtml" icon="brazil-icon"/>
-					
+				<h:outputLabel class="outputLabel" value="Burn It Down" />
+				<p:button value="Tradução" outcome="burn-it-down.xhtml" icon="brazil-icon"/>
 			</p:panelGrid>
 		</p:panel> </section>
 	</ui:define>

@@ -143,8 +143,8 @@
 #bio-panel {
 	background-image: url("#{resource['imagens/singles/highres/bleed-it-out.jpg']}");
 	background-size: cover;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 230px;
+	padding-bottom: 230px;
 }
 
 #wid-panel {
