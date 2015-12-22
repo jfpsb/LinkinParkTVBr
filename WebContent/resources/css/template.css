@@ -41,7 +41,6 @@ body {
 .button {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 17px;
-	overflow: hidden;
 	min-width: 100px;
 	color: black;
 	background: #ECECEC;
@@ -144,7 +143,7 @@ a:hover {
 	background: white !important;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 789px) {
 	#mobile-nav {
 		display: block;
 	}
@@ -165,7 +164,4 @@ a:hover {
 		padding: 0;
 		background-image: url("#{resource['imagens/background320.jpg']}");
 	}
-}
-
-@media all and (min-width: 501px) and (max-width: 1000px) {
 }

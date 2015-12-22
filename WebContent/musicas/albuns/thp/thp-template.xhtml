@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+					<p>Essa música não possui letra ou houve um erro ao carregá-la.</p>
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+					<p>Essa música não possui letra ou houve um erro ao carregá-la.</p>
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid columns="1"
+			class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="album/thumb/thp.jpg" class="album-thumb" />
+				<p:button value="Voltar ao The Hunting Party"
+					outcome="thp.xhtml" class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. Keys To The Kingdom"
+				outcome="keys-to-the-kingdom.xhtml" />
+			<p:link class="album-text" value="2. All For Nothing (Feat. Page Hamilton)"
+				outcome="all-for-nothing.xhtml" />
+			<p:link class="album-text" value="3. Guilty All The Same (Feat. Rakim)"
+				outcome="guilty-all-the-same.xhtml" />
+			<p:link class="album-text" value="4. The Summoning"
+				outcome="the-summoning.xhtml" />
+			<p:link class="album-text" value="5. War"
+				outcome="war.xhtml" />
+			<p:link class="album-text" value="6. Wastelands"
+				outcome="wastelands.xhtml" />
+			<p:link class="album-text" value="7. Until It's Gone"
+				outcome="until-its-gone.xhtml"/>
+			<p:link class="album-text" value="8. Rebellion (Feat. Daron Malakian)"
+				outcome="rebellion.xhtml"/>
+			<p:link class="album-text" value="9. Mark The Graves"
+				outcome="mark-the-graves.xhtml" />
+			<p:link class="album-text" value="10. Drawbar (Feat. Tom Morello)"
+				outcome="drawbar.xhtml" />
+			<p:link class="album-text" value="11. Final Masquerade"
+				outcome="final-masquerade.xhtml" />
+			<p:link class="album-text" value="12. A Line In The Sand"
+				outcome="a-line-in-the-sand.xhtml" />
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>

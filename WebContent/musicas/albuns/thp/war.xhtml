@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="thp-template.xhtml">
+	<ui:define name="title">The Hunting Party : War</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="lista-section";
+            window.onload = loadLetra('thp','war');
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="video-tab">
+		<p:tab title="Vídeos">
+			<p:panel header="Em Destaque" styleClass="destaque-panel">
+				<div class="video-container">
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/dTgor60kaZk" frameborder="0"
+						allowfullscreen="true"> </iframe>
+				</div>
+			</p:panel>
+			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
+				<p:dataGrid var="video"
+					value="#{searchBean.getListaVideos('War')}" columns="3"
+					layout="grid"
+					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
+
+					<p:panel>
+						<p:panelGrid columns="1" class="videoGrid">
+							<a href="http://www.youtube.com/watch/#{video.videoId}"
+								target="_blank" class="videoLink"> <img
+								src="#{video.thumbUrl}" alt="Thumbnail: #{video.nome}"
+								class="videoThumb" /> <h:outputLabel value="#{video.nome}" />
+							</a>
+						</p:panelGrid>
+					</p:panel>
+				</p:dataGrid>
+			</p:panel>
+		</p:tab>
+	</ui:define>
+</ui:composition>
+</html>

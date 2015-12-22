@@ -10,10 +10,13 @@
 	width: 100% !important;
 }
 
+.ui-tabs .ui-tabs-nav {
+	font-family: "Courier New", Courier, monospace !important;
+}
+
 .album-text {
 	font-family: "Courier New", Courier, monospace;
-	font-size: 80%;
-	width: 10px;
+	font-size: 13px !important;
 	font-weight: bold;
 	text-shadow: 2px 2px 3px white;
 	color: black;
@@ -104,5 +107,9 @@
 	
 	.body-section {
 		border: none !important;
+	}
+	
+	.ui-tabs .ui-tabs-nav {
+		font-size: 13px !important;
 	}
 }
