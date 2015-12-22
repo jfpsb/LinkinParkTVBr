@@ -4,6 +4,10 @@
 	text-align: center;
 }
 
+.ui-tabs .ui-tabs-nav {
+	font-family: "Courier New", Courier, monospace !important;
+}
+
 .leg-article {
 	color: white;
 	font-family: "Courier New", Courier, monospace;
@@ -114,11 +118,19 @@ a:hover>label {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-@media all and (max-width: 545px) {
+@media all and (max-width: 600px) {
 	.mobileNome {
 		display: block;
 		font-size: 100%;
 	}
+	
+	
+}
+
+@media all and (max-width: 612px) {
+	.ui-tabs .ui-tabs-nav {
+		font-size: 15px !important;
+	}	
 }
 
 @media all and (max-width: 800px) { 

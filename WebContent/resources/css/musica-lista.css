@@ -44,15 +44,6 @@
 	font-size: auto;
 }
 
-.ui-dialog-titlebar {
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.6);
-}
-
-.ui-dialog-content {
-	overflow: hidden;
-}
-
 .textArea {
 	resize: none;
 	width: 100%;
@@ -62,17 +53,3 @@
 	overflow: auto;
 	text-align: center;
 }
-
-.ui-dialog-titlebar-close {
-	color: red;
-}
-
-  #videoDialog div {
-  	font-size: 10%;
-  }
-  
-  @media all and (max-width: 600px){
-  	  dialog {
-  	width: 100% !important;
-  }
-  }
