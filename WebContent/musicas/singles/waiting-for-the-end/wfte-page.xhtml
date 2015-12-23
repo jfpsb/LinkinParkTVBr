@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Singles : Waiting For The End</ui:define>
+	<ui:define name="icon">
+		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
+			type="image/x-icon" />
+	</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="wfte-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/singles-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="wfte-section" class="body-section"> <p:panel
+			header="Waiting For The End" id="wfte-panel">
+			<p:panelGrid id="panelGrid" columns="3">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Waiting For The End" />
+				<p:button value="Tradução" outcome="waiting-for-the-end.xhtml" icon="brazil-icon"/>
+					
+					<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="The Catalyst" />
+				<p:button value="Tradução" outcome="the-catalyst.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

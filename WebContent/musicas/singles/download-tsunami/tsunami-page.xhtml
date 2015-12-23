@@ -5,14 +5,14 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+<ui:composition template="/WEB-INF/template.xhtml">
 	<ui:define name="title">Singles : Download To Donate: Tsunami Relief</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="power-section"; 
+            window.location.hash="dt-section"; 
         </h:outputScript>
 	</ui:define>
-	<ui:define name="mus-conteudo">
+	<ui:define name="conteudo">
 		<h:outputStylesheet name="css/musica-lista.css" />
 		<h:outputStylesheet name="css/icon.css" />
 		<h:outputStylesheet name="css/singles-lista.css" />
@@ -20,15 +20,10 @@
 		<h:outputScript library="js" name="videomusica.js" />
 		<section id="dt-section" class="body-section"> <p:panel
 			header="Download To Donate: Tsunami Relief" id="dt-panel">
-			<p:panelGrid id="panelGrid" columns="4">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
 				<h:outputLabel class="outputLabel" value="1." />
 				<h:outputLabel class="outputLabel" value="Issho Ni" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					disabled="true" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/download-tsunami','issho-ni')" />
+				<p:button value="Tradução" outcome="issho-ni.xhtml" icon="brazil-icon"/>
 			</p:panelGrid>
 		</p:panel> </section>
 	</ui:define>

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">Singles : New Divide</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="nd-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/singles-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="nd-section" class="body-section"> <p:panel
+			header="New Divide" id="nd-panel">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="New Divide" />
+				<p:button value="Tradução" outcome="new-divide.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="New Divide (Instrumental)" />
+				<p:button value="Tradução" outcome="new-divide-instrumental.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="New Divide (A Capella)" />
+				<p:button value="Tradução" outcome="new-divide-acapella.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="New Divide (Live)" />
+				<p:button value="Tradução" outcome="new-divide-live.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

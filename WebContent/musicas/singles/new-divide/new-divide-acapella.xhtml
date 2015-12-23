@@ -5,12 +5,12 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="bits-template.xhtml">
-	<ui:define name="title">Burning In The Skies</ui:define>
+<ui:composition template="divide-template.xhtml">
+	<ui:define name="title">New Divide (A Capella)</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('ats','burning-in-the-skies');
+            window.onload = loadLetra('','new-divide');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,13 +18,13 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/kh_YCSW5lPc" frameborder="0"
+						src="https://www.youtube.com/embed/3gbt5daKKyI" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Burning In The Skies')}"
+					value="#{searchBean.getListaVideos('New Divide (A Capella)')}"
 					columns="3" layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 

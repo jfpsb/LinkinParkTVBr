@@ -6,11 +6,11 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <ui:composition template="bits-template.xhtml">
-	<ui:define name="title">Burning In The Skies</ui:define>
+	<ui:define name="title">Burning In The Skies : When They Come For Me (Live Madison Square Garden)</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('ats','burning-in-the-skies');
+            window.onload = loadLetra('ats','when-they-come-for-me');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,13 +18,13 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/kh_YCSW5lPc" frameborder="0"
+						src="https://www.youtube.com/embed/5tpEjHTVkMU" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Burning In The Skies')}"
+					value="#{searchBean.getListaVideos('When They Come For Me (Live Madison Square Garden)')}"
 					columns="3" layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 
