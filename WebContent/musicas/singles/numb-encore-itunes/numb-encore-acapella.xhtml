@@ -5,12 +5,12 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="bio-template.xhtml">
-	<ui:define name="title">Bleed It Out</ui:define>
+<ui:composition template="nei-template.xhtml">
+	<ui:define name="title">Numb/Encore (Acapella)</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('mtm','bleed-it-out');
+            window.onload = loadLetra('collision-course','numb-encore');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,13 +18,13 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/OnuuYcqhzCE" frameborder="0"
+						src="https://www.youtube.com/embed/ZRqRoHi--jg" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Bleed It Out')}" columns="3"
+					value="#{searchBean.getListaVideos('Numb/Encore')}" columns="3"
 					layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">Singles : Numb/Encore</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="ne-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/singles-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="ne-section" class="body-section"> <p:panel
+			header="Numb/Encore" id="ne-panel">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Numb/Encore" />
+				<p:button value="Tradução" outcome="numb-encore.xhtml" icon="brazil-icon"/>
+
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Numb/Encore (Instrumental)" />
+				<p:button value="Tradução" outcome="numb-encore-instrumental.xhtml" icon="brazil-icon"/>
+
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>
