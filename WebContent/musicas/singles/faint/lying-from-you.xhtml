@@ -5,12 +5,12 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="meteora-template.xhtml">
-	<ui:define name="title">Meteora : Numb</ui:define>
+<ui:composition template="faint-template.xhtml">
+	<ui:define name="title">Meteora : Lying From You</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('meteora','numb');
+            window.onload = loadLetra('meteora','lying-from-you');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,13 +18,13 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/kXYiU_JCYtU" frameborder="0"
+						src="https://www.youtube.com/embed/F7nRgIraqVo" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Numb')}" columns="3"
+					value="#{searchBean.getListaVideos('Lying From You')}" columns="3"
 					layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 

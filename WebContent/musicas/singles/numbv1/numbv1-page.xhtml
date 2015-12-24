@@ -21,24 +21,14 @@
 		<section id="nv1-section" class="body-section"> 
 		<ui:define name="title">Singles : Numb (Versão 1)</ui:define><p:panel
 			header="Numb (Versão 1)" id="nv1-panel">
-			<p:panelGrid id="panelGrid" columns="4">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
 				<h:outputLabel class="outputLabel" value="1." />
 				<h:outputLabel class="outputLabel" value="Numb" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','numb')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('meteora','numb')" />
+				<p:button value="Tradução" outcome="numb.xhtml" icon="brazil-icon"/>
 					
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="From The Inside (Live)" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','from-the-inside')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/numbv1','from-the-inside')" />
+				<p:button value="Tradução" outcome="from-the-inside.xhtml" icon="brazil-icon"/>
 					
 			</p:panelGrid>
 		</p:panel> </section>

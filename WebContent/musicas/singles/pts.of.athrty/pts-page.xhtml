@@ -20,33 +20,18 @@
 		<h:outputScript library="js" name="videomusica.js" />
 		<section id="pointsremix-section" class="body-section"> <p:panel
 			header="PTS.OF.ATHRTY" id="pointsremix-panel">
-			<p:panelGrid id="panelGrid" columns="4">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
 				<h:outputLabel class="outputLabel" value="1." />
 				<h:outputLabel class="outputLabel" value="PTS.OF.ATHRTY" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','points-of-authority')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','points')" />
+				<p:button value="Tradução" outcome="pts.xhtml" icon="brazil-icon"/>
 					
 				<h:outputLabel class="outputLabel" value="2." />
 				<h:outputLabel class="outputLabel" value="By Myself (Remix By Marilyn Manson)" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','by-myself')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','by-myself')" />
+				<p:button value="Tradução" outcome="by-myself.xhtml" icon="brazil-icon"/>
 					
 				<h:outputLabel class="outputLabel" value="3." />
 				<h:outputLabel class="outputLabel" value="H! VLTG3" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('reanimation','high-voltage')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/pts.of.athrty','high-voltage')" />
+				<p:button value="Tradução" outcome="high-voltage.xhtml" icon="brazil-icon"/>
 					
 			</p:panelGrid>
 		</p:panel> </section>

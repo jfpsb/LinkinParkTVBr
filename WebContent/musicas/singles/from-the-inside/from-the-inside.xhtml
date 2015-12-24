@@ -3,53 +3,43 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui" >
+	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : From The Inside</ui:define>
+<ui:composition template="fti-template.xhtml">
+	<ui:define name="title">From The Inside</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="fti-section"; 
+            window.location.hash="lista-section";
+            window.onload = loadLetra('meteora','from-the-inside');
         </h:outputScript>
 	</ui:define>
-	<ui:define name="mus-conteudo">
-		<h:outputStylesheet name="css/musica-lista.css" />
-		<h:outputStylesheet name="css/icon.css" />
-		<h:outputStylesheet name="css/singles-lista.css" />
-		<h:outputScript library="js" name="letramusica.js" />
-		<h:outputScript library="js" name="videomusica.js" />
-		<section id="fti-section" class="body-section"> <p:panel
-			header="From The Inside" id="fti-panel">
-			<p:panelGrid id="panelGrid" columns="4">
-				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="From The Inside" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','from-the-inside')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('meteora','from-the-inside')" />
-					
-				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel" value="Runaway (Live In Texas)" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','runaway')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/from-the-inside','runaway')" />
-					
-				<h:outputLabel class="outputLabel" value="3." />
-				<h:outputLabel class="outputLabel" value="From The Inside (Live In Texas)" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('meteora','from-the-inside')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/from-the-inside','from-the-inside')" />
-					
-			</p:panelGrid>
-		</p:panel> </section>
+	<ui:define name="video-tab">
+		<p:tab title="Vídeos">
+			<p:panel header="Em Destaque" styleClass="destaque-panel">
+				<div class="video-container">
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/YLHpvjrFpe0" frameborder="0"
+						allowfullscreen="true"> </iframe>
+				</div>
+			</p:panel>
+			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
+				<p:dataGrid var="video"
+					value="#{searchBean.getListaVideos('From The Inside')}" columns="3"
+					layout="grid"
+					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
+
+					<p:panel>
+						<p:panelGrid columns="1" class="videoGrid">
+							<a href="http://www.youtube.com/watch/#{video.videoId}"
+								target="_blank" class="videoLink"> <img
+								src="#{video.thumbUrl}" alt="Thumbnail: #{video.nome}"
+								class="videoThumb" /> <h:outputLabel value="#{video.nome}" />
+							</a>
+						</p:panelGrid>
+					</p:panel>
+				</p:dataGrid>
+			</p:panel>
+		</p:tab>
 	</ui:define>
 </ui:composition>
 </html>
