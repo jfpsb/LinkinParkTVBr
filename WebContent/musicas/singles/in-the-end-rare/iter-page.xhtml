@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui" >
+
+<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
+	<ui:define name="title">Singles : In The End: Live And Rare</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="iter-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="mus-conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/singles-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="iter-section" class="body-section"> <p:panel
+			header="In The End: Live And Rare" id="iter-panel">
+			<p:panelGrid id="panelGrid" columns="3" layout="grid" >
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="In The End" />
+				<p:button value="Tradução" outcome="in-the-end.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Papercut (Live At Docklands Arena, London)" />
+				<p:button value="Tradução" outcome="papercut.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Points Of Authority (Live At Docklands Arena, London)" />
+				<p:button value="Tradução" outcome="points-of-authority.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="A Placa For My Head (Live At Docklands Arena, London)" />
+				<p:button value="Tradução" outcome="a-place-for-my-head.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Step Up" />
+				<p:button value="Tradução" outcome="step-up.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="My December" />
+				<p:button value="Tradução" outcome="my-december.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="High Voltage" />
+				<p:button value="Tradução" outcome="high-voltage.xhtml" icon="brazil-icon"/>
+					
+			</p:panelGrid>
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>
