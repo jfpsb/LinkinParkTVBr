@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">Remixes : Reanimation</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            	window.location.hash="reanimation-section"; 
+        	</h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/remixes-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="reanimation-section" class="body-section"> <p:panel
+			header="Reanimation" id="reanimation-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Opening" />
+				<p:button value="Tradução" outcome="opening.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="PTS.OF.ATHRTY" />
+				<p:button value="Tradução" outcome="points-of-authority.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="ENTH E ND" />
+				<p:button value="Tradução" outcome="in-the-end.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="CHALI" />
+				<p:button value="Tradução" outcome="chali.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="FRGT/10" />
+				<p:button value="Tradução" outcome="forgotten.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="P5HNG ME A*WY" />
+				<p:button value="Tradução" outcome="pushing-me-away.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="PLC.4 MIE HAED" />
+				<p:button value="Tradução" outcome="a-place-for-my-head.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="X-ECUTIONER STYLE" />
+				<p:button value="Tradução" outcome="x-executioner.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="H! VLTG3" />
+				<p:button value="Tradução" outcome="high-voltage.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="RIFF RAFF" />
+				<p:button value="Tradução" outcome="riff-raff.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="11." />
+				<h:outputLabel class="outputLabel" value="WTH>YOU" />
+				<p:button value="Tradução" outcome="with-you.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="12." />
+				<h:outputLabel class="outputLabel" value="NTR\MSSION" />
+				<p:button value="Tradução" outcome="ntr-mission.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="13." />
+				<h:outputLabel class="outputLabel" value="PPR:KUT" />
+				<p:button value="Tradução" outcome="papercut.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="14." />
+				<h:outputLabel class="outputLabel" value="RNW@Y" />
+				<p:button value="Tradução" outcome="runaway.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="15." />
+				<h:outputLabel class="outputLabel" value="MY&lt;DSMBR" />
+				<p:button value="Tradução" outcome="my-december.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="16." />
+				<h:outputLabel class="outputLabel" value="STEF" />
+				<p:button value="Tradução" outcome="stef.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="17." />
+				<h:outputLabel class="outputLabel" value="BY_MYSLF" />
+				<p:button value="Tradução" outcome="by-myself.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="18." />
+				<h:outputLabel class="outputLabel" value="KYUR4 TH ICH" />
+				<p:button value="Tradução" outcome="cure-for-the-itch.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="19." />
+				<h:outputLabel class="outputLabel" value="1STP KLOSR" />
+				<p:button value="Tradução" outcome="one-step-closer.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="20." />
+				<h:outputLabel class="outputLabel" value="KRWLNG" />
+				<p:button value="Tradução" outcome="crawling.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

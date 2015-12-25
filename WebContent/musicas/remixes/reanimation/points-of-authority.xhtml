@@ -5,12 +5,12 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="pts-template.xhtml">
-	<ui:define name="title">Pts.Of.Athrty</ui:define>
+<ui:composition template="reanimation-template.xhtml">
+	<ui:define name="title">Reanimation : PTS.OF.ATHRTY</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('hybrid-theory','points');
+            window.onload = loadLetra('reanimation','points-of-authority');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,13 +18,13 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/ApUjxBO0-jo" frameborder="0"
+						src="https://www.youtube.com/embed/GgxcvmkPD-I" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Pts.Of.Athrty')}" columns="3"
+					value="#{searchBean.getListaVideos('PTS.OF.ATHRTY')}" columns="3"
 					layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 
@@ -37,6 +37,7 @@
 							</a>
 						</p:panelGrid>
 					</p:panel>
+
 				</p:dataGrid>
 			</p:panel>
 		</p:tab>
