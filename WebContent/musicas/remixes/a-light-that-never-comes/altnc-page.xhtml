@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">Remixes : A Light That Never Comes (Remixes)</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            	window.location.hash="altnc-section"; 
+        	</h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/remixes-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="altnc-section" class="body-section"> <p:panel
+			header="A Light That Never Comes (Remixes)" id="altnc-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes (Rick Rubin Reboot)" />
+				<p:button value="Tradução" outcome="altnc-rick.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes (Vicetone Remix)" />
+				<p:button value="Tradução" outcome="altnc-vicetone.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value=" Light That Never Comes (Angger Dimas Remix)" />
+				<p:button value="Tradução" outcome="altnc-angger.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes (Twoloud Remix)" />
+				<p:button value="Tradução" outcome="altnc-twoloud.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes (Coone Remix)" />
+				<p:button value="Tradução" outcome="altnc-coone.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes (Vicetone Remix Dub)" />
+				<p:button value="Tradução" outcome="altnc-vicetone-dub.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes (Brian Yates Remix)" />
+				<p:button value="Tradução" outcome="altnc-brian.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

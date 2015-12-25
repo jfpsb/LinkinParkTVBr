@@ -1,55 +1,46 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui" >
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="/WEB-INF/mus-lista-template.xhtml">
-	<ui:define name="title">Singles : In The End</ui:define>
+	<ui:composition template="ite-template.xhtml">
+	<ui:define name="title">In The End</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
-            window.location.hash="ite-section"; 
+            window.location.hash="lista-section";
+            window.onload = loadLetra('hybrid-theory','in-the-end');
         </h:outputScript>
 	</ui:define>
-	<ui:define name="mus-conteudo">
-		<h:outputStylesheet name="css/musica-lista.css" />
-		<h:outputStylesheet name="css/icon.css" />
-		<h:outputStylesheet name="css/singles-lista.css" />
-		<h:outputScript library="js" name="letramusica.js" />
-		<h:outputScript library="js" name="videomusica.js" />
-		<section id="ite-section" class="body-section"> <p:panel
-			header="In The End" id="ite-panel">
-			<p:panelGrid id="panelGrid" columns="4">
-				<h:outputLabel class="outputLabel" value="1." />
-				<h:outputLabel class="outputLabel" value="In The End" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','in-the-end')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('hybrid-theory','in-the-end')" />
-					
-				<h:outputLabel class="outputLabel" value="2." />
-				<h:outputLabel class="outputLabel" value="In The End (Live BBC Radio One)" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','in-the-end')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/in-the-end','in-the-end')" />
-					
-				<h:outputLabel class="outputLabel" value="3." />
-				<h:outputLabel class="outputLabel" value="Points Of Authority (Live At Docklands Arena, London)" />
-				<p:commandButton styleClass="ui-button ui-button-text mus"
-					value="Letra" icon="lyric-icon"
-					onclick="PF('letra').show();loadLetra('hybrid-theory','points-of-authority')" />
-				<p:commandButton styleClass="ui-button ui-button-text video"
-					value="Vídeo" icon="video-icon"
-					onclick="PF('video').show();loadVideo('singles/in-the-end-rare','points-of-authority')" />
-					
-			</p:panelGrid>
-		</p:panel> </section>
+	<ui:define name="video-tab">
+		<p:tab title="Vídeos">
+			<p:panel header="Em Destaque" styleClass="destaque-panel">
+				<div class="video-container">
+					<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/eVTXPUF4Oz4" frameborder="0"
+						allowfullscreen="true"> </iframe>
+				</div>
+			</p:panel>
+			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
+				<p:dataGrid var="video"
+					value="#{searchBean.getListaVideos('In The End')}" columns="3"
+					layout="grid"
+					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
+
+					<p:panel>
+						<p:panelGrid columns="1" class="videoGrid">
+							<a href="http://www.youtube.com/watch/#{video.videoId}"
+								target="_blank" class="videoLink"> <img
+								src="#{video.thumbUrl}" alt="Thumbnail: #{video.nome}"
+								class="videoThumb" /> <h:outputLabel value="#{video.nome}" />
+							</a>
+						</p:panelGrid>
+					</p:panel>
+
+				</p:dataGrid>
+			</p:panel>
+		</p:tab>
 	</ui:define>
 </ui:composition>
 </html>

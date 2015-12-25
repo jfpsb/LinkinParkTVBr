@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+#altnc-panel {
+	background-image: url("#{resource['imagens/remixes/highres/a-light-that-never-comes.jpg']}");
+	background-size: cover;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+#recharged-panel {
+	background-image: url("#{resource['imagens/remixes/highres/recharged.jpg']}");
+	background-size: cover;
+}

@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui">
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="lite-template.xhtml">
-	<ui:define name="title">Lost In The Echo : Lost In The Echo (Killsonik Remix)</ui:define>
+	<ui:composition template="itev2-template.xhtml">
+	<ui:define name="title">In The End</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('living-things','lost-in-the-echo');
+            window.onload = loadLetra('hybrid-theory','in-the-end');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,14 +18,14 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/hesGjN2r_5c" frameborder="0"
+						src="https://www.youtube.com/embed/eVTXPUF4Oz4" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Lost In The Echo (Killsonik Remix)')}"
-					columns="3" layout="grid"
+					value="#{searchBean.getListaVideos('In The End')}" columns="3"
+					layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 
 					<p:panel>

@@ -5,12 +5,12 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-<ui:composition template="lite-template.xhtml">
-	<ui:define name="title">Lost In The Echo : Lost In The Echo (Killsonik Remix)</ui:define>
+<ui:composition template="recharged-template.xhtml">
+	<ui:define name="title">Recharged : I'll Be Gone (Schoolboy Remix)</ui:define>
 	<ui:define name="script">
 		<h:outputScript target="body">
             window.location.hash="lista-section";
-            window.onload = loadLetra('living-things','lost-in-the-echo');
+            window.onload = loadLetra('living-things','ill-be-gone');
         </h:outputScript>
 	</ui:define>
 	<ui:define name="video-tab">
@@ -18,13 +18,13 @@
 			<p:panel header="Em Destaque" styleClass="destaque-panel">
 				<div class="video-container">
 					<iframe width="560" height="315"
-						src="https://www.youtube.com/embed/hesGjN2r_5c" frameborder="0"
+						src="https://www.youtube.com/embed/uE43BpbvX6k" frameborder="0"
 						allowfullscreen="true"> </iframe>
 				</div>
 			</p:panel>
 			<p:panel header="Vídeos Relacionados" styleClass="rel-panel">
 				<p:dataGrid var="video"
-					value="#{searchBean.getListaVideos('Lost In The Echo (Killsonik Remix)')}"
+					value="#{searchBean.getListaVideos('I\'ll Be Gone')}"
 					columns="3" layout="grid"
 					emptyMessage="Conteúdo não encontrado. Tente atualizar a página.">
 

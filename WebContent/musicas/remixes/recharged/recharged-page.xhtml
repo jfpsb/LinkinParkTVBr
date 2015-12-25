@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">Remixes : Recharged</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            	window.location.hash="recharged-section"; 
+        	</h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/remixes-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<h:outputScript library="js" name="videomusica.js" />
+		<section id="recharged-section" class="body-section"> <p:panel
+			header="Recharged" id="recharged-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes" />
+				<p:button value="Tradução" outcome="a-light-that-never-comes.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Castle Of Glass (M. Shinoda Remix)" />
+				<p:button value="Tradução" outcome="cog-shinoda.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Lost In The Echo (Killsonik Remix)" />
+				<p:button value="Tradução" outcome="lite-killsonik.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Victimized (M. Shinoda Remix)" />
+				<p:button value="Tradução" outcome="victimized-shinoda.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="I'll Be Gone (Vice Remix) [Feat. Pusha T]" />
+				<p:button value="Tradução" outcome="ibg-vice.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Lies Greed Misery (Dirtyphonics Remix)" />
+				<p:button value="Tradução" outcome="lgm-dirty.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Roads Untraveled (Rad Omen Remix) [Feat. Bun B]" />
+				<p:button value="Tradução" outcome="roads-rad.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="Powerless (Enferno Remix)" />
+				<p:button value="Tradução" outcome="powerless-enferno.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Burn It Down (Tom Swoon Remix) [Feat. Bun B]" />
+				<p:button value="Tradução" outcome="bid-tom.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="Until It Breaks (Datsik Remix) [Feat. Bun B]" />
+				<p:button value="Tradução" outcome="uib-datsik.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="11." />
+				<h:outputLabel class="outputLabel" value="Skin To Bone (Nick Catchdubs Remix) [Feat. Cody B. Ware &amp; Ryu]" />
+				<p:button value="Tradução" outcome="stb-nick.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="12." />
+				<h:outputLabel class="outputLabel" value="I'll Be Gone (Schoolboy Remix)" />
+				<p:button value="Tradução" outcome="ibg-schoolboy.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="13." />
+				<h:outputLabel class="outputLabel" value="Until It Breaks (Money Mark Headphone Remix)" />
+				<p:button value="Tradução" outcome="uib-money.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="14." />
+				<h:outputLabel class="outputLabel" value="A Light That Never Comes (Rick Rubin Reboot)" />
+				<p:button value="Tradução" outcome="altnc-rick.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

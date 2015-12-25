@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+					<p>Essa música não possui letra ou houve um erro ao carregá-la.</p>
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+					<p>Essa música não possui letra ou houve um erro ao carregá-la.</p>
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="remixes/lowres/recharged.jpg" class="album-thumb" />
+				<p:button value="Voltar ao Recharged" outcome="recharged-page.xhtml" 
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. A Light That Never Comes" outcome="a-light-that-never-comes.xhtml" />
+			<p:link class="album-text" value="2. Castle Of Glass (M. Shinoda Remix)" outcome="cog-shinoda.xhtml" />
+			<p:link class="album-text" value="3. Lost In The Echo (Killsonik Remix)" outcome="lite-killsonik.xhtml" />
+			<p:link class="album-text" value="4. Victimized (M. Shinoda Remix)" outcome="victimized-shinoda.xhtml" />
+			<p:link class="album-text" value="5. I'll Be Gone (Vice Remix) [Feat. Pusha T]" outcome="ibg-vice.xhtml" />
+			<p:link class="album-text" value="6. Lies Greed Misery (Dirtyphonics Remix)" outcome="lgm-dirty.xhtml" />
+			<p:link class="album-text" value="7. Roads Untraveled (Rad Omen Remix) [Feat. Bun B]" outcome="roads-rad.xhtml" />
+			<p:link class="album-text" value="8. Powerless (Enferno Remix)" outcome="powerless-enferno.xhtml" />
+			<p:link class="album-text" value="9. Burn It Down (Tom Swoon Remix) [Feat. Bun B]" outcome="bid-tom.xhtml" />
+			<p:link class="album-text" value="10. Until It Breaks (Datsik Remix) [Feat. Bun B]" outcome="uib-datsik.xhtml" />
+			<p:link class="album-text" value="11. Skin To Bone (Nick Catchdubs Remix) [Feat. Cody B. Ware &amp; Ryu]" outcome="stb-nick.xhtml" />
+			<p:link class="album-text" value="12. I'll Be Gone (Schoolboy Remix)" outcome="ibg-schoolboy.xhtml" />
+			<p:link class="album-text" value="13. Until It Breaks (Money Mark Headphone Remix)" outcome="uib-money.xhtml" />
+			<p:link class="album-text" value="14. A Light That Never Comes (Rick Rubin Reboot)" outcome="altnc-rick.xhtml" />
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>
