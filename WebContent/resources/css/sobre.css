@@ -6,15 +6,17 @@
 }
 
 p {
-	text-indent: 3em;
 	padding: 0px 25px 0px 25px;
 	font-size: 125%;
+	align: center;
+	text-align: center;
 }
 
 #rodape1 {
 	color: red;
+	margin-top: 30px;
 	font-size: 80%;
-	width: 30%;	
+	width: 70%;
 }
 
 #img-ev-logo {
@@ -25,10 +27,16 @@ p {
 #sobre-article {	
 	color: white;
 	font-family: "Courier New", Courier, monospace;
-	border-style: solid;
-	border-width: 1px;
-	background: rgb(0, 0, 0);
-  	background: rgba(0, 0, 0, 0.8);
   	margin:	0px 0px 15px 0px;
   	padding: 15px 0px 0px 0px;
+}
+
+@media all and (max-width: 600px) {
+	p {
+		font-size: 100%;
+	}
+	
+	#img-ev-logo {
+		width: 90%
+	}
 }

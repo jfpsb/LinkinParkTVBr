@@ -1,6 +1,6 @@
 <h2>STEF</h2>
-<pre>Next message:
-Yo, what up? It’s Stef, call me up.
-I’m gonna be in town all this week,
-So, uhh, if you wanna get that track takin’ care of,
-Let me know. Call me on my cell, later.</pre>
+<pre>Próxima mensagem:
+Yo, beleza? É o Stef, me liga.
+Estarei na cidade toda essa semana,
+Então, se quiser ir cuidar daquela música
+É só me dizer. Liga no meu celular depois.</pre>

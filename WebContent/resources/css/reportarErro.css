@@ -7,8 +7,9 @@
 	margin-right: auto;
 }
 
-.ui-panelgrid tr, .ui-panelgrid td, .ui-panelgrid {
-	border: 1px solid black;
+.formPanelGrid .ui-grid-row > .ui-panelgrid-cell {
+	background: none !important;	
+	border: 1px solid rgb(175,175,175) !important;
 }
 
 .indexButton {
@@ -29,4 +30,17 @@
 
 .buttondiv {
 	text-align: center;
+}
+
+.formulario {
+	max-width: 740px;
+	align: center;
+	margin: auto;
+}
+
+@media all and (max-width: 600px) {
+	.formPanelGrid .ui-grid-row > .ui-panelgrid-cell {
+		background: none !important;
+		border: none !important;
+	}
 }

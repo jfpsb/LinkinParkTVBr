@@ -1,47 +1,79 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html">
-      
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-</h:head> 
+</h:head>
 
-	<ui:composition template="/WEB-INF/template.xhtml">
-		<ui:define name="title">LinkinParkTVBr</ui:define>
-		<ui:define name="script">
-			<h:outputScript target="body" >
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">LinkinParkTVBr</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
             	window.location.hash="redes-section"; 
         	</h:outputScript>
-		</ui:define>
-		<ui:define name="conteudo">
-			<h:outputStylesheet name="css/redes-sociais.css" />
-			<section id="redes-section" class="body-section">
-				<article id="article-facebook">
-					<img id="img-facebook" align="left" src="resources/imagens/facebook-icon.png" alt="Ícone do Facebook"/>
-					<p id="texto-facebook">Nossa página no Facebook possui postagens gerais sobre a banda como
-					notícias sobre álbuns, shows, redes sociais da banda e etc. 
-					Também possui postagens com fotos da banda em bastidores, shows, LPTVs e mais.</p>
-					<img id="facebook-amostra" src="resources/imagens/img-facebook.jpg" alt="Página no Facebook"/>
-					<p id="link-facebook"><a href="https://www.facebook.com/LinkinParkTVBr/">Acesse nossa página clicando aqui.</a></p>
-				</article>
-				<article id="article-youtube">
-					<img id="img-youtube" align="left" src="resources/imagens/youtube-icon.png" alt="Ícone do Youtube" />
-					<p id="texto-youtube">No nosso canal do Youtube é onde estão a maioria dos vídeos da banda legendados. 
-					Lá pode-se encontrar vídeos de shows, bastidores, LPTVs e etc.</p>
-					<img id="youtube-amostra" src="resources/imagens/youtube-amostra.jpg" alt="Canal no Youtube" />
-					<p id="link-youtube"><a href="https://www.youtube.com/lptvbrasil" >Acesse nosso canal no Youtube clicando aqui.</a></p>
-				</article>
-				<article id="article-twitter">
-					<img id="img-twitter" align="left" src="resources/imagens/twitter-icon.png" alt="Ícone do Twitter"/>
-					<p id="texto-twitter">No Twitter você pode acompanhar sempre que um vídeo é postado no canal ou sempre quando
-					algo é postado na nossa página do Facebook.</p>
-					<img id="twitter-amostra" src="resources/imagens/twitter-amostra.jpg" alt="Nosso perfil no Twitter"/>
-					<p id="link-twitter"><a href="https://twitter.com/linkinparktvbr">Acesse nosso perfil no Twitter clicando aqui.</a></p>
-				</article>
-			</section>
-		</ui:define>
-	</ui:composition>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/redes-sociais.css" />
+		<section id="redes-section" class="body-section"> <article
+			id="article-facebook">
+		<center>
+			<img class="redes-img" id="img-facebook"
+				src="resources/imagens/facebook-icon.png" alt="Ícone do Facebook" />
+		</center>
+		<div class="texto-wrapper">
+			<p id="texto-facebook" class="texto descricao">Nossa página no
+				Facebook possui postagens gerais sobre a banda como notícias sobre
+				álbuns, shows, redes sociais da banda e etc. Também possui postagens
+				com fotos da banda em bastidores, shows, LPTVs e mais.</p>
+		</div>
+		<center>
+			<img class="redes-amostra" id="facebook-amostra"
+				src="resources/imagens/img-facebook.jpg" alt="Página no Facebook" />
+		</center>
+		<div class="link-wrapper" align="center">
+			<a href="https://www.facebook.com/LinkinParkTVBr/" class="texto link" target="_blank">Acesse
+				nossa página clicando aqui.</a>
+		</div>
+		</article> <article id="article-youtube"> 
+		<center>
+		<img class="redes-img"
+			id="img-youtube" src="resources/imagens/youtube-icon.png" alt="Ícone do Youtube" />
+		</center>
+		<div class="texto-wrapper">
+			<p id="texto-youtube" class="texto descricao">No nosso canal do
+				Youtube é onde estão a maioria dos vídeos da banda legendados. Lá
+				pode-se encontrar vídeos de shows, bastidores, LPTVs e etc.</p>
+		</div>
+		<center>
+		<img class="redes-amostra" src="resources/imagens/youtube-amostra.jpg"
+			alt="Canal no Youtube" />
+		</center>
+		<div class="link-wrapper" align="center">
+			<a href="https://www.youtube.com/lptvbrasil" class="texto link" target="_blank">Acesse
+				nosso canal no Youtube clicando aqui.</a>
+		</div>
+		</article> <article id="article-twitter"> 
+		<center>
+		<img class="redes-img" src="resources/imagens/twitter-icon.png" alt="Ícone do Twitter" />
+		</center>
+		<div class="texto-wrapper">
+			<p id="texto-twitter" class="texto descricao">No Twitter você
+				pode acompanhar sempre que um vídeo é postado no canal ou sempre
+				quando algo é postado na nossa página do Facebook.</p>
+		</div>
+		<center>
+		<img class="redes-amostra" src="resources/imagens/twitter-amostra.jpg"
+			alt="Nosso perfil no Twitter" />
+		</center>
+		<div class="link-wrapper" align="center">
+			<a href="https://twitter.com/linkinparktvbr" class="texto link" target="_blank">Acesse
+				nosso perfil no Twitter clicando aqui.</a>
+		</div>
+		</article> </section>
+	</ui:define>
+</ui:composition>
 </html>

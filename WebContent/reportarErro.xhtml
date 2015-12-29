@@ -7,6 +7,7 @@
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>LinkinParkTVBr : Reportar Erro</title>
 	<link id="favicon" href="#{request.contextPath}/favicon16.ico"
 		rel="shortcut icon" type="image/vnd.microsoft.icon"></link>
@@ -40,7 +41,7 @@
 		</div>
 		
 		<h:form class="formulario">
-			<p:panelGrid columns="2" class="formPanelGrid">
+			<p:panelGrid columns="2" class="formPanelGrid" layout="grid">
 				<p:outputLabel value="Título(descrição curta): " />
 				<p:inputText id="titulo" maxlength="50"/>
 				<p:outputLabel value="Descrição: "/>
