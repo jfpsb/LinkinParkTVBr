@@ -21,3 +21,10 @@
 	padding-top: 300px;
 	padding-bottom: 300px;
 }
+
+#reanimation-panel {
+	background-image: url("#{resource['imagens/remixes/highres/reanimation.jpg']}");
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 120px;
+}

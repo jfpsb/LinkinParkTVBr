@@ -1,0 +1,6 @@
+@CHARSET "ISO-8859-1";
+
+#lpu15-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpu15.jpg']}");
+	background-size: cover;
+}
