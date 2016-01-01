@@ -10,7 +10,13 @@ function loadTraducao(album, musica) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById("tradTextArea").innerHTML = xhttp.responseText;
+    	document.getElementById("tradTextArea").innerHTML = xhttp.responseText;
+    }
+    else {
+    	if(xhttp.status == 404 || xhttp.status == 204) {
+    		document.getElementById("tradTextArea").innerHTML = "Não há letra disponível" +
+    				" para essa música. <br/>Reporte esta situação no botão ao final da página.";
+    	}
     }
   };
   
@@ -24,13 +30,14 @@ function loadOriginal(album, musica) {
 	    if (xhttp.readyState == 4 && xhttp.status == 200) {
 	      document.getElementById("origTextArea").innerHTML = xhttp.responseText;
 	    }
+	    else {
+	    	if(xhttp.status == 404 || xhttp.status == 204) {
+	    		document.getElementById("origTextArea").innerHTML = "Não há letra disponível" +
+	    				" para essa música. <br/>Reporte esta situação no botão ao final da página.";
+	    	}
+	    }
 	  };
 	  
 	  xhttp.open("GET", letraPathOrig + album + "/" + musica + ".txt", true);
 	  xhttp.send();
 	}
-
-function onDialogClose() {
-	document.getElementById("tradTextArea").innerHTML = "<p>Aguarde...</p>";
-	document.getElementById("origTextArea").innerHTML = "<p>Aguarde...</p>";
-}

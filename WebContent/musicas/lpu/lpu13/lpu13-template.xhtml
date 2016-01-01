@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="lpu/lowres/lpuxiii.jpg" class="album-thumb" />
+				<p:button value="Voltar ao LPU XIII" outcome="lpu13-page.xhtml"
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. Basquiat - 2007 DEMO" outcome="basquiat.xhtml" />
+			<p:link class="album-text" value="2. Holding Company - 2011 DEMO" outcome="holding-company.xhtml" />
+			<p:link class="album-text" value="3. Primo - I'll Be Gone - Longform 2010 DEMO" outcome="primo.xhtml" />
+			<p:link class="album-text" value="4. Hemispheres - 2011 DEMO" outcome="hemispheres.xhtml" />
+			<p:link class="album-text" value="5. Cumulus - 2002 DEMO" outcome="cumulus.xhtml" />
+			<p:link class="album-text" value="6. Pretty Birdy - Somewhere I Below 2002 DEMO" outcome="pretty-birdy.xhtml" />
+			<p:link class="album-text" value="7. Universe - 2006 DEMO" outcome="universe.xhtml" />
+			<p:link class="album-text" value="8. Apaches - Until It Breaks DEMO No. 1" outcome="apaches.xhtml" />
+			<p:link class="album-text" value="9. Foot Patrol - Until It Breaks DEMO No. 2" outcome="foot-patrol.xhtml" />
+			<p:link class="album-text" value="10. Three Band Terror - Until It Breaks DEMO No. 3" outcome="three-band-terror.xhtml" />
+			<p:link class="album-text" value="11. Truth Inside A Lie - By Ryan Giles - LPU Sessions 2013" outcome="truth-inside-a-lie.xhtml" />
+			<p:link class="album-text" value="12. Change - By Beta State - LPU Session 2013" outcome="change.xhtml" />
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>

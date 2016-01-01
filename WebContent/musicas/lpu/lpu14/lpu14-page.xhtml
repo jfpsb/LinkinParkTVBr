@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">LPU : LPU XIV</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            	window.location.hash="lpu14-section"; 
+        	</h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/lpu-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<section id="lpu14-section" class="body-section"> <p:panel
+			header="LPU XIV" id="lpu14-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Aubrey One (2009 DEMO)" />
+				<p:button value="Tradução" outcome="aubrey-one.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Malathion+Tritonus (2008 Berlin DEMO)" />
+				<p:button value="Tradução" outcome="malathion.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Berlin One, Version C (2009 DEMO)" />
+				<p:button value="Tradução" outcome="berlin-one.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Blanka (2008 DEMO)" />
+				<p:button value="Tradução" outcome="blanka.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Heartburn (2007 DEMO)" />
+				<p:button value="Tradução" outcome="heartburn.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Breaking The Habit (Original Mike 2002 DEMO)" />
+				<p:button value="Tradução" outcome="breaking-the-habit.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Dave Beat Feat. Joe (2009)" />
+				<p:button value="Tradução" outcome="dave-beat.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="Froctagon (2009 DEMO)" />
+				<p:button value="Tradução" outcome="froctagon.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Rhinocerous (2002 DEMO)" />
+				<p:button value="Tradução" outcome="rhinocerous.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="After Canada (2005 DEMO)" />
+				<p:button value="Tradução" outcome="after-canada.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

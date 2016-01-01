@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="lpu/lowres/lpuxiv.png" class="album-thumb" />
+				<p:button value="Voltar ao LPU XIV" outcome="lpu14-page.xhtml"
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. Aubrey One (2009 DEMO)" outcome="aubrey-one.xhtml" />
+			<p:link class="album-text" value="2. Malathion+Tritonus (2008 Berlin DEMO)" outcome="malathion.xhtml" />
+			<p:link class="album-text" value="3. Berlin One, Version C (2009 DEMO)" outcome="berlin-one.xhtml" />
+			<p:link class="album-text" value="4. Blanka (2008 DEMO)" outcome="blanka.xhtml" />
+			<p:link class="album-text" value="5. Heartburn (2007 DEMO)" outcome="heartburn.xhtml" />
+			<p:link class="album-text" value="6. Breaking The Habit (Original Mike 2002 DEMO)" outcome="breaking-the-habit.xhtml" />
+			<p:link class="album-text" value="7. Dave Sbeat Feat. Joe (2009)" outcome="dave-beat.xhtml" />
+			<p:link class="album-text" value="8. Froctagon (2009 DEMO)" outcome="froctagon.xhtml" />
+			<p:link class="album-text" value="9. Rhinocerous (2002 DEMO)" outcome="rhinocerous.xhtml" />
+			<p:link class="album-text" value="10. After Canada (2005 DEMO)" outcome="after-canada.xhtml" />		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>

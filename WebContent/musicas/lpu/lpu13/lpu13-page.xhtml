@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">LPU : LPU XIII</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            	window.location.hash="lpu13-section"; 
+        	</h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/lpu-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<section id="lpu13-section" class="body-section"> <p:panel
+			header="LPU XIV" id="lpu13-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Basquiat - 2007 DEMO" />
+				<p:button value="Tradução" outcome="basquiat.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Holding Company - 2011 DEMO" />
+				<p:button value="Tradução" outcome="holding-company.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Primo - I'll Be Gone - Longform 2010 DEMO" />
+				<p:button value="Tradução" outcome="primo.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Hemispheres - 2011 DEMO" />
+				<p:button value="Tradução" outcome="hemispheres.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Cumulus - 2002 DEMO" />
+				<p:button value="Tradução" outcome="cumulus.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Pretty Birdy - Somewhere I Below 2002 DEMO" />
+				<p:button value="Tradução" outcome="pretty-birdy.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Universe - 2006 DEMO" />
+				<p:button value="Tradução" outcome="universe.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="Apaches - Until It Breaks DEMO No. 1" />
+				<p:button value="Tradução" outcome="apaches.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Foot Patrol - Until It Breaks DEMO No. 2" />
+				<p:button value="Tradução" outcome="foot-patrol.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="Three Band Terror - Until It Breaks DEMO No. 3" />
+				<p:button value="Tradução" outcome="three-band-terror.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="11." />
+				<h:outputLabel class="outputLabel" value="Truth Inside A Lie - By Ryan Giles - LPU Sessions 2013" />
+				<p:button value="Tradução" outcome="truth-inside-a-lie.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="12." />
+				<h:outputLabel class="outputLabel" value="Change - By Beta State - LPU Session 2013" />
+				<p:button value="Tradução" outcome="change.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

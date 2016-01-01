@@ -3,4 +3,17 @@
 #lpu15-panel {
 	background-image: url("#{resource['imagens/lpu/lowres/lpu15.jpg']}");
 	background-size: cover;
+	background-position: center;
+}
+
+#lpu14-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpuxiv.png']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#lpu13-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpuxiii.jpg']}");
+	background-size: cover;
+	background-position: center;
 }
