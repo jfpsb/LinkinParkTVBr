@@ -17,3 +17,9 @@
 	background-size: cover;
 	background-position: center;
 }
+
+#lpu12-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpu12.jpg']}");
+	background-size: cover;
+	background-position: center;
+}

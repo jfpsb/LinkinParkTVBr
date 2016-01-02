@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">LPU : LP Underground 12</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            	window.location.hash="lpu12-section"; 
+        	</h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/lpu-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<section id="lpu12-section" class="body-section"> <p:panel
+			header="LP Underground 12" id="lpu12-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Homecoming (Minutes To Midnight DEMO)" />
+				<p:button value="Tradução" outcome="homecoming.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="Points Of Authority (DEMO)" />
+				<p:button value="Tradução" outcome="points-of-authority.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Clarity (Minutes To Midnight DEMO)" />
+				<p:button value="Tradução" outcome="clarity.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Asbestos (Minutes To Midnight DEMO)" />
+				<p:button value="Tradução" outcome="asbestos.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Bunker (Minutes To Midnight DEMO)" />
+				<p:button value="Tradução" outcome="bunker.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="So Far Away (Unreleased 1998)" />
+				<p:button value="Tradução" outcome="so-far-away.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Pepper (Meteora DEMO)" />
+				<p:button value="Tradução" outcome="pepper.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="Debris (Minutes To Midnight DEMO)" />
+				<p:button value="Tradução" outcome="debris.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Ominous (Meteora DEMO)" />
+				<p:button value="Tradução" outcome="ominous.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="Forgotten (DEMO)" />
+				<p:button value="Tradução" outcome="forgotten.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>
