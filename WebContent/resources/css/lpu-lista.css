@@ -23,3 +23,9 @@
 	background-size: cover;
 	background-position: center;
 }
+
+#lpu11-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpu11.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
