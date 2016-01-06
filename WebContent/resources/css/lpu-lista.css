@@ -29,3 +29,15 @@
 	background-size: cover;
 	background-position: center;
 }
+
+#decade-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/a-decade-underground.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#sftu-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/songs-from-the-underground.jpg']}");
+	background-size: cover;
+	background-position: center;
+}

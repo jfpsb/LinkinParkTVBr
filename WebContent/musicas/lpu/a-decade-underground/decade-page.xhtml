@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">LPU : A Decade Underground</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="decade-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/lpu-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<section id="decade-section" class="body-section"> <p:panel
+			header="A Decade Underground" id="decade-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Announcement Service Public" />
+				<p:button value="Tradução" outcome="announcement.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="QWERTY (Studio Version)" />
+				<p:button value="Tradução" outcome="qwerty.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="And One" />
+				<p:button value="Tradução" outcome="and-one.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Sold My Soul To Yo Mama" />
+				<p:button value="Tradução" outcome="sold-my-soul-to-yo-mama.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Dedicated (DEMO 1999)" />
+				<p:button value="Tradução" outcome="dedicated.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Hunger Strike (Live From Projekt Revolution 2008) - Chris Cornell Feat. 
+				Chester Bennington" />
+				<p:button value="Tradução" outcome="hunger-strike.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="My December (Live 2008)" />
+				<p:button value="Tradução" outcome="my-december.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="Part Of Me" />
+				<p:button value="Tradução" outcome="part-of-me.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Across The Line (Unreleased DEMO 2007)" />
+				<p:button value="Tradução" outcome="across-the-line.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="Pretend To Be (Unreleased DEMO 2008)" />
+				<p:button value="Tradução" outcome="pretend-to-be.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>
