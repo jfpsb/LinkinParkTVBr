@@ -41,3 +41,33 @@
 	background-size: cover;
 	background-position: center;
 }
+
+#lpu10-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpux.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#lpu9-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpu9.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#lpu8-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpu8.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#lpu7-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpu7.jpg']}");
+	background-size: cover;
+	background-position: center;
+}
+
+#lpu6-panel {
+	background-image: url("#{resource['imagens/lpu/lowres/lpu6.jpg']}");
+	background-size: cover;
+	background-position: center;
+}

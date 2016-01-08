@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">LPU : LP Underground X</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="lpu10-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/lpu-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<section id="lpu10-section" class="body-section"> <p:panel
+			header="LP Underground X" id="lpu10-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="Unfortunate (Unreleased DEMO 2002)" />
+				<p:button value="Tradução" outcome="unfortunate.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="What We Don't Know (Unreleased DEMO 2007)" />
+				<p:button value="Tradução" outcome="what-we-dont-know.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Oh No (Points Of Authority DEMO)" />
+				<p:button value="Tradução" outcome="oh-no.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="I Have Not Begun (Unreleased DEMO 2009)" />
+				<p:button value="Tradução" outcome="i-have-not-begun.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="Pale (Unreleased DEMO 2006)" />
+				<p:button value="Tradução" outcome="pale.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="Pretend To Be (Unreleased DEMO 2008)" />
+				<p:button value="Tradução" outcome="pretend-to-be.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="7." />
+				<h:outputLabel class="outputLabel" value="Divided (Unreleased DEMO 2005)" />
+				<p:button value="Tradução" outcome="divided.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="8." />
+				<h:outputLabel class="outputLabel" value="What I've Done (M. Shinoda Remix)" />
+				<p:button value="Tradução" outcome="what-ive-done.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="9." />
+				<h:outputLabel class="outputLabel" value="Coal (Unreleased DEMO 1997)" />
+				<p:button value="Tradução" outcome="coal.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="10." />
+				<h:outputLabel class="outputLabel" value="Halo (Unreleased DEMO 2002)" />
+				<p:button value="Tradução" outcome="halo.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

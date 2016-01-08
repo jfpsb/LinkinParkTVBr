@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="lpu/lowres/lpu9.jpg" class="album-thumb" />
+				<p:button value="Voltar ao LP Underground 9" outcome="lpu9-page.xhtml"
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. A.06 (Original Long Version)" outcome="a06.xhtml" />
+			<p:link class="album-text" value="2. Faint (DEMO 2002)" outcome="faint.xhtml" />
+			<p:link class="album-text" value="3. Sad (By Myself DEMO 1999)" outcome="sad.xhtml" />
+			<p:link class="album-text" value="4. Fear (Leave Out All The Rest DEMO 2006)" outcome="fear.xhtml" />
+			<p:link class="album-text" value="5. Figure.09 (DEMO 2002)" outcome="figure09.xhtml" />
+			<p:link class="album-text" value="6. Stick N' Move (Runaway DEMO 1998)" outcome="stick-n-move.xhtml" />
+			<p:link class="album-text" value="7. Across The Line (Unreleased DEMO 2007)" outcome="across-the-line.xhtml" />
+			<p:link class="album-text" value="8. Drawing (Breaking The Habit DEMO 2002)" outcome="drawing.xhtml" />
+			<p:link class="album-text" value="9. Drum Song (The Little Things Give You Away DEMO 2006)" outcome="drum-song.xhtml" />
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>
