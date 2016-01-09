@@ -1,19 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.org/ui" >
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
-	<ui:composition template="/WEB-INF/template.xhtml">
-		<ui:define name="title">Vídeos Legendados</ui:define>
-		<ui:define name="icon"><link rel="shortcut icon" href="#{request.contextPath}/favicon.ico" type="image/x-icon" /></ui:define>
-		<ui:define name="script">
-			<h:outputScript target="body" >
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">Vídeos Legendados</ui:define>
+	<ui:define name="icon">
+		<link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"
+			type="image/x-icon" />
+	</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
             	window.location.hash="videos-section"; 
         	</h:outputScript>
-		</ui:define>
-		<ui:define name="conteudo">
+	</ui:define>
+	<ui:define name="conteudo">
+		<section id="videos-section" class="body-section"> <article
+			id="videos-article" class="leg-article">
+		<h2 style="font-family: 'CourierNew', Courier, monospace; text-align: center;">
+			Esta área ainda não possui conteúdo.<br />Volte em breve.
+		</h2>
+		</article> </section>
+	</ui:define>
+	<!--<ui:define name="conteudo">
 			<h:outputStylesheet name="css/video-mus-page.css" />
 			<h:outputStylesheet name="css/videos-leg.css" />			
 			<section id="videos-section" class="body-section">
@@ -62,6 +73,6 @@
 					</p:panelGrid>
 				</article>
 			</section>
-		</ui:define>
-	</ui:composition>
+		</ui:define>-->
+</ui:composition>
 </html>

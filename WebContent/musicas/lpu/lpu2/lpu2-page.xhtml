@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="title">LPU : LP Underground 2</ui:define>
+	<ui:define name="script">
+		<h:outputScript target="body">
+            window.location.hash="lpu2-section"; 
+        </h:outputScript>
+	</ui:define>
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-lista.css" />
+		<h:outputStylesheet name="css/icon.css" />
+		<h:outputStylesheet name="css/lpu-lista.css" />
+		<h:outputScript library="js" name="letramusica.js" />
+		<section id="lpu2-section" class="body-section"> <p:panel
+			header="LP Underground 2" id="lpu2-panel">			
+			<p:panelGrid id="panelGrid" columns="3" layout="grid">
+				<h:outputLabel class="outputLabel" value="1." />
+				<h:outputLabel class="outputLabel" value="A.06" />
+				<p:button value="Tradução" outcome="a06.xhtml" icon="brazil-icon"/>
+					
+				<h:outputLabel class="outputLabel" value="2." />
+				<h:outputLabel class="outputLabel" value="With You (Live)" />
+				<p:button value="Tradução" outcome="with-you.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="3." />
+				<h:outputLabel class="outputLabel" value="Pts.Of.Athrty (Crystal Method Remix)" />
+				<p:button value="Tradução" outcome="points-remix.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="4." />
+				<h:outputLabel class="outputLabel" value="Dedicated (Demo Version)" />
+				<p:button value="Tradução" outcome="dedicated.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="5." />
+				<h:outputLabel class="outputLabel" value="High Voltage Remix (Live)" />
+				<p:button value="Tradução" outcome="high-voltage-remix.xhtml" icon="brazil-icon"/>
+				
+				<h:outputLabel class="outputLabel" value="6." />
+				<h:outputLabel class="outputLabel" value="My December" />
+				<p:button value="Tradução" outcome="my-december.xhtml" icon="brazil-icon"/>
+			</p:panelGrid>
+
+		</p:panel> </section>
+	</ui:define>
+</ui:composition>
+</html>

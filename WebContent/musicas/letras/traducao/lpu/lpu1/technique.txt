@@ -1,0 +1,2 @@
+<h2>Technique</h2>
+<pre>Você deve exercitar a técnica correta...</pre>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="conteudo">
+		<h:outputStylesheet name="css/musica-letra.css" />
+		<section id="lista-section" class="body-section"> <article
+			style="overflow: auto; overflow-x: hidden;"> <article
+			id="mus-article"> <h:outputScript library="js"
+			name="letramusica.js" /> <h:outputStylesheet name="css/datagrid.css" />
+		<p:tabView>
+			<p:tab title="Tradução">
+				<div id="tradTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<p:tab title="Original">
+				<div id="origTextArea" class="textArea" align="center">
+				</div>
+			</p:tab>
+			<ui:insert name="video-tab" />
+		</p:tabView> </article> <aside id="album-aside"> <p:panelGrid
+			columns="1" class="album-panelGrid" layout="grid">
+			<f:facet name="header">
+				<p:graphicImage library="imagens"
+					name="lpu/lowres/lpu1.jpg" class="album-thumb" />
+				<p:button value="Voltar ao Hybrid Theory EP (LPU 1)" outcome="lpu1-page.xhtml"
+					class="footer-button" />
+			</f:facet>
+			<p:link class="album-text" value="1. Carousel" outcome="carousel.xhtml" />
+			<p:link class="album-text" value="2. Technique" outcome="technique.xhtml" />
+			<p:link class="album-text" value="3. Step Up" outcome="step-up.xhtml" />
+			<p:link class="album-text" value="4. And One" outcome="and-one.xhtml" />
+			<p:link class="album-text" value="5. High Voltage" outcome="high-voltage.xhtml" />
+			<p:link class="album-text" value="6. Part Of Me" outcome="part-of-me.xhtml" />
+		</p:panelGrid> </aside> </article> </section>
+	</ui:define>
+</ui:composition>
+</html>
