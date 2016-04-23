@@ -20,7 +20,7 @@ public class LoginBean {
 			if(senha.equals("12345")) {
 				System.out.println(login + " --- " + senha);
 				context.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Entrou", ""));
-				return "home?faces-redirect=true";				
+				return "home?faces-redirect=true";
 			}
 		}
 		
